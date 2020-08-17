@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# DEV164 - Developing Apps with SAPUI5
 
 ## Description
 
