@@ -5,7 +5,7 @@ In this exercise, you will create a new UI5 application based on a provided temp
 ## Scenario
 Your customer "Keep Cool Inc." is a maintainer of several icehouses across the country. Recently those have been upgraded with new sensors with internet connection, so that their measuring values are available as a service. To make use of this data and to improve their internal workflows the company asked us to provide an application leveraging this sensor data, visualize it and provide an overview of the current state of each sensor, so that they can react quickly on any issues.
 
-## Exercise 1.1 Create a new UI5 application
+## Exercise 1.1 - Create a new UI5 application
 
 After completing these steps you will have created your first UI5 application.
 
