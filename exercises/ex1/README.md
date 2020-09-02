@@ -10,16 +10,15 @@ Your customer "Keep Cool Inc." is a maintainer of several icehouses across the c
 After completing these steps you will have created your first UI5 application.
 
 1. Click on *Create project from template* on the *Welcome* page.
-  1. [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View* and then select *Find Command...*. A new popup is opend, enter here *SAP Business Application Studio: Welcome Page*.
+    1. [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View* and then select *Find Command...*. A new popup is opend, enter here *SAP Business Application Studio: Welcome Page*.
 <br>![](images/01_00_0010.png)
 
 2. Choose *SAP Fiori Freestyle - Project Generator* and press *Next*
 <br>![](images/01_00_0020.png)
 
 3. Enter in *Target Running Environment* following settings:
-  1. Select *Cloud Foundry* as *target running environment*
-  2. Select *SAPUI5 Application* as application template
-and press *Next*.
+    1. Select *Cloud Foundry* as *target running environment*
+    2. Select *SAPUI5 Application* as application template and press *Next*.
 <br>![](images/01_00_0030.png)
 
 4. Enter *TechEd2020* as project name and press *Next*.
@@ -29,11 +28,10 @@ and press *Next*.
 <br>![](images/01_00_0050.png)
 
 6. Enter following settings in *Basic Attributes*:
-  1. Enter *SensorsTest* as *HTML5 module name* 
-  2. Choose *No* as authentication
-  3. Enter *keepcool* as your namespace
-  4. Choose *Yes* for karma support
-and press *Next*.
+    1. Enter *SensorsTest* as *HTML5 module name* 
+    2. Choose *No* as authentication
+    3. Enter *keepcool* as your namespace
+    4. Choose *Yes* for karma support and press *Next*.
 <br>![](images/01_00_0060.png)
 
 7. Enter *App* as your view name, choose *No* for data service usage and press *Next*.
