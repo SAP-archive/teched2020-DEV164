@@ -12,7 +12,7 @@ After completing these steps you will have created your first UI5 application.
 1. Click on *Create project from template* on the *Welcome* page.
     1. [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View* and then select *Find Command...*. A new popup is opend, enter here *SAP Business Application Studio: Welcome Page*.
 
-<br>![](images/01_00_0010.png)
+![](images/01_00_0010.png)
 
 2. Choose *SAP Fiori Freestyle - Project Generator* and press *Next*
 <br>![](images/01_00_0020.png)
@@ -21,7 +21,7 @@ After completing these steps you will have created your first UI5 application.
     1. Select *Cloud Foundry* as *target running environment*
     2. Select *SAPUI5 Application* as application template and press *Next*.
 
-<br>![](images/01_00_0030.png)
+![](images/01_00_0030.png)
 
 4. Enter *TechEd2020* as project name and press *Next*.
 <br>![](images/01_00_0040.png)
@@ -34,8 +34,7 @@ After completing these steps you will have created your first UI5 application.
     2. Choose *No* as authentication
     3. Enter *keepcool* as your namespace
     4. Choose *Yes* for karma support and press *Next*.
-
-<br>![](images/01_00_0060.png)
+![](images/01_00_0060.png)
 
 7. Enter *App* as your view name, choose *No* for data service usage and press *Next*.
 <br>![](images/01_00_0070.png)
@@ -43,7 +42,7 @@ After completing these steps you will have created your first UI5 application.
 8. The project is generated and a small notification window appears in the lower right corner. Click on *Open in New Workspace*.
 <br>![](images/01_00_0080.png)
 
-Now, the project should be visible in the File Explorer.
+9. Now, the project should be visible in the File Explorer.
 <br>![](images/01_00_0090.png)
 
 ## Summary
