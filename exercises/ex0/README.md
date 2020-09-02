@@ -1,4 +1,4 @@
-# Getting-Started
+# Getting Started
 
 In this exercise, you will logon to your SAP Business Application Studio and get brief overview.
 
@@ -20,5 +20,6 @@ After completing these steps you will know how to open your SAP Business Applica
 
 ## Summary
 
-Congratulations, you achieved the [Getting started](#Getting-Started)
+Congratulations, you achieved the [Getting Started](#Getting-Started).
+
 Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
