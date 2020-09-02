@@ -1,42 +1,111 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Navigation and Libraries in Manifest
 
-In this exercise, we will create...
+In this exercise, you will add content to your application. A new UI5 view showing multiple sensors will be the first part of your app.
 
-## Exercise 2.1 Sub Exercise 1 Description
+## Exercise 2.1 - Create Sensors.view.xml
 
-After completing these steps you will have created...
+After completing these steps you will have written your first UI5 view.
 
-1. Click here.
+1. Perfom a right click on the `SensorTest/webapp/view` folder. A new menu opens where you have to click on `New File`.
 <br>![](/exercises/ex2/images/02_01_0010.png)
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+2. Enter `Sensors.view.xml` as the new file name and press *OK*.
+<br>![](/exercises/ex2/images/02_01_0020.png)
 
+3. Now, Its time for adding some first content to your newly created UI5 view. Its an empty `sap.m.IconTabBar`.
 
+***SensorTest/webapp/view/Sensors.view.xml***
 
-## Exercise 2.2 Sub Exercise 2 Description
+````xml
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+                <content>
+                </content>
+            </IconTabBar>
+        </content>
+    </Page>
+</mvc:View>
+````
 
-After completing these steps you will have...
+## Exercise 2.2 - Add Dependencies
+You will use several UI5 libraries like `sap.m` or `sap.f` in your application. The central point of configuring your UI5 application is the `manifest.json` which is located under `SensorTest/webapp/manifest.json`.
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+1. Open `SensorTest/webapp/manifest.json`.
+2. Go to the section `sap.ui5`.
+3. Add the `sap.m`, `sap.f` and `sap.suite.ui.microchart` libraries to the `dependencies/libs` section. For all the listed libraries, UI5 takes care of loading these libraries when your app is started.
 
-```
+***SensorTest/webapp/manifest.json***
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+````json
+"dependencies": {
+    "minUI5Version": "1.60.1",
+    "libs": {
+        "sap.ui.core": {},
+        "sap.ui.layout": {},
+        "sap.m": {},
+        "sap.f": {},
+        "sap.suite.ui.microchart": {}
+    }
+},
+````
+
+## Exercise 2.3 - Enable Routing for Sensors.view.xml
+UI5 comes with a powerful routing API that helps you control the state of your application efficiently. With that UI5 takes care of displaying the desired UI5 view based on the given browser hash.
+
+Lets adjust the `manifest.json` to enable the routing feature also for the newly created view.
+
+1. Open `SensorTest/webapp/manifest.json`.
+2. Go the section `sap.ui5`.
+3. Replace all content inside the `routing` property with following content:
+
+***SensorTest/webapp/manifest.json***
+
+````json
+"routing": {
+    "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "keepcool.SensorsTest.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+    },
+    "routes": [{
+        "name": "RouteSensors",
+        "pattern": "RouteSensors",
+        "target": ["TargetSensors"]
+    }],
+    "targets": {
+        "TargetSensors": {
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "Sensors",
+            "viewName": "Sensors"
+        }
+    }
+}
+````
+
+## Exercie 2.4 - Create a Run Configuration
+Now, its time for a first preview of your newly created application.
+
+1. 
 
 ## Summary
 
 You've now ...
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+
+
+## Further Information
+UI5 Demokit: https://ui5.sap.com/
+Views in UI5: https://ui5.sap.com/#/topic/91f27e3e6f4d1014b6dd926db0e91070
+Routing in UI5: https://ui5.sap.com/#/topic/3d18f20bd2294228acb6910d8e8a5fb5
