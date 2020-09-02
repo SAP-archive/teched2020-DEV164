@@ -18,8 +18,8 @@ After completing these steps you will have created your first UI5 application.
 
 3. Enter following settings in the *Target Running Environment* step: 
     1. Select *Cloud Foundry* as *target running environment*
-    2. Select *SAPUI5 Application* as application template and press *Next*.</ul>
-<br>![](images/01_00_0030.png)
+    2. Select *SAPUI5 Application* as application template and press *Next*.</ol>
+<br>![](images/01_00_0030.png)<ol>
 
 4. Enter *TechEd2020* as project name and press *Next*.
 <br>![](images/01_00_0040.png)
