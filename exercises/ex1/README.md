@@ -10,9 +10,8 @@ Your customer "Keep Cool Inc." is a maintainer of several icehouses across the c
 After completing these steps you will have created your first UI5 application.
 
 1. Click on *Create project from template* on the *Welcome* page.
-    1. [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View* and then select *Find Command...*. A new popup is opend, enter here *SAP Business Application Studio: Welcome Page*.
-
-![](images/01_00_0010.png)
+    * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View* and then select *Find Command...*. A new popup is opend, enter here *SAP Business Application Studio: Welcome Page*.
+  <br>![](images/01_00_0010.png)
 
 2. Choose *SAP Fiori Freestyle - Project Generator* and press *Next*
 <br>![](images/01_00_0020.png)
