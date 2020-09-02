@@ -7,7 +7,7 @@ After completing these steps you will know how to open your SAP Business Applica
 
 1. Open a browser of your choice (Google Chrome, Microsoft Edge, Apple Safari, etc.).
 
-2. Open [SAP Business Application Studio](https://triallink.eu10.trial.applicationstudio.cloud.sap/) and login with your credentials. If the login does not work, ensure you have completed the [requirements](../README.md#requirements). 
+2. Open [SAP Business Application Studio](https://triallink.eu10.trial.applicationstudio.cloud.sap/) and login with your credentials. If the login does not work, ensure you have completed the [requirements](../../README.md#requirements). 
 
 3. Now, you have to create a dev space. Therefore, click on *Create Dev Space* button. 
 <br>![](images/00_00_0010.png)
