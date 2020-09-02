@@ -40,7 +40,7 @@ After completing these steps you will have created your first UI5 application.
 8. The project is generated and a small notification window appears in the lower right corner. Click on *Open in New Workspace*.
 <br>![](images/01_00_0080.png)
 
-9. Now, the project should be visible in the File Explorer.
+9. Now, the newly created UI5 application is displayed in the File Explorer.
 <br>![](images/01_00_0090.png)
 
 ## Summary
