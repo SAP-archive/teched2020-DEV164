@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called **UX261 – Developing Apps with SAPUI5**. 
+This repository contains the material for the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**. 
 
 ## Overview
 
