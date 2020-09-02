@@ -31,8 +31,8 @@ After completing these steps you will have created your first UI5 application.
     1. Enter *SensorsTest* as *HTML5 module name* 
     2. Choose *No* as authentication
     3. Enter *keepcool* as your namespace
-    4. Choose *Yes* for karma support and press *Next*.</ul>
-<br>![](images/01_00_0060.png)
+    4. Choose *Yes* for karma support and press *Next*.</ol>
+<br>![](images/01_00_0060.png)<ol>
 
 7. Enter *App* as your view name, choose *No* for data service usage and press *Next*.
 <br>![](images/01_00_0070.png)
