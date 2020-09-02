@@ -1,13 +1,11 @@
-# Level 1 Heading
+# Getting-Started
 
-In this exercise, you will...
+In this exercise, you will logon to your SAP Business Application Studio and get brief overview.
 
-## Level 2 Heading
+## Logon
+After completing these steps you will know how to open your SAP Business Application Studio.
 
-After completing these steps you will have....
-
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
+1.	Open a browser your choice (Google Chrome, Microsoft Edge, Apple Safari, etc.).
 
 2.	Insert this code.
 ```
@@ -22,5 +20,5 @@ After completing these steps you will have....
 
 ## Summary
 
-Now that you have ... 
+Congratulations, you achieved the [Getting started](#Getting-Started)
 Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
