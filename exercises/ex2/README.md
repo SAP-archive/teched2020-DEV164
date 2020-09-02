@@ -106,6 +106,6 @@ Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
 
 
 ## Further Information
-UI5 Demokit: https://ui5.sap.com/
-Views in UI5: https://ui5.sap.com/#/topic/91f27e3e6f4d1014b6dd926db0e91070
-Routing in UI5: https://ui5.sap.com/#/topic/3d18f20bd2294228acb6910d8e8a5fb5
+* UI5 Demokit: https://ui5.sap.com/
+* Views in UI5: https://ui5.sap.com/#/topic/91f27e3e6f4d1014b6dd926db0e91070
+* Routing in UI5: https://ui5.sap.com/#/topic/3d18f20bd2294228acb6910d8e8a5fb5
