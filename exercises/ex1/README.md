@@ -77,7 +77,7 @@ Now, its time for a first preview of your newly created application.
 <br>![](images/01_02_0100.png)
 
 ## Summary
-Hooray! You've successfully accomplished [Exercise 1 - Project Setup using SAP Business Application Studio](#exercise-1-project-setup-using-sap-business-applicationsstudio).
+Hooray! You've successfully accomplished [Exercise 1 - Project Setup using SAP Business Application Studio](#exercise-1---project-setup-using-sap-business-applicationsstudio).
 
 Continue to - [Exercise 2 - Navigation and Libraries in Manifest](../ex2/README.md)
 
