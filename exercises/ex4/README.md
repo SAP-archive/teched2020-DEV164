@@ -109,7 +109,7 @@ If you wanna support Indian or any other prefered language feel free to repeat t
 
 Yay! You've accomplished successfully [Exercise 4 - Introduce Localization](#exercise-4---introduce-localization). 
 
-Continue to [Exercise 5 - Improve Visualization](../ex5/README.md)
+Continue to [Exercise 5 - Improve Visualization](../ex5/README.md).
 
 ## Further Information
 * Localization: https://ui5.sap.com/#/topic/91f217c46f4d1014b6dd926db0e91070
