@@ -23,6 +23,8 @@ title=Keep Cool Inc. Sensor Manager
 appTitle=Sensor Manager
 appDescription=The sensor manager
 noSensorDataText=No Sensor Data
+distanceLabel=Distance
+distanceUnit=km
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -51,6 +53,8 @@ title=Keep Cool Inc. Sensor Manager
 appTitle=Sensor Manager
 appDescription=The sensor manager
 noSensorDataText=No Sensor Data
+distanceLabel=Distance
+distanceUnit=km
 ````
 
 7. Open `i18n_de.properties` and paste following content.
@@ -62,6 +66,8 @@ title=Keep Cool Inc. Sensor Verwalter
 appTitle=Sensor Verwalter
 appDescription=Der Sensor Verwalter
 noSensorDataText=Keine Sensordaten
+distanceLabel=Distanz
+distanceUnit=km
 ````
 
 8. Depending on which browser language you've configured you would see a different texts on user interface.
