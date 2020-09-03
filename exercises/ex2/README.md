@@ -100,7 +100,7 @@ Lets adjust the `manifest.json` to enable the routing feature also for the newly
 
 You've now enabled your application for routing and prepared your application further development with completing [Exercise 2 - Basic UI5 Configuration and  View Creation](#exercise-2---basic-ui5-configuration-and-view-creation). Stay tuned!
 
-Continue to [Exercise 3 - Show Sensor Content](../ex3/README.md)
+Continue to [Exercise 3 - Show Sensor Content](../ex3/README.md).
 
 
 ## Further Information

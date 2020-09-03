@@ -127,7 +127,7 @@ After adding the `sap.f.GridList` control, you have to connect the control to th
 
 Congratulations! You've completed successully [Exercise 3 - Show Sensor Content](#exercise-3---show-sensor-content).
 
-Continue to [Exercise 4 - Introduce Localization](../ex4/README.md)
+Continue to [Exercise 4 - Introduce Localization](../ex4/README.md).
 
 ## Further Information
 * Data Binding: https://ui5.sap.com/#/topic/68b9644a253741e8a4b9e4279a35c247
