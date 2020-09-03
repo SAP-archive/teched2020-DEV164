@@ -1,7 +1,7 @@
 # Exercise 4 - Introduce Localization
 In this exercise, you will learn how easy it is to enable your UI5 application for localization.
 
-## Exercise 4.1 Replacing Hard Coded Text with i18n-variables
+## Exercise 4.1 - Replacing Hard Coded Text with i18n Variables
 In your existing UI5 application you've used hard coded text values. Thats ok, if you wanna implement a fast proof of concept. If you wanna build a productive application no hard coded text values should be used because they will be displayed no matter which browser language is configured. Your goal is to build an enterprise ready application which offeres also localization features, like text translation. UI5 comes with a huge set of localization features out of the box which are enabled by default. To benefit from these features you have to replace all occurrences of hard coded texts in your UI5 application. Luckily, its only one occurrence 😃. However, its a good reminder to start directly with localization in mind before refactoring many places in your application afterwards.
 
 1. Open the `Sensors.view.xml` located under `SensorTest/webapp/view/`.
@@ -28,7 +28,7 @@ noSensorDataText=No Sensor Data
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
 <br>![](images/04_01_0010.png)
 
-## Exercise 4.2 Add New Languages
+## Exercise 4.2 - Add New Languages
 Your UI5 application is prepared for localization. No matter with which browser language is configured your UI5 application displays the texts of the `i18n.properties`-file.
 Lets provide new language for english and german.
 
@@ -69,7 +69,7 @@ noSensorDataText=Keine Sensordaten
     * If your language is German the content of `i18n_de.properties` is used
     * If you any other language than English or German the content of `i18n.properties` is used
 
-## Exercise 4.3 Configure Supported Languages
+## Exercise 4.3 - Configure Supported Languages
 Usually, only the `i18n.properties` file is maintained by developers. The language dependent files will be filled by native speakers or translators. You as an application developer can configure which languages are supported by your application and which language is your default (aka fallback) language. In your case English will be the default language and additionaly German should be supported.
 
 1. Open the `manifest.json` located under `SensorTest/webapp`.
