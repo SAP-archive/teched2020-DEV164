@@ -93,11 +93,6 @@ Lets adjust the `manifest.json` to enable the routing feature also for the newly
 }
 ````
 
-## Exercie 2.4 - Create a Run Configuration
-Now, its time for a first preview of your newly created application.
-
-1. 
-
 ## Summary
 
 You've now ...

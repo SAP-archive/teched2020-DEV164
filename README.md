@@ -20,6 +20,7 @@ The requirements to follow the exercises in this repository are:
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Project Setup using Business Application Studio](exercises/ex1/)
     - [Exercise 1.1 - Create a new UI5 application](exercises/ex1#exercise-11---create-a-new-ui5-application)
+    - [Exercise 1.2 - Create a Run Configuration](exercises/ex1#exercise-12---create-a-run-configuration)
 - [Exercise 2 - Navigation and Libraries in Manifest](exercises/ex2/)
 - [Exercise 3 - Adding Content to the View](exercises/ex3/)
 - [Exercise 4 - GridList and DataBinding](exercises/ex4/)
