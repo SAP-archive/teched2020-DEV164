@@ -27,4 +27,4 @@ After completing these steps you will know how to open your SAP Business Applica
 
 Congratulations, you achieved the [Getting Started](#getting-started) exercise.
 
-Continue to - [Exercise 1 - Project Setup using Business Application Studio](../ex1/README.md)
+Continue to [Exercise 1 - Project Setup using Business Application Studio](../ex1/README.md)

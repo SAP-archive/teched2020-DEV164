@@ -71,7 +71,7 @@ After the configuring the data service its time to enrich your `Sensors.view.xml
 ...
 ````
 
-2. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar.
+3. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar.
 
 ***SensorTest/webapp/view/Sensors.view.xml***
 
@@ -89,11 +89,11 @@ After the configuring the data service its time to enrich your `Sensors.view.xml
 ...
 ````
 
-3. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
+4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
 <br>![](images/03_03_0010.png)
 
 ## Exercise 3.4 - Add Data Binding
-After adding the GridList control, you have to connect the GridList to the sensor data. Therefore, UI5 provides an mechanism called *Data Binding*.
+After adding the `sap.f.GridList` control, you have to connect the control to the sensor data. Therefore, UI5 provides an mechanism called *Data Binding*.
 
 1. Open the `Sensors.view.xml` located under `SensorTest/webapp/view`.
 
@@ -127,7 +127,7 @@ After adding the GridList control, you have to connect the GridList to the senso
 
 Congratulations! You've completed successully [Exercise 3 - Show Sensor Content](#exercise-3---show-sensor-content).
 
-Continue to - [Exercise 4 - Introduce Localization](../ex4/README.md)
+Continue to [Exercise 4 - Introduce Localization](../ex4/README.md)
 
 ## Further Information
 * Data Binding: https://ui5.sap.com/#/topic/68b9644a253741e8a4b9e4279a35c247
