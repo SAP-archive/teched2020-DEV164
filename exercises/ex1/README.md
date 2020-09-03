@@ -46,10 +46,10 @@ After completing these steps you will have created your first UI5 application.
 ## Exercie 1.2 - Create a Run Configuration
 Now, its time for a first preview of your newly created application.
 
-1. Click on ""-icon in the left bar in your SAP Business Application Studio
+1. Click on "&#9654;"-icon in the left bar in your SAP Business Application Studio
 <br>![](images/01_02_0010.png)
 
-2. Click on the "+" icon to add a new configuration in *Run Configurations*.
+2. Click on the "&plusb;" icon to add a new configuration in *Run Configurations*.
 <br>![](images/01_02_0020.png)
 
 3. After a short delay a list should popup at the top in the middle of your screen, here you can select the just created module *SensorsTest*.

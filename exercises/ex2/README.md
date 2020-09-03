@@ -1,4 +1,4 @@
-# Exercise 2 - Navigation and Libraries in Manifest
+# Exercise 2 - Basic UI5 Configuration and View Creation
 
 In this exercise, you will add content to your application. A new UI5 view showing multiple sensors will be the first part of your app.
 
@@ -71,21 +71,19 @@ Lets adjust the `manifest.json` to enable the routing feature also for the newly
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "keepcool.SensorsTest.view",
+        "transition": "slide",
+        "viewPath": "keepcool.SensorTest.view",
         "controlAggregation": "pages",
-        "controlId": "app",
-        "clearControlAggregation": false
+        "controlId": "app"
     },
     "routes": [{
         "name": "RouteSensors",
-        "pattern": "RouteSensors",
+        "pattern": "",
         "target": ["TargetSensors"]
     }],
     "targets": {
         "TargetSensors": {
             "viewType": "XML",
-            "transition": "slide",
-            "clearControlAggregation": false,
             "viewId": "Sensors",
             "viewName": "Sensors"
         }
@@ -93,9 +91,14 @@ Lets adjust the `manifest.json` to enable the routing feature also for the newly
 }
 ````
 
+4. Now, open the tab with the application preview and perform a reload. The application is being updated and you can see an empty `sap.m.IconTabBar`.
+  * [Optional] If you have closed the tab with the application preview accidentally, click in the header toolbar on *View* and then select *Find Command...*. A new popup is opend, enter here *Ports: Preview* and press *Enter*. A new tab is opened with the application preview.</ul>
+
+<br>![](images/02_01_0030.png)
+
 ## Summary
 
-You've now ...
+You've now enabled your application for routing and prepared your application further development with completing [Exercise 2 - Basic UI5 Configuration and  View Creation](#exercise-2-basic-ui5-configuration-and-view-creation). Stay tuned!
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
 
