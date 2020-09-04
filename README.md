@@ -54,6 +54,12 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 7.5 - Implement the Select Customer Logic](exercises/ex7#exercise-75---implement-the-select-customer-logic)
     - [Exercise 7.6 - Assign the Customer Change and Select Logic to the Dialog](exercises/ex7#exercise-76---assign-the-customer-change-and-select-logic-to-the-dialog)
 - [Exercise 8 - Second View with Navigation](exercises/ex8/)
+    - [Exercise 8.1 - Create SensorStatus.view.xml](exercises/ex8#exercise-81---create-sensorstatusviewxml)
+    - [Exercise 8.2 - Configure the manifest.json](exercises/ex8#exercise-82---configure-the-manifestjson)
+    - [Exercise 8.3 - Implement the navigation to the new view](exercises/ex8#exercise-83---implement-the-navigation-tothe-new-view)
+    - [Exercise 8.4 - Assign the navigation logic to the sensor items](exercises/ex8#exercise-84---assign-the-navigation-logic-to-the-sensor-items)
+    - [Exercise 8.5 - Create SensorStatus.controller.js](exercises/ex8#exercise-85---create-sensorstatuscontrollerjs)
+    - [Exercise 8.6 - Implement navigation back to Sensors.view.xml](exercises/ex8#exercise-86---implement-navigation-back-to-sensorsviewxml)
 - [Exercise 9 - Card with NumericHeader](exercises/ex9/)
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
 
