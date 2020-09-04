@@ -25,6 +25,7 @@ appDescription=The sensor manager
 noSensorDataText=No Sensor Data
 distanceLabel=Distance
 distanceUnit=km
+msgSensorDataLoaded=All sensors online!
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -55,6 +56,7 @@ appDescription=The sensor manager
 noSensorDataText=No Sensor Data
 distanceLabel=Distance
 distanceUnit=km
+msgSensorDataLoaded=All sensors online!
 ````
 
 7. Open `i18n_de.properties` and paste following content.
@@ -68,6 +70,7 @@ appDescription=Der Sensor Verwalter
 noSensorDataText=Keine Sensordaten
 distanceLabel=Distanz
 distanceUnit=km
+msgSensorDataLoaded=Alle Sensoren aktiv!
 ````
 
 8. Depending on which browser language you've configured you would see a different texts on user interface.

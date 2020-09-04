@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**. 
+This repository contains the material for the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**.
 
 ## Overview
 
@@ -35,6 +35,11 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 4.2 - Add New Languages](exercises/ex4#exercise-42---add-new-languages)
     - [Exercise 4.3 - Configure Supported Languages](exercises/ex4#exercise-43---configure-supported-languages)
 - [Exercise 5 - Improve Visualization](exercises/ex5/)
+    - [Exercise 5.1 - Enhance Sensors.view.xml](exercises/ex5#exercise-51---enhance-sensorsviewxml)
+    - [Exercise 5.2 - Create Sensors.controller.js](exercises/ex5#exercise-52---create-sensorscontrollerjs)
+    - [Exercise 5.3 - Assign Controller to View](exercises/ex5#exercise-53---assign-controller-to-view)
+    - [Exercise 5.4 - Create your first Formatter](exercises/ex5#exercise-54---create-your-first-formatter)
+    - [Exercise 5.5 - Add the Formatter in your View](exercises/ex5#exercise-55---add-the-formatter-in-your-view)
 - [Exercise 6 - Filtering with the IconTabBar](exercises/ex6/)
 - [Exercise 7 - Fragment containing a SelectDialog](exercises/ex7/)
 - [Exercise 8 - Second View with Navigation](exercises/ex8/)
