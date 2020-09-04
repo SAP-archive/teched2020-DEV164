@@ -33,6 +33,7 @@ msgFilterOk=Ok
 msgFilterWarning=Warning
 msgFilterError=Error
 titleSelectCustomer=Select Customers
+titleSensorStatus=Sensor Status
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -70,6 +71,7 @@ msgFilterOk=Ok
 msgFilterWarning=Warning
 msgFilterError=Error
 titleSelectCustomer=Select Customers
+titleSensorStatus=Sensor Status
 ````
 
 7. Open `i18n_de.properties` and paste following content.
@@ -89,6 +91,7 @@ msgFilterOk=Ok
 msgFilterWarning=Warnung
 msgFilterError=Hoch
 titleSelectCustomer=Wähle die Kunden
+titleSensorStatus=Sensor Status
 ````
 
 8. Depending on which browser language you've configured you would see a different texts on user interface.

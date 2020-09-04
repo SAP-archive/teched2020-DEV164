@@ -85,7 +85,6 @@ Lets adjust the `manifest.json` to enable the routing feature also for the newly
     }],
     "targets": {
         "TargetSensors": {
-            "viewType": "XML",
             "viewId": "Sensors",
             "viewName": "Sensors"
         }
