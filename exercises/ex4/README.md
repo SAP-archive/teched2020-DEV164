@@ -26,6 +26,10 @@ noSensorDataText=No Sensor Data
 distanceLabel=Distance
 distanceUnit=km
 msgSensorDataLoaded=All sensors online!
+msgFilterAll=All
+msgFilterOk=Ok
+msgFilterWarning=Warning
+msgFilterError=Error
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -52,11 +56,15 @@ Lets provide new language for english and german.
 ````ini
 title=Keep Cool Inc. Sensor Manager
 appTitle=Sensor Manager
-appDescription=The sensor manager
+appDescription=The sensor
 noSensorDataText=No Sensor Data
 distanceLabel=Distance
 distanceUnit=km
 msgSensorDataLoaded=All sensors online!
+msgFilterAll=All
+msgFilterOk=Ok
+msgFilterWarning=Warning
+msgFilterError=Error
 ````
 
 7. Open `i18n_de.properties` and paste following content.
@@ -71,6 +79,10 @@ noSensorDataText=Keine Sensordaten
 distanceLabel=Distanz
 distanceUnit=km
 msgSensorDataLoaded=Alle Sensoren aktiv!
+msgFilterAll=Alle
+msgFilterOk=Ok
+msgFilterWarning=Warnung
+msgFilterError=Hoch
 ````
 
 8. Depending on which browser language you've configured you would see a different texts on user interface.
