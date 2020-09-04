@@ -1,7 +1,9 @@
 # Exercise 6 - Filtering with the IconTabBar
+
 As your customer needs the full overview to make decisions quickly, you will give him an option to narrow down the list of sensors, based on the actual temperature of a sensor.
 
 ## Exercise 6.1 - Add new IconTabFilters to the Sensors.view.xml
+
 Therefore we enhance our `sap.m.IconTabBar`.
 
 1. Open `SensorTest/webapp/view/Sensors.view.xml`.
@@ -27,6 +29,7 @@ Therefore we enhance our `sap.m.IconTabBar`.
 <br>![](images/06_01_0010.png)
 
 ## Exercise 6.2 - Implement the Filtering
+
 In previous section you've added all necessary controls. Now, you've to implement the filtering logic.
 
 1. 1. Open `SensorTest/webapp/controller/Sensors.controller.js`.
@@ -72,6 +75,7 @@ onSensorSelect: function (oEvent) {
 ````
 
 ## Exercise 6.3 - Assign the Filtering to the IconTabBar
+
 The filtering logic is writtem. Now, you have to assign the filtering function to the binding of the `sap.m.IconTabBar`.
 
 1. Open `SensorTest/webapp/view/Sensors.view.xml`.
@@ -88,6 +92,7 @@ The filtering logic is writtem. Now, you have to assign the filtering function t
 <br>![](images/06_03_0010.png)
 
 ## Exercise 6.4 - Display the total number of sensors in every IconTabFilter
+
 Your customer wishes to display the amount of sensors. Therefore, you can introduce the `count` property of `sap.m.IconTabFilter`.
 
 1. Open `SensorTest/webapp/view/Sensors.view.xml`.
@@ -106,10 +111,12 @@ Your customer wishes to display the amount of sensors. Therefore, you can introd
 <br>![](images/06_04_0010.png)
 
 ## Summary
+
 Hooray! You've successfully accomplished [Exercise 6 - Filtering with the IconTabBar](#exercise-6---filtering-with-the-icontabbar). 
 
 Continue to [Exercise 7 - Fragment containing a SelectDialog](../ex7/README.md).
 
 ## Further Information
+
 * Model Filter in UI5: https://ui5.sap.com/#/topic/5295470d7eee46c1898ee46c1b9ad763
 * Expression Binding: https://ui5.sap.com/#/topic/daf6852a04b44d118963968a1239d2c0

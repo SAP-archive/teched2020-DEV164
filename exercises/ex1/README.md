@@ -3,6 +3,7 @@
 In this exercise, you will create a new UI5 application based on a provided template of SAP Business Application Studio.
 
 ## Scenario
+
 Your customer "Keep Cool Inc." is a maintainer of several icehouses across the country. Recently those have been upgraded with new sensors with internet connection, so that their measuring values are available as a service. To make use of this data and to improve their internal workflows the company asked us to provide an application leveraging this sensor data, visualize it and provide an overview of the current state of each sensor, so that they can react quickly on any issues.
 
 ## Exercise 1.1 - Create a new UI5 application
@@ -44,6 +45,7 @@ After completing these steps you will have created your first UI5 application.
 <br>![](images/01_01_0090.png)
 
 ## Exercie 1.2 - Create a Run Configuration
+
 Now, its time for a first preview of your newly created application.
 
 1. Click on "&#9654;"-icon in the left bar in your SAP Business Application Studio
@@ -77,6 +79,7 @@ Now, its time for a first preview of your newly created application.
 <br>![](images/01_02_0100.png)
 
 ## Summary
+
 Hooray! You've successfully accomplished [Exercise 1 - Project Setup using SAP Business Application Studio](#exercise-1---project-setup-using-sap-business-applicationsstudio).
 
 Continue to [Exercise 2 - Navigation and Libraries in Manifest](../ex2/README.md).

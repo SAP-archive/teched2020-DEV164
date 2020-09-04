@@ -1,7 +1,9 @@
 # Exercise 3 - Show Sensor Content
+
 In this exercise, you will add a local data service to the application and display the data on the enhanced UI5 view.
 
 ## Exercise 3.1 - Import Sensor Data
+
 To simulate a sensor data providing source, you have to add sensor data to the application.
 
 1. Go to folder `SensorTest/webapp/localService`.
@@ -17,6 +19,7 @@ To simulate a sensor data providing source, you have to add sensor data to the a
 5. Copy and paste the content of the [sensors.json](data/sensors.json) into the newly created file.
 
 ## Exercise 3.2 - Configure Data Service
+
 After adding the sensor data to your application, you have to configure the data service which provides the sensor data.
 
 1. Open the `manifest.json` located under `SensorTest/webapp`.
@@ -52,6 +55,7 @@ After adding the sensor data to your application, you have to configure the data
 ````
 
 ## Exercise 3.3 - Add a GridList
+
 After the configuring the data service its time to enrich your `Sensors.view.xml` with some fancy UI5 controls.
 
 1. Open the `Sensors.view.xml` located under `SensorTest/webapp/view`.
@@ -93,6 +97,7 @@ After the configuring the data service its time to enrich your `Sensors.view.xml
 <br>![](images/03_03_0010.png)
 
 ## Exercise 3.4 - Add Data Binding
+
 After adding the `sap.f.GridList` control, you have to connect the control to the sensor data. Therefore, UI5 provides an mechanism called *Data Binding*.
 
 1. Open the `Sensors.view.xml` located under `SensorTest/webapp/view`.
@@ -130,4 +135,5 @@ Congratulations! You've completed successully [Exercise 3 - Show Sensor Content]
 Continue to [Exercise 4 - Introduce Localization](../ex4/README.md).
 
 ## Further Information
+
 * Data Binding: https://ui5.sap.com/#/topic/68b9644a253741e8a4b9e4279a35c247

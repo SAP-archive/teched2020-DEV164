@@ -3,6 +3,7 @@
 In this exercise, you will logon to your SAP Business Application Studio, create a dev space and get a brief overview.
 
 ## Logon
+
 After completing these steps you will know how to open your SAP Business Application Studio.
 
 1. Open a browser of your choice (Google Chrome, Microsoft Edge, Apple Safari, etc.).

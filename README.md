@@ -17,6 +17,7 @@ The requirements to follow the exercises in this repository are:
 
 
 ## Exercises
+
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Project Setup using Business Application Studio](exercises/ex1/)
     - [Exercise 1.1 - Create a new UI5 application](exercises/ex1#exercise-11---create-a-new-ui5-application)
@@ -46,6 +47,12 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 6.3 - Assign the Filtering to the IconTabBar](exercises/ex6#exercise-63---assign-the-filtering-to-the-icontabbar)
     - [Exercise 6.4 - Display the total number of sensors in every IconTabFilter](exercises/ex6#exercise-64---display-the-total-number-of-sensors-in-every-icontabfilter)
 - [Exercise 7 - Fragment containing a SelectDialog](exercises/ex7/)
+    - [Exercise 7.1 - Create a new Fragment Definition](exercises/ex7#exercise-71---create-a-new-fragment-definition)
+    - [Exercise 7.2 - Implement the Dialog Opening Logic](exercises/ex7#exercise-72---implement-the-dialog-opening-logic)
+    - [Exercise 7.3 - Add a Dialog Opening Button](exercises/ex7#exercise-73---add-a-dialog-opening-button)
+    - [Exercise 7.4 - Implement the Customer Change Logic](exercises/ex7#exercise-74---implement-the-customer-change-logic)
+    - [Exercise 7.5 - Implement the Customer Select Logic](exercises/ex7#exercise-75---implement-the-customer-select-logic)
+    - [Exercise 7.6 - Assign the Customer Change and Select Logic to the Dialog](exercises/ex7#exercise-76---assign-the-customer-change-and-select-logic-to-the-dialog)
 - [Exercise 8 - Second View with Navigation](exercises/ex8/)
 - [Exercise 9 - Card with NumericHeader](exercises/ex9/)
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
@@ -55,4 +62,5 @@ The requirements to follow the exercises in this repository are:
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
 ## License
+
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.

@@ -1,7 +1,9 @@
 # Exercise 5 - Improve Visualization
+
 You achieved a lot in the previous exercises. Now, its time to pimp your UI5 application with some visual effects.
 
 ## Exercise 5.1 - Enhance Sensors.view.xml
+
 To give the customer the best possible overview, add some color to your application! Therefore you introduce a new layout and structure for the item and also show an `sap.ui.core.Icon` there.
 
 1. Open `Sensors.view.xml` and add the xml namespace `xmlns:core="sap.ui.core` to the view to have the `sap.ui.core.Icon` available.
@@ -44,6 +46,7 @@ To give the customer the best possible overview, add some color to your applicat
 ````
 
 ## Exercise 5.2 - Create Sensors.controller.js
+
 In this exercise you'll enhance your application with some additional controller coding. 
 
 1. Go to folder `SensorTest/webapp/controller/`.
@@ -101,6 +104,7 @@ onInit: function() {
 ```` 
 
 ## Exercise 5.3 - Assign Controller to View
+
 Now, its time to tell the view which controller is associated with it. 
 
 1. Open `SensorTest/webapp/view/Sensors.view.xml`.
@@ -125,6 +129,7 @@ Now, its time to tell the view which controller is associated with it.
 <br>![](images/05_03_0010.png)
 
 ## Exercise 5.4 - Create your first Formatter
+
 Now, your goal is to bring some color to the user interface. Based on the actual temperature of the sensor you want to display the icon in the according color. Therefore you can use the formatter concept of UI5.
 
 1. Open `SensorTest/webapp/controller/Sensors.controller.js`. 
@@ -146,6 +151,8 @@ formatIconColor: function(iTemperature) {
 ````
 
 ## Exercise 5.5 - Add the Formatter in your View
+
+
 You're almost at the finish. The last piece is adding the newly created formatter function to the binding of your icon.
 
 1. Open `SensorTest/webapp/view/Sensors.view.xml`. 
@@ -170,6 +177,7 @@ Congratulations, you achieved the [Exercise 5 - Improve Visualization](#xxercise
 Continue to [Exercise 6 - Filtering with the IconTabBar](../ex6/README.md).
 
 ## Further Information
+
 * Model View Controller Concept: https://ui5.sap.com/#/topic/91f233476f4d1014b6dd926db0e91070 
 * Controller: https://ui5.sap.com/#/topic/121b8e6337d147af9819129e428f1f75
 * Formatting, Parsing, and Validating Data: https://ui5.sap.com/#/topic/07e4b920f5734fd78fdaa236f26236d8

@@ -33,6 +33,7 @@ After completing these steps you will have written your first UI5 view.
 ````
 
 ## Exercise 2.2 - Add Dependencies
+
 You will use several UI5 libraries like `sap.m` or `sap.f` in your application. The central point of configuring your UI5 application is the `manifest.json` which is located under `SensorTest/webapp/manifest.json`.
 
 1. Open `SensorTest/webapp/manifest.json`.
@@ -55,6 +56,7 @@ You will use several UI5 libraries like `sap.m` or `sap.f` in your application. 
 ````
 
 ## Exercise 2.3 - Enable Routing for Sensors.view.xml
+
 UI5 comes with a powerful routing API that helps you control the state of your application efficiently. With that UI5 takes care of displaying the desired UI5 view based on the given browser hash.
 
 Lets adjust the `manifest.json` to enable the routing feature also for the newly created view.
@@ -104,6 +106,7 @@ Continue to [Exercise 3 - Show Sensor Content](../ex3/README.md).
 
 
 ## Further Information
+
 * UI5 Demokit: https://ui5.sap.com/
 * Views in UI5: https://ui5.sap.com/#/topic/91f27e3e6f4d1014b6dd926db0e91070
 * Routing in UI5: https://ui5.sap.com/#/topic/3d18f20bd2294228acb6910d8e8a5fb5
