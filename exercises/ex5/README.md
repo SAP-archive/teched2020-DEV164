@@ -150,7 +150,7 @@ You're almost at the finish. The last piece is adding the newly created formatte
 
 1. Open `SensorTest/webapp/view/Sensors.view.xml`. 
 
-2. Add the `color` attribute to the `sap.ui.core.Icon` definition and assign the binding information with the formatter function to this attribute.
+2. Add the `color` property to the `sap.ui.core.Icon` definition, bind the `color` property to path `sensors>temperature/value` and assign the formatter function to the binding.
 
 ***SensorTest/webapp/view/Sensors.view.xml***
 
