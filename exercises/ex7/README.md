@@ -140,7 +140,7 @@ onCustomerSelectConfirm: function(oEvent) {
 }
 ````
 
-3. To ensure that both filters (customer and status) are applied you need to make two more adaptations in the `Sensors.controller.js` by declaring the `_aCustomerFilters` in the `onInit` function and merging the `_aCustomerFilters` with the `_aStatusFilters` before performing the fitering on the binding.
+3. To ensure that both filters (customer and status) are applied you need to make two more adaptations in the `Sensors.controller.js` by declaring the `_aCustomerFilters` and `_aStatusFilters` in the `onInit` function to ensure that these fields are definedm and merging the `_aCustomerFilters` with the `_aStatusFilters` before performing the fitering on the binding.
 
 ***SensorTest/webapp/controller/Sensors.controller.js***
 
