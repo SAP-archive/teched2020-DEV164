@@ -32,6 +32,7 @@ msgFilterAll=All
 msgFilterOk=Ok
 msgFilterWarning=Warning
 msgFilterError=Error
+titleSelectCustomer=Select Customers
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -68,6 +69,7 @@ msgFilterAll=All
 msgFilterOk=Ok
 msgFilterWarning=Warning
 msgFilterError=Error
+titleSelectCustomer=Select Customers
 ````
 
 7. Open `i18n_de.properties` and paste following content.
@@ -86,6 +88,7 @@ msgFilterAll=Alle
 msgFilterOk=Ok
 msgFilterWarning=Warnung
 msgFilterError=Hoch
+titleSelectCustomer=Wähle die Kunden
 ````
 
 8. Depending on which browser language you've configured you would see a different texts on user interface.
