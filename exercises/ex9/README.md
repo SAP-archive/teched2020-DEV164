@@ -94,12 +94,11 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 ***SensorTest/webapp/view/SensorStatus.view.xml***
 
 ````xml
-...
 	<f:header>
 		<card:NumericHeader
 			title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}"
-        number="{sensorModel>temperature/value}"
-        scale="°C"
+				number="{sensorModel>temperature/value}"
+				scale="°C"
 			/>
 	</f:header>
 ````
@@ -141,9 +140,9 @@ sap.ui.define([
 ...
 	<f:header>
 		<card:NumericHeader title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}" 
-      number="{sensorModel>temperature/value}"
-      scale="°C"
-      state="{parts: ['sensorModel>/threshold', 'sensorModel>temperature/value'], formatter: '.formatValueColor'}"
+			number="{sensorModel>temperature/value}"
+			scale="°C"
+			state="{parts: ['sensorModel>/threshold', 'sensorModel>temperature/value'], formatter: '.formatValueColor'}"
 			/>
 	</f:header>
 ````
