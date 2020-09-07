@@ -13,8 +13,8 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 ***SensorTest/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mvc:View displayBlock="true" 
-    controllerName="keepcool.SensorTest.controller.SensorStatus"
+<mvc:View displayBlock="true"       
+  controllerName="keepcool.SensorTest.controller.SensorStatus"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.m"
 	xmlns:f="sap.f"
@@ -31,7 +31,7 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 			<VBox class="sapUiContentPadding">
 				<f:Card>
 					<f:header>
-            <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
+          	<card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
 						/>
 					</f:header>
 					<f:content>
