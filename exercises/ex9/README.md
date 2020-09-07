@@ -146,20 +146,21 @@ sap.ui.define([
 ````xml
 <f:header>
   <card:NumericHeader 
-  title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
-  subtitle="{parts: [
-    'i18n>cardSubTitle', 
-    'i18n>locationLabel', 
-    'sensorModel>location', 
-    'i18n>distanceLabel', 
-    'sensorModel>distance', 
-    'i18n>distanceUnit'], 
-    formatter: '.formatMessage'}"
-  number="{sensorModel>temperature/value}"
-  scale="°C"
-  state="{parts: [
-    'sensorModel>/threshold', 'sensorModel>temperature/value'],
-    formatter: '.formatValueColor'}"/>
+    title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
+    subtitle="{parts: [
+      'i18n>cardSubTitle', 
+      'i18n>locationLabel', 
+      'sensorModel>location', 
+      'i18n>distanceLabel', 
+      'sensorModel>distance', 
+      'i18n>distanceUnit'], 
+      formatter: '.formatMessage'}"
+    number="{sensorModel>temperature/value}"
+    scale="°C"
+    state="{parts: [
+      'sensorModel>/threshold', 
+      'sensorModel>temperature/value'],
+      formatter: '.formatValueColor'}"/>
 </f:header>
 ````
 
