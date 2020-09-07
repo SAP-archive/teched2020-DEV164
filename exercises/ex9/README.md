@@ -145,7 +145,8 @@ sap.ui.define([
 
 ````xml
 <f:header>
-  <card:NumericHeader title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
+  <card:NumericHeader 
+  title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
   subtitle="{parts: [
     'i18n>cardSubTitle', 
     'i18n>locationLabel', 
