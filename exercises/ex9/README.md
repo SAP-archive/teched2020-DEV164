@@ -106,7 +106,7 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
       'i18n>distanceUnit'], 
       formatter: '.formatMessage'}"
     number="{sensorModel>temperature/value}"
-    scale="°C"/>
+    scale="{i18n>temperatureUnit}"/>
 </f:header>
 ````
 
@@ -156,7 +156,7 @@ sap.ui.define([
       'i18n>distanceUnit'], 
       formatter: '.formatMessage'}"
     number="{sensorModel>temperature/value}"
-    scale="°C"
+    scale="{i18n>temperatureUnit}"
     state="{parts: [
       'sensorModel>/threshold', 
       'sensorModel>temperature/value'],
