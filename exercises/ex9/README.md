@@ -31,8 +31,7 @@ Now, you'll pimp your `SensorStatus.view.xml`.
     <VBox class="sapUiContentPadding">
       <f:Card>
         <f:header>
-        <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'],
-          formatter: '.formatMessage'}"/>
+        <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"/>
         </f:header>
         <f:content>
 
@@ -68,6 +67,7 @@ sap.ui.define([
             this._oRouter = this.getOwnerComponent().getRouter();
             this._oRouter.getRoute("RouteSensorStatus").attachMatched(this.onRouteMatched, this);
         },
+
         onRouteMatched: function (oEvent) {
             this.getView().bindElement({
                 path: "/sensors/" + oEvent.getParameter("arguments").index,
@@ -97,7 +97,13 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 <f:header>
   <card:NumericHeader
     title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
-    subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}"
+    subtitle="{parts: [
+    'i18n>cardSubTitle', 
+    'i18n>locationLabel', 
+    'sensorModel>location', 
+    'i18n>distanceLabel', 
+    'sensorModel>distance', 
+    'i18n>distanceUnit'], formatter: '.formatMessage'}"
     number="{sensorModel>temperature/value}"
     scale="°C"/>
 </f:header>
