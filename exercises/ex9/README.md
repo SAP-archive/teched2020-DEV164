@@ -31,12 +31,7 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 			<VBox class="sapUiContentPadding">
 				<f:Card>
 					<f:header>
-            <card:Header
-							title="{parts: [
-              'i18n>cardTitle',
-              'sensorModel>customer'
-              ],
-              formatter: '.formatMessage'}"
+            <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
 						/>
 					</f:header>
 					<f:content>
@@ -102,22 +97,9 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 ...
 	<f:header>
 		<card:NumericHeader
-			title="{parts: [
-              'i18n>cardTitle',
-              'sensorModel>customer'
-              ],
-              formatter: '.formatMessage'}"
-			subtitle="{parts: [
-              'i18n>cardSubTitle',
-              'i18n>locationLabel',
-              'sensorModel>location',
-              'i18n>distanceLabel',
-              'sensorModel>distance',
-              'i18n>distanceUnit'
-              ],
-              formatter: '.formatMessage'}"
-      number="{sensorModel>temperature/value}"
-      scale="°C"
+			title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}"
+        number="{sensorModel>temperature/value}"
+        scale="°C"
 			/>
 	</f:header>
 ````
@@ -132,10 +114,11 @@ The formatter needs the threshold and the current temperature from the model. Ba
 
 ````js
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
+  "sap/ui/core/mvc/Controller",
   "sap/base/strings/formatMessage",
-	"sap/m/ValueColor"
+  "sap/m/ValueColor"
 ], function (Controller, formatMessage, ValueColor) {
+  
   formatValueColor: function(oTreshold, iTemperature) {
     oTreshold = oTreshold || {};
     if (iTemperature < oTreshold.warning) {
@@ -157,21 +140,7 @@ sap.ui.define([
 ````xml
 ...
 	<f:header>
-		<card:NumericHeader
-			title="{parts: [
-              'i18n>cardTitle',
-              'sensorModel>customer'
-              ],
-              formatter: '.formatMessage'}"
-			subtitle="{parts: [
-              'i18n>cardSubTitle',
-              'i18n>locationLabel',
-              'sensorModel>location',
-              'i18n>distanceLabel',
-              'sensorModel>distance',
-              'i18n>distanceUnit'
-              ],
-              formatter: '.formatMessage'}"
+		<card:NumericHeader title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}" 
       number="{sensorModel>temperature/value}"
       scale="°C"
       state="{parts: ['sensorModel>/threshold', 'sensorModel>temperature/value'], formatter: '.formatValueColor'}"
