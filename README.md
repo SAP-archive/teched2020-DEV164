@@ -56,11 +56,14 @@ The requirements to follow the exercises in this repository are:
 - [Exercise 8 - Second View with Navigation](exercises/ex8/)
     - [Exercise 8.1 - Create SensorStatus.view.xml](exercises/ex8#exercise-81---create-sensorstatusviewxml)
     - [Exercise 8.2 - Configure the manifest.json](exercises/ex8#exercise-82---configure-the-manifestjson)
-    - [Exercise 8.3 - Implement the navigation to the new view](exercises/ex8#exercise-83---implement-the-navigation-tothe-new-view)
+    - [Exercise 8.3 - Implement the navigation to the new view](exercises/ex8#exercise-83---implement-the-navigation-to-the-new-view)
     - [Exercise 8.4 - Assign the navigation logic to the sensor items](exercises/ex8#exercise-84---assign-the-navigation-logic-to-the-sensor-items)
     - [Exercise 8.5 - Create SensorStatus.controller.js](exercises/ex8#exercise-85---create-sensorstatuscontrollerjs)
     - [Exercise 8.6 - Implement navigation back to Sensors.view.xml](exercises/ex8#exercise-86---implement-navigation-back-to-sensorsviewxml)
 - [Exercise 9 - Card with NumericHeader](exercises/ex9/)
+    - [Exercise 9.1 - Add a Card to SensorStatus.view.xml](exercises/ex9#exercise-91---add-a-card-to-sensorstatusviewxml)
+    - [Exercise 9.2 - Enhance SensorStatus.controller.js](exercises/ex9#exercise-92---enhance-sensorstatuscontrollerjs)
+    - [Exercise 9.3 - Add a NumericHeader to the Card](exercises/ex9#exercise-93---add-a-numericheader-to-the-card)
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
 
 ## How to obtain support

@@ -34,6 +34,9 @@ msgFilterWarning=Warning
 msgFilterError=Error
 titleSelectCustomer=Select Customers
 titleSensorStatus=Sensor Status
+cardTitle=Customer: {0}
+locationLabel=Location
+cardSubTitle={0}: {1}, {2}: {3}{4}
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -72,6 +75,9 @@ msgFilterWarning=Warning
 msgFilterError=Error
 titleSelectCustomer=Select Customers
 titleSensorStatus=Sensor Status
+cardTitle=Customer: {0}
+locationLabel=Location
+cardSubTitle={0}: {1}, {2}: {3}{4}
 ````
 
 7. Open `i18n_de.properties` and paste following content.
@@ -92,6 +98,9 @@ msgFilterWarning=Warnung
 msgFilterError=Hoch
 titleSelectCustomer=Wähle die Kunden
 titleSensorStatus=Sensor Status
+cardTitle=Kunde: {0}
+locationLabel=Ort
+cardSubTitle={0}: {1}, {2}: {3}{4}
 ````
 
 8. Depending on which browser language you've configured you would see a different texts on user interface.
