@@ -14,11 +14,11 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 
 ````xml
 <mvc:View displayBlock="true"       
-	controllerName="keepcool.SensorTest.controller.SensorStatus"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m"
-	xmlns:f="sap.f"
-	xmlns:card="sap.f.cards">
+  controllerName="keepcool.SensorTest.controller.SensorStatus"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:f="sap.f"
+  xmlns:card="sap.f.cards">
 ````
 
 3. Add a `sap.f.Card` with a card header to `SensorStatus.view.xml` and the customer name as the title of the header via data binding.
@@ -26,21 +26,21 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 ***SensorTest/webapp/view/SensorStatus.view.xml***
 
 ````xml
-	<Page id="SensorStatusPage" title="{i18n>title}" showNavButton="true" navButtonPress=".navToSensors">
-		<content>
-			<VBox class="sapUiContentPadding">
-				<f:Card>
-					<f:header>
-					<card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'],
-						formatter: '.formatMessage'}"/>
-					</f:header>
-					<f:content>
+<Page id="SensorStatusPage" title="{i18n>title}" showNavButton="true" navButtonPress=".navToSensors">
+  <content>
+    <VBox class="sapUiContentPadding">
+      <f:Card>
+        <f:header>
+        <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'],
+          formatter: '.formatMessage'}"/>
+        </f:header>
+        <f:content>
 
-					</f:content>
-				</f:Card>
-			</VBox>
-		</content>
-	</Page>
+        </f:content>
+      </f:Card>
+    </VBox>
+  </content>
+</Page>
 ````
 
 ## Exercise 9.2 - Enhance SensorStatus.controller.js
@@ -94,13 +94,13 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 ***SensorTest/webapp/view/SensorStatus.view.xml***
 
 ````xml
-	<f:header>
-		<card:NumericHeader
-			title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}"
-				number="{sensorModel>temperature/value}"
-				scale="°C"
-			/>
-	</f:header>
+<f:header>
+  <card:NumericHeader
+    title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}"
+      number="{sensorModel>temperature/value}"
+      scale="°C"
+    />
+</f:header>
 ````
 
 2. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a card with a nice temperature information.
@@ -137,13 +137,13 @@ sap.ui.define([
 ***SensorTest/webapp/view/SensorStatus.view.xml***
 
 ````xml
-	<f:header>
-		<card:NumericHeader title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}" 
-			number="{sensorModel>temperature/value}"
-			scale="°C"
-			state="{parts: ['sensorModel>/threshold', 'sensorModel>temperature/value'], formatter: '.formatValueColor'}"
-			/>
-	</f:header>
+<f:header>
+  <card:NumericHeader title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}" subtitle="{parts: ['i18n>cardSubTitle', 'i18n>locationLabel', 'sensorModel>location', 'i18n>distanceLabel', 'sensorModel>distance', 'i18n>distanceUnit'], formatter: '.formatMessage'}" 
+    number="{sensorModel>temperature/value}"
+    scale="°C"
+    state="{parts: ['sensorModel>/threshold', 'sensorModel>temperature/value'], formatter: '.formatValueColor'}"
+    />
+</f:header>
 ````
 
 6. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a card with a fancy colored temperature information depending on the value of the temperature.
