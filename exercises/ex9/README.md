@@ -32,8 +32,7 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 				<f:Card>
 					<f:header>
 					<card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'],
-					 formatter: '.formatMessage'}"
-						/>
+						formatter: '.formatMessage'}"/>
 					</f:header>
 					<f:content>
 
