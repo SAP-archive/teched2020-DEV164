@@ -31,8 +31,8 @@ Now, you'll pimp your `SensorStatus.view.xml`.
 			<VBox class="sapUiContentPadding">
 				<f:Card>
 					<f:header>
-          	<card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'],
-             formatter: '.formatMessage'}"
+					<card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'],
+					 formatter: '.formatMessage'}"
 						/>
 					</f:header>
 					<f:content>
