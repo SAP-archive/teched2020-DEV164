@@ -65,6 +65,8 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 9.2 - Enhance SensorStatus.controller.js](exercises/ex9#exercise-92---enhance-sensorstatuscontrollerjs)
     - [Exercise 9.3 - Add a NumericHeader to the Card](exercises/ex9#exercise-93---add-a-numericheader-to-the-card)
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
+    - [Exercise 10.1 - Create the Chart](exercises/ex10#exercise-101---create-the-chart)
+    - [Exercise 10.2 - Master the Chart](exercises/ex10#exercise-102---master-the-chart)
 
 ## How to obtain support
 
