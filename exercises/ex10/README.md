@@ -107,9 +107,9 @@ After completing the previous exercises you are quite experienced in pimping you
 
 ## Summary
 
-Yay! You've completed successfully [Exercise 10 - Chart with DataBinding](#exercise-10---chart-with-databinding).
+Congratulations! You've completed successfully [Exercise 10 - Chart with DataBinding](#exercise-10---chart-with-databinding).
 
-Celebrate yourself! You have reached your first level in being an UI5 experts.
+Continue to [Exercise 11 - Deployment to SAP Cloud Platform Cloud Foundry](../ex11/README.md).
 
 
 ## Further Information

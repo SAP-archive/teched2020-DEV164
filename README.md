@@ -67,6 +67,9 @@ The requirements to follow the exercises in this repository are:
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
     - [Exercise 10.1 - Create the Chart](exercises/ex10#exercise-101---create-the-chart)
     - [Exercise 10.2 - Master the Chart](exercises/ex10#exercise-102---master-the-chart)
+- [Exercise 11 - Deployment to SAP Cloud Platform Cloud Foundry](exercises/ex12/)
+    - [Exercise 11.1 - ](exercises/ex11#exercise-101---)
+    - [Exercise 11.2 - ](exercises/ex11#exercise-112---)
 
 ## How to obtain support
 
