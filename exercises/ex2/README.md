@@ -15,7 +15,7 @@ SAP Fiori 3 is SAP’s new target design system, which evolves the SAP Fiori des
 ````html
 <script id="sap-ui-bootstrap"
     src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-    data-sap-ui-theme="sap_belize"
+    data-sap-ui-theme="sap_fiori_3"
     data-sap-ui-resourceroots='{"keepcool.SensorTest": "./"}'
     data-sap-ui-compatVersion="edge"
     data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
