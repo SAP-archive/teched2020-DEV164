@@ -131,3 +131,4 @@ Continue to [Exercise 3 - Show Sensor Content](../ex3/README.md).
 * UI5 Demokit: https://ui5.sap.com/
 * Views in UI5: https://ui5.sap.com/#/topic/91f27e3e6f4d1014b6dd926db0e91070
 * Routing in UI5: https://ui5.sap.com/#/topic/3d18f20bd2294228acb6910d8e8a5fb5
+* SAP Fiori 3: https://experience.sap.com/fiori-design-web/sap-fiori/#sap-fiori-3
