@@ -18,7 +18,7 @@
                 "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
                 "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/teched2020-DEV164/ex10/TechEd2020/SensorManager\"}"
             },
-            "envFile": "${workspaceFolder}/SensorManager/.env6",
+            "envFile": "${workspaceFolder}/SensorManager/.env1",
             "preLaunchTask": "Build TechEd2020"
         }
     ]
