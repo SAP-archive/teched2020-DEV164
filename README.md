@@ -3,7 +3,7 @@ On this site you can find an overview about the available exercises, their code 
 
 ## Code and Demo
 | Exercise |  |  | |
-| -- | -- |  -- |  -- |
+| :--- | --- |  --- |  --- |
 Getting Started | [exercise](https://github.com/SAP-samples/teched2020-DEV164/tree/master/exercises/ex0) | [code](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex0/TechEd2020) | [demo](https://sap-samples.github.io/teched2020-dev164/exercises/ex0/TechEd2020/SensorManager/webapp/)
 Exercise 1 - Project Setup using Business Application Studio | [exercise](https://github.com/SAP-samples/teched2020-DEV164/tree/master/exercises/ex1) | [code](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex1/TechEd2020) | [demo](https://sap-samples.github.io/teched2020-dev164/exercises/ex1/TechEd2020/SensorManager/webapp/)
 Exercise 2 - Basic UI5 Configuration and  View Creation | [exercise](https://github.com/SAP-samples/teched2020-DEV164/tree/master/exercises/ex2) | [code](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex2/TechEd2020) | [demo](https://sap-samples.github.io/teched2020-dev164/exercises/ex2/TechEd2020/SensorManager/webapp/)
