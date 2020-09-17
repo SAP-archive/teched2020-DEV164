@@ -8,9 +8,10 @@ On this site you can find an overview about the available exercises, their code 
 4. Execute `git clone https://github.com/SAP-samples/teched2020-DEV164.git`
 5. Enter your github username
 6. Enter your personal access token (because its a private repo, later this step should not be neccessary anymore)
-7. Execute `git checkout code`
-8. Click on *Open Workspace* button
-9. Select your desired exercise, e.g. `/projects/teched2020-DEV164/ex1/TechEd2020`
+7. Execute `cd teched2020-DEV164/`
+8. Execute `git checkout code`
+9. Click on *File* > *Open Workspace...* 
+10. Select your desired exercise, e.g. `/projects/teched2020-DEV164/ex1/TechEd2020`
 
 ## Working with the Demo
 Thats an easy job. Just click on the demo link of the desired exercise.

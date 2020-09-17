@@ -1,5 +1,6 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc"
     xmlns:grid="sap.ui.layout.cssgrid"
+    xmlns:f="sap.f"
     xmlns="sap.m" displayBlock="true">
     <Page id="page" title="{i18n>title}">
         <content>
