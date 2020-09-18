@@ -50,9 +50,9 @@ After creating the dialog you have to implement the coding to open the dialog.
 
 ````js
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/IconColor",
-	"sap/m/MessageToast",
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/core/IconColor",
+    "sap/m/MessageToast",
     "sap/ui/model/Filter",
     "sap/ui/core/Fragment"
 ], function (Controller, IconColor, Toast, Filter, Fragment) {
@@ -94,7 +94,7 @@ After implementing the dialog opening logic its time for assigning this logic to
 ````xml
 <Page>
     <headerContent>
-        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="Select Customer" />
+        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}" />
     </headerContent>
     <content>
 ````
@@ -187,11 +187,11 @@ One last thing is missing. You've to assign the newly created functions to the d
 
 ````xml
 <SelectDialog
-    title="Select Customers"
+    title="{i18n>titleSelectCustomer}"
     contentHeight="38.3%"
     rememberSelections="true"
     confirm=".onCustomerSelectConfirm"
-    liveChange=".onCustomerSelectChange"
+    liveChange=".onCustomerSelectChange">
 ````
 
 3. Its demo time! Switch the browser tab to the application preview and perform a refresh to see how the UI5 application changed its user interface. Click on the *menu* button in upper right corner. Enter some parts of customers and see if the customer list is filtered.

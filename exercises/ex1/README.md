@@ -85,5 +85,5 @@ Now, its time for a first preview of your newly created application.
 
 Hooray! You've successfully accomplished [Exercise 1 - Project Setup using SAP Business Application Studio](#exercise-1---project-setup-using-sap-business-applicationsstudio).
 
-Continue to [Exercise 2 - Navigation and Libraries in Manifest](../ex2/README.md).
+Continue to [Exercise 2 - Basic UI5 Configuration and  View Creation](../ex2/README.md).
 

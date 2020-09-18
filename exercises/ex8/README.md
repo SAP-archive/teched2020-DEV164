@@ -23,10 +23,10 @@ Offering a new view leads to creating a new one.
 
 ````xml
 <mvc:View displayBlock="true"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m">
-	<Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true">
-	</Page>
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true">
+  </Page>
 </mvc:View>
 ````
 
@@ -43,7 +43,6 @@ After creating the new view, you have to configure the view in the `manifest.jso
 ***SensorManager/webapp/manifest.json***
 
 ````json
-"routes": [
 {
     "name": "RouteSensorStatus",
     "pattern": "sensor/{index}",
@@ -119,13 +118,13 @@ Nice. Now, lets implement the navigation back to the `Sensors.view.xml`. Therefo
 
 ````js
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
+  "sap/ui/core/mvc/Controller"
 ], function (Controller) {
-	"use strict";
+  "use strict";
 
-	return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
+  return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
 
-	});
+  });
 });
 ````
 
@@ -134,12 +133,11 @@ sap.ui.define([
 6. Assign the newly created controller to the view with the attribute `controllerName`.
 
 ````xml
-<mvc:View 
-    controllerName="keepcool.SensorManager.controller.SensorStatus" 
+<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" 
   displayBlock="true" 
-	xmlns:mvc="sap.ui.core.mvc" 
+  xmlns:mvc="sap.ui.core.mvc" 
   xmlns="sap.m">
-  ````
+````
 
 ## Exercise 8.6 - Implement navigation back to Sensors.view.xml
 
@@ -153,9 +151,9 @@ Now, you have to implement the navigation logic.
 
 ````js
 return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
-	navToSensors: function() {
-		this.getOwnerComponent().getRouter().navTo("RouteSensors");
-	}
+  navToSensors: function() {
+    this.getOwnerComponent().getRouter().navTo("RouteSensors");
+  }
 });
 ````
 

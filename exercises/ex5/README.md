@@ -14,7 +14,6 @@ To give the customer the best possible overview, add some color to your applicat
 ***SensorManager/webapp/view/Sensors.view.xml***
 
 ````xml
-...
 <mvc:View
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
@@ -22,7 +21,6 @@ To give the customer the best possible overview, add some color to your applicat
     xmlns:f="sap.f"
     xmlns="sap.m"
     displayBlock="true">
-...
 ````
 
 2. Add a temperature icon and layouting to the `sap.m.CustomListItem`. `sapUiSmallMarginTop` and `sapUiSmallMarginEnd` are predefined device agnostic css classes which add spacing to controls. `sap.m.HBox`and `sap.m.VBox` are helpers for layouting your application.
@@ -66,17 +64,17 @@ In this exercise you'll enhance your application with some additional controller
 
 ````js
 sap.ui.define([
-		"sap/ui/core/mvc/Controller"
-	],
-	function (Controller) {
-		"use strict";
+    "sap/ui/core/mvc/Controller"
+  ],
+  function (Controller) {
+    "use strict";
 
-		return Controller.extend("keepcool.SensorsTest.controller.Sensors", {
-			onInit: function () {
+    return Controller.extend("keepcool.SensorsTest.controller.Sensors", {
+      onInit: function () {
 
-			}
-		});
-	});
+      }
+    });
+  });
 ````
 
 5. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them lateron during this exercise.
@@ -104,7 +102,7 @@ onInit: function() {
 },
 getSensorModel: function(){
     return this.getOwnerComponent().getModel("sensorModel");
-},
+}
 ```` 
 
 ## Exercise 5.3 - Assign Controller to View
@@ -126,7 +124,6 @@ Now, its time to tell the view which controller is associated with it.
     xmlns:f="sap.f"
     xmlns="sap.m"
     displayBlock="true">
-...
 ````
 
 3. Lets see if your UI5 application is able to show the `sap.m.MessageToast`. Therefore switch to the browser tab with the opened application preview. Perform a page reload. The `sap.m.MessageToast` should be displayed and confirms that your sensor data is loaded successfully.
@@ -145,7 +142,7 @@ Now, your goal is to bring some color to the user interface. Based on the actual
 ````js
 formatIconColor: function(iTemperature) {
     var oThreshold = this.getSensorModel().getProperty("/threshold")
-    if (oThreshold){
+    if (!oThreshold){
         return IconColor.Neutral;
     } else if (iTemperature < oThreshold.warning) {
         return IconColor.Default;

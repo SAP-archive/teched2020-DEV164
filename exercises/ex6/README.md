@@ -16,7 +16,6 @@ Therefore we enhance our `sap.m.IconTabBar`.
 ***SensorManager/webapp/view/Sensors.view.xml***
 
 ````xml
-...
 <IconTabBar id="idIconTabBar" class="sapUiResponsiveContentPadding">
     <items>
         <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All"/>

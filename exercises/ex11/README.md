@@ -63,7 +63,7 @@ After logging in, you're asked to specify your desired Cloud Foundry organizatio
 
 ## Exercise 11.4 - Configure Approuter for Redirect
 
-Your application will be available at https://<approuter-url>/<app/id> and the application router will not redirect traffic that hits the root URL. In this step, you will change this.
+Your application will be available at `https://<approuter-url>/<app/id>` and the application router will not redirect traffic that hits the root URL. In this step, you will change this, so your application will be available also on the root of `https://<approuter-url>/`.
 
 1. Open file `SensorManager/webapp/manifest.json`.
 

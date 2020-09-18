@@ -68,14 +68,12 @@ After the configuring the data service its time to enrich your `Sensors.view.xml
 ***SensorManager/webapp/view/Sensors.view.xml***
 
 ````xml
-...
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:grid="sap.ui.layout.cssgrid"
     xmlns:f="sap.f"
     xmlns="sap.m"
     displayBlock="true">
-...
 ````
 
 3. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar.
@@ -83,7 +81,6 @@ After the configuring the data service its time to enrich your `Sensors.view.xml
 ***SensorManager/webapp/view/Sensors.view.xml***
 
 ````xml
-...
 <f:GridList id="sensorsList" noDataText="No sensors">
     <f:customLayout>
         <grid:GridBoxLayout/>
@@ -93,7 +90,6 @@ After the configuring the data service its time to enrich your `Sensors.view.xml
         </CustomListItem>
     </f:items>
 </f:GridList>
-...
 ````
 
 4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
@@ -110,22 +106,19 @@ After adding the `sap.f.GridList` control, you have to connect the control to th
 ***SensorManager/webapp/view/Sensors.view.xml***
 
 ````xml
-...
 <f:GridList id="sensorsList"
     items="{path: 'sensorModel>/sensors', sorter: {path:'customer', group:true, descending: false}}"
     noDataText="No sensors">
-...
 ````
 
 3. The list items will be defined once as a template. This template will then be repeated to represent each entry of the sensors array. Furthermore we add the location details to our `sap.m.CustomListItem`. `location` hereby references the property of each of the displayed sensor items.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
+
 ````xml
-...
 <CustomListItem>
     <Title text="{sensorModel>location}"/>
 </CustomListItem>
-...
 ````
 
 4. Lets see if the UI5 application displays the correct sensor data. Therefore switch to the browser tab with opened application preview. Perform a page reload.

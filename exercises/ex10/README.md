@@ -24,7 +24,8 @@ To be able to show some historical data you can leverage the `temperatureLog` of
     xmlns:card="sap.f.cards"
     xmlns:mc="sap.suite.ui.microchart">
 ````
-3. Add the chart to the `SensorStatus.view.xml` and bind the `temperatureLog` to the points aggregation. For each point we display the `temperature` property.
+
+3. Add the chart to the content aggregation of the card which is placed inside the `SensorStatus.view.xml` and bind the `temperatureLog` to the points aggregation. For each point we display the `temperature` property.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
