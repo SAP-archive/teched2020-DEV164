@@ -9512,7 +9512,7 @@
     },
     "counts": {
         "all": 100,
-        "ok": 0,
+        "cold": 0,
         "critical": 0,
         "warning": 100
     },
