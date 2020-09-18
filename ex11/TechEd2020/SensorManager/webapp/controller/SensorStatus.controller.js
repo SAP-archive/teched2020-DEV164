@@ -26,12 +26,12 @@ sap.ui.define([
 
         formatValueColor: function (oTreshold, iTemperature) {
             oTreshold = oTreshold || {};
-            if (iTemperature < oTreshold.warning) {
+            if (iTemperature < oTreshold.critical) {
                 return ValueColor.Neutral;
-            } else if (iTemperature >= oTreshold.warning && iTemperature < oTreshold.error) {
+            } else if (iTemperature >= oTreshold.critical && iTemperature < oTreshold.warning) {
                 return ValueColor.Critical;
             } else {
-                return ValueColor.Error;
+                return ValueColor.warning;
             }
         }
     });

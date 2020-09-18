@@ -23,9 +23,9 @@ sap.ui.define([
                 var oThreshold = this.getSensorModel().getProperty("/threshold")
                 if (!oThreshold) {
                     return IconColor.Neutral;
-                } else if (iTemperature < oThreshold.warning) {
+                } else if (iTemperature < oThreshold.critical) {
                     return IconColor.Default;
-                } else if (iTemperature >= oThreshold.warning && iTemperature < oThreshold.error) {
+                } else if (iTemperature >= oThreshold.critical && iTemperature < oThreshold.warning) {
                     return IconColor.Critical;
                 } else {
                     return IconColor.Negative;
@@ -37,11 +37,11 @@ sap.ui.define([
                     oThreshold = this.getSensorModel().getProperty("/threshold");
 
                 if (sKey === "Ok") {
-                    this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warning, false)];
+                    this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.critical, false)];
                 } else if (sKey === "Warning") {
-                    this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warning, oThreshold.error, false)];
+                    this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.critical, oThreshold.warning, false)];
                 } else if (sKey === "Error") {
-                    this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.error, false)];
+                    this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.warning, false)];
                 } else {
                     this._aStatusFilters = [];
                 }
