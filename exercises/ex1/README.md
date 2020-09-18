@@ -75,7 +75,7 @@ It's time for a first preview of your newly created application!
 8. The application is initialized. After a few seconds some notifications are displayed in the lower right corner. Click *Expose and Open*.
 <br>![](images/01_02_0080.png)
 
-9. After a short delay a popup for some optional input opens. Leave it empty and press *Enter*.
+9. After a short delay, a popup for some optional input opens. Leave it empty and press *Enter*.
 <br>![](images/01_02_0090.png)
 
 10. The UI5 application is opened in a new tab.
