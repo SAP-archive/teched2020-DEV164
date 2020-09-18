@@ -72,7 +72,7 @@ It's time for a first preview of your newly created application!
 7. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Click the green icon *Run Module*.
 <br>![](images/01_02_0070.png)
 
-8. The application is initialized. After a few seconds some notifications are displayed in the lower right corner. Click *Expose and Open*.
+8. The application is initialized. After a few seconds, some notifications are displayed in the lower right corner. Click *Expose and Open*.
 <br>![](images/01_02_0080.png)
 
 9. After a short delay, a popup for some optional input opens. Leave it empty and press *Enter*.
