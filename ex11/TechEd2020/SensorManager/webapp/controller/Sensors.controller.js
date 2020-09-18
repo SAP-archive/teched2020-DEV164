@@ -36,11 +36,11 @@ sap.ui.define([
                     sKey = oEvent.getParameter("key"),
                     oThreshold = this.getSensorModel().getProperty("/threshold");
 
-                if (sKey === "Ok") {
+                if (sKey === "Cold") {
                     this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.critical, false)];
-                } else if (sKey === "Warning") {
+                } else if (sKey === "Critical") {
                     this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.critical, oThreshold.warning, false)];
-                } else if (sKey === "Error") {
+                } else if (sKey === "Warning") {
                     this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.warning, false)];
                 } else {
                     this._aStatusFilters = [];
