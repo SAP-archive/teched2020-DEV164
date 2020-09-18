@@ -1,4 +1,37 @@
 {
+    "threshold": {
+        "heated": 4,
+        "hot": 5
+    },
+    "counts": {
+        "all": 100,
+        "cold": 0,
+        "heated": 0,
+        "hot": 100
+    },
+    "customers": [
+        {
+            "name": "LITL"
+        },
+        {
+            "name": "SPARR"
+        },
+        {
+            "name": "TUSCO"
+        },
+        {
+            "name": "7-11"
+        },
+        {
+            "name": "MALLMART"
+        },
+        {
+            "name": "MATRO"
+        },
+        {
+            "name": "OLDI"
+        }
+    ],
     "sensors": [
         {
             "_id": "5d395b4cd139013a9033161d",
@@ -9504,39 +9537,6 @@
                     "time": 1565254865967
                 }
             ]
-        }
-    ],
-    "threshold": {
-        "heated": 4,
-        "hot": 5
-    },
-    "counts": {
-        "all": 100,
-        "cold": 0,
-        "heated": 0,
-        "hot": 100
-    },
-    "customers": [
-        {
-            "name": "LITL"
-        },
-        {
-            "name": "SPARR"
-        },
-        {
-            "name": "TUSCO"
-        },
-        {
-            "name": "7-11"
-        },
-        {
-            "name": "MALLMART"
-        },
-        {
-            "name": "MATRO"
-        },
-        {
-            "name": "OLDI"
         }
     ]
 }
