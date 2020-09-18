@@ -20,7 +20,7 @@ Therefore we enhance our `sap.m.IconTabBar`.
     <items>
         <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All"/>
         <IconTabSeparator/>
-        <IconTabFilter icon="sap-icon://fridge" iconColor="Default" text="{i18n>msgFilterOk}" key="Cold"/>
+        <IconTabFilter icon="sap-icon://fridge" iconColor="Default" text="{i18n>msgFilterCold}" key="Cold"/>
         <IconTabFilter icon="sap-icon://blur" iconColor="Critical" text="{i18n>msgFilterCritical}" key="Critical"/>
         <IconTabFilter icon="sap-icon://warning" iconColor="Negative" text="{i18n>msgFilterWarning}" key="Warning"/>
     </items>
