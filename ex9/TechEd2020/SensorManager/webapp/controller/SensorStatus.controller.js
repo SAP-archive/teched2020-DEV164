@@ -31,7 +31,7 @@ sap.ui.define([
             } else if (iTemperature >= oTreshold.critical && iTemperature < oTreshold.warning) {
                 return ValueColor.Critical;
             } else {
-                return ValueColor.warning;
+                return ValueColor.Error;
             }
         }
     });
