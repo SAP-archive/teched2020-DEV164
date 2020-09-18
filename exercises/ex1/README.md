@@ -60,7 +60,7 @@ It's time for a first preview of your newly created application!
 3. After a short delay, a list pops up at the top in the center of your screen. Here, select the module *SensorsTest* that you've just created.
 <br>![](images/01_02_0030.png)
 
-4. Specifiy your desired html site. Select *index.html* as the runnable file.
+4. Specify your desired html site. Select *index.html* as the runnable file.
 <br>![](images/01_02_0040.png)
 
 5. Select *latest* as your UI5 version.
@@ -86,4 +86,3 @@ It's time for a first preview of your newly created application!
 Hooray! You've successfully accomplished [Exercise 1 - Project Setup using SAP Business Application Studio](#exercise-1---project-setup-using-sap-business-applicationsstudio)!
 
 Continue to [Exercise 2 - Basic UI5 Configuration and  View Creation](../ex2/README.md).
-
