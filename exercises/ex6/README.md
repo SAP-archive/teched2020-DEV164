@@ -34,7 +34,7 @@ Therefore we enhance our `sap.m.IconTabBar`.
 
 In previous section you've added all necessary controls. Now, you've to implement the filtering logic.
 
-1. 1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
+1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
 2. Add the module `sap/ui/model/Filter` as dependency to the `Sensors.controller.js`.
 
