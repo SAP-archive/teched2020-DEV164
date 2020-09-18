@@ -20,9 +20,9 @@ Therefore we enhance our `sap.m.IconTabBar`.
     <items>
         <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All"/>
         <IconTabSeparator/>
-        <IconTabFilter icon="sap-icon://status-positive" iconColor="Positive" text="{i18n>msgFilterOk}" key="Ok"/>
-        <IconTabFilter icon="sap-icon://status-critical" iconColor="Critical" text="{i18n>msgFilterWarning}" key="Warning"/>
-        <IconTabFilter icon="sap-icon://status-error" iconColor="Negative" text="{i18n>msgFilterError}" key="Error"/>
+        <IconTabFilter icon="sap-icon://fridge" iconColor="Default" text="{i18n>msgFilterOk}" key="Cold"/>
+        <IconTabFilter icon="sap-icon://blur" iconColor="Critical" text="{i18n>msgFilterCritical}" key="Critical"/>
+        <IconTabFilter icon="sap-icon://warning" iconColor="Negative" text="{i18n>msgFilterWarning}" key="Warning"/>
     </items>
     <content>
 ````
@@ -63,12 +63,12 @@ onSensorSelect: function (oEvent) {
         sKey = oEvent.getParameter("key"),
         oThreshold = this.getSensorModel().getProperty("/threshold");
 
-    if (sKey === "Ok") {
-        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warning, false)];
+    if (sKey === "Cold") {
+        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.critical, false)];
+    } else if (sKey === "Critical") {
+        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.critical, oThreshold.warning, false)];
     } else if (sKey === "Warning") {
-        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warning, oThreshold.error, false)];
-    } else if (sKey === "Error") {
-        this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.error, false)];
+        this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.warning, false)];
     } else {
         this._aStatusFilters = [];
     }

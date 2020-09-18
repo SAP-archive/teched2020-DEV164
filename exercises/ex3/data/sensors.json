@@ -9507,14 +9507,14 @@
         }
     ],
     "threshold": {
-        "warning": 4,
-        "error": 5
+        "critical": 4,
+        "warning": 5
     },
     "counts": {
         "all": 100,
-        "ok": 0,
-        "warning": 0,
-        "error": 100
+        "cold": 0,
+        "critical": 0,
+        "warning": 100
     },
     "customers": [
         {

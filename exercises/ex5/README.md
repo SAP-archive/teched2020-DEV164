@@ -141,12 +141,12 @@ Now, your goal is to bring some color to the user interface. Based on the actual
 
 ````js
 formatIconColor: function(iTemperature) {
-    var oThreshold = this.getSensorModel().getProperty("/threshold")
-    if (!oThreshold){
+    var oThreshold = this.getSensorModel().getProperty("/threshold");
+    if (!oThreshold) {
         return IconColor.Neutral;
-    } else if (iTemperature < oThreshold.warning) {
+    } else if (iTemperature < oThreshold.critical) {
         return IconColor.Default;
-    } else if (iTemperature >= oThreshold.warning && iTemperature < oThreshold.error) {
+    } else if (iTemperature >= oThreshold.critical && iTemperature < oThreshold.warning) {
         return IconColor.Critical;
     } else {
         return IconColor.Negative;

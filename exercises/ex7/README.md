@@ -161,12 +161,12 @@ onSensorSelect: function (oEvent) {
         sKey = oEvent.getParameter("key"),
         oThreshold = this.getSensorModel().getProperty("/threshold");
 
-    if (sKey === "Ok") {
-        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warning, false)];
+    if (sKey === "Cold") {
+        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.critical, false)];
+    } else if (sKey === "Critical") {
+        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.critical, oThreshold.warning, false)];
     } else if (sKey === "Warning") {
-        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warning, oThreshold.error, false)];
-    } else if (sKey === "Error") {
-        this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.error, false)];
+        this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.warning, false)];
     } else {
         this._aStatusFilters = [];
     }

@@ -127,16 +127,16 @@ sap.ui.define([
   "sap/m/ValueColor"
 ], function (Controller, formatMessage, ValueColor) {
   
-  formatValueColor: function(oTreshold, iTemperature) {
-    oTreshold = oTreshold || {};
-    if (iTemperature < oTreshold.warning) {
+ formatValueColor: function (oTreshold, iTemperature) {
+  oTreshold = oTreshold || {};
+  if (iTemperature < oTreshold.critical) {
       return ValueColor.Neutral;
-    } else if (iTemperature >= oTreshold.warning && iTemperature < oTreshold.error) {
+  } else if (iTemperature >= oTreshold.critical && iTemperature < oTreshold.warning) {
       return ValueColor.Critical;
-    } else {
+  } else {
       return ValueColor.Error;
-    }
   }
+}
 ````
 
 4. The `sap.f.cards.NumericHeader` control provides a property `state` which allows you to render the state of the control fancy. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
