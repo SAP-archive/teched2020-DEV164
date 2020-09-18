@@ -129,9 +129,9 @@ sap.ui.define([
   
  formatValueColor: function (oTreshold, iTemperature) {
   oTreshold = oTreshold || {};
-  if (iTemperature < oTreshold.critical) {
+  if (iTemperature < oTreshold.heated) {
       return ValueColor.Neutral;
-  } else if (iTemperature >= oTreshold.critical && iTemperature < oTreshold.warning) {
+  } else if (iTemperature >= oTreshold.heated && iTemperature < oTreshold.hot) {
       return ValueColor.Critical;
   } else {
       return ValueColor.Error;

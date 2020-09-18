@@ -144,9 +144,9 @@ formatIconColor: function(iTemperature) {
     var oThreshold = this.getSensorModel().getProperty("/threshold");
     if (!oThreshold) {
         return IconColor.Neutral;
-    } else if (iTemperature < oThreshold.critical) {
+    } else if (iTemperature < oThreshold.heated) {
         return IconColor.Default;
-    } else if (iTemperature >= oThreshold.critical && iTemperature < oThreshold.warning) {
+    } else if (iTemperature >= oThreshold.heated && iTemperature < oThreshold.hot) {
         return IconColor.Critical;
     } else {
         return IconColor.Negative;
@@ -171,7 +171,7 @@ You're almost at the finish. The last piece is adding the newly created formatte
     class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
 ````
 
-3. Lets see if your UI5 application is showing colored icons depending on the sensor data. Therefore switch to the browser tab with the opened application preview. Perform a page reload. The icons of the sensors are displayed either in blue (neutral), yellow (warning) or red (negative).
+3. Lets see if your UI5 application is showing colored icons depending on the sensor data. Therefore switch to the browser tab with the opened application preview. Perform a page reload. The icons of the sensors are displayed either in blue (neutral), yellow (hot) or red (negative).
 <br>![](images/05_05_0010.png)
 
 ## Summary
