@@ -32,7 +32,7 @@ A dialog is a perfect scenario, where you can use a `sap.ui.core.Fragment`. This
         items="{
             path: 'sensorModel>/customers',
             sorter: {path:'name'}
-        }" >
+        }">
         <StandardListItem title="{sensorModel>name}"/>
     </SelectDialog>
 </core:FragmentDefinition>
@@ -94,7 +94,7 @@ After implementing the dialog opening logic its time for assigning this logic to
 ````xml
 <Page>
     <headerContent>
-        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}" />
+        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}"/>
     </headerContent>
     <content>
 ````

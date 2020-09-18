@@ -31,8 +31,7 @@ To be able to show some historical data you can leverage the `temperatureLog` of
 
 ````xml
 <f:content>
-    <FlexBox width="100%" height="15rem"
-    alignItems="Center" class="sapUiSmallMargin">
+    <FlexBox width="100%" height="15rem" alignItems="Center" class="sapUiSmallMargin">
         <mc:InteractiveLineChart points="{sensorModel>temperatureLog}" displayedPoints="20" selectionEnabled="false">
             <mc:InteractiveLineChartPoint value="{sensorModel>temperature}"/>
         </mc:InteractiveLineChart>

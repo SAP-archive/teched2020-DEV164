@@ -34,7 +34,7 @@ Now, you'll pimp your `SensorStatus.view.xml`.
     <VBox class="sapUiContentPadding">
       <f:Card>
         <f:header>
-        <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"/>
+          <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"/>
         </f:header>
         <f:content>
 
@@ -127,16 +127,16 @@ sap.ui.define([
   "sap/m/ValueColor"
 ], function (Controller, formatMessage, ValueColor) {
   
- formatValueColor: function (oTreshold, iTemperature) {
-  oTreshold = oTreshold || {};
-  if (iTemperature < oTreshold.heated) {
-      return ValueColor.Neutral;
-  } else if (iTemperature >= oTreshold.heated && iTemperature < oTreshold.hot) {
-      return ValueColor.Critical;
-  } else {
-      return ValueColor.Error;
+  formatValueColor: function (oTreshold, iTemperature) {
+    oTreshold = oTreshold || {};
+    if (iTemperature < oTreshold.heated) {
+        return ValueColor.Neutral;
+    } else if (iTemperature >= oTreshold.heated && iTemperature < oTreshold.hot) {
+        return ValueColor.Critical;
+    } else {
+        return ValueColor.Error;
+    }
   }
-}
 ````
 
 4. The `sap.f.cards.NumericHeader` control provides a property `state` which allows you to render the state of the control fancy. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
