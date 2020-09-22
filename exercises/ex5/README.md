@@ -176,7 +176,7 @@ You're almost done. The last piece is adding the newly created formatter functio
 
 ## Summary
 
-Congratulations, you achieved the [Exercise 5 - Improve Visualization](#xxercise-5---improve-visualization) exercise.
+Congratulations, you completed the [Exercise 5 - Improve Visualization](#xxercise-5---improve-visualization) exercise!
 
 Continue to [Exercise 6 - Filtering with the IconTabBar](../ex6/README.md).
 
