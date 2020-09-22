@@ -1,6 +1,6 @@
 {
     "threshold": {
-        "heated": 4,
+        "warm": 4,
         "hot": 5
     },
     "customers": [

@@ -26,9 +26,9 @@ sap.ui.define([
 
         formatValueColor: function (oTreshold, iTemperature) {
             oTreshold = oTreshold || {};
-            if (iTemperature < oTreshold.heated) {
+            if (iTemperature < oTreshold.warm) {
                 return ValueColor.Neutral;
-            } else if (iTemperature >= oTreshold.heated && iTemperature < oTreshold.hot) {
+            } else if (iTemperature >= oTreshold.warm && iTemperature < oTreshold.hot) {
                 return ValueColor.Critical;
             } else {
                 return ValueColor.Error;

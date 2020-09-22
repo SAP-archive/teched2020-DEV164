@@ -19,9 +19,9 @@ sap.ui.define([
                 var oThreshold = this.getSensorModel().getProperty("/threshold")
                 if (!oThreshold){
                     return IconColor.Neutral;
-                } else if (iTemperature < oThreshold.heated) {
+                } else if (iTemperature < oThreshold.warm) {
                     return IconColor.Default;
-                } else if (iTemperature >= oThreshold.heated && iTemperature < oThreshold.hot) {
+                } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
                     return IconColor.Critical;
                 } else {
                     return IconColor.Negative;
