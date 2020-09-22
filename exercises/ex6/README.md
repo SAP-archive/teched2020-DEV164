@@ -94,7 +94,7 @@ The filtering logic is written. Next, you need to assign the filtering function 
 3. Let's see if your UI5 application is now able to filter the sensor data correctly. Switch to the browser tab with the opened application preview and reload the page. Click the *Error* icon. Only sensors with too high a temperature are displayed.
 <br>![](images/06_03_0010.png)
 
-## Exercise 6.4 - Display the Total Number of Sensors in Every IconTabFilter
+## Exercise 6.4 - Display the Total Number of Sensors
 
 Your customer wishes to display the total number of sensors as well. For this, you can introduce the `count` property of `sap.m.IconTabFilter`.
 
