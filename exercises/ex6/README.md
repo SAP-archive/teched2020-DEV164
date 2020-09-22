@@ -50,7 +50,7 @@ sap.ui.define([
     "use strict";
 ````
 
-3. Implement the `onSensorSelect` function for filtering the sensor list items by checking their `status` property. We make also use of the previously defined threshold and use some filter settings to narrow down the result. `LT` for example means "less than".
+3. Implement the `onSensorSelect` function for filtering the sensor list items by checking their `status` property. We'll also make use of the previously defined threshold and use some filter settings to narrow down the result. `LT` for example means "less than".
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
