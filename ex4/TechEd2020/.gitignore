@@ -1,1 +1,6 @@
+/node_modules/
+package-lock.json
+/dist/
+/*-content.zip/ 
+/coverage/ 
 .DS_Store
