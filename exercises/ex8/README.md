@@ -90,7 +90,7 @@ After implementing the navigation logic you'll need to assign it to a control, s
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Add the `press` attribute to the `sap.m.CustomListItem` control and assign the newly created function.
+2. Add the `press` event to the `sap.m.CustomListItem` control and assign the newly created function.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
