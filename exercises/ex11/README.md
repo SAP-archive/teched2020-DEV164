@@ -6,7 +6,7 @@ In this exercise you'll learn how easy it is to deploy your application directly
 
 ## Exercise 11.1 - Create Space in Cloud Foundry
 
-First of all, you need to create the space in your cloud foundry environment to host your newly created UI5 application.
+First of all, you need to create the space in your Cloud Foundry environment to host your newly created UI5 application.
 
 1. Open the SAP Cloud Platform Trial by opening *https://cockpit.hanatrial.ondemand.com/cockpit/#/home/trial* in a new browser tab and click *Enter Your Trial Account*.
 <br>![](images/11_01_0010.png)
