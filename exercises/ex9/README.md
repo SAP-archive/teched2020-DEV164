@@ -167,7 +167,7 @@ sap.ui.define([
 </f:header>
 ````
 
-6. Switch the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with fancy-colored temperature information depending on the value of the temperature.
+6. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with fancy-colored temperature information depending on the value of the temperature.
 <br>![](images/09_03_0020.png)
 
 ## Summary
