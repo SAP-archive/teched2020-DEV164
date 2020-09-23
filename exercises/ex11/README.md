@@ -51,7 +51,7 @@ After logging in you're asked to specify your desired Cloud Foundry organization
 1. Open SAP Business Application Studio and click in the header toolbar on *View* and then select *Find Command...*. Enter *CF: Set Org and Space*.
 <br>![](images/11_03_0010.png)
 
-2. Enter your cloud foundry organization name e.g. *ui5-cloud-foundry*.
+2. Enter your Cloud Foundry organization name e.g. *ui5-cloud-foundry*.
 <br>![](images/11_03_0020.png)
 
 3. Select your newly created space, e.g. *ui5-apps*.
