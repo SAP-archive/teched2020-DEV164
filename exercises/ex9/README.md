@@ -24,7 +24,7 @@ Now you'll dress up the `SensorStatus.view.xml` view.
   xmlns:card="sap.f.cards">
 ````
 
-3. Add a `sap.f.Card` with a card header to `SensorStatus.view.xml`. Enter the customer name as the header title via data binding.
+3. Add an `sap.f.Card` with a card header to `SensorStatus.view.xml`. Enter the customer name as the header title via data binding.
 
 ***SensorManager/webapp/view/SensorStatus.view.xml***
 
