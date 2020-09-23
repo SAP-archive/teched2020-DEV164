@@ -120,7 +120,7 @@ The build step has created a file named `TechEd2020_0.0.1.mtar` located under `m
 2. After a few minutes deployment has finished, of which you'll be notified by a popup in the lower right corner.
 <br>![](images/11_07_0020.png)
 
-3. In the deployment logs you'll find the URL of your deployed application. Copy it from the logs, open a new browser tab and paste it into the browser tab.
+3. In the deployment logs you'll find the URL of your deployed application. Copy it from the logs and paste it into a new browser tab.
 <br>![](images/11_07_0030.png)
 
 4. Congratulations! You've deployed your UI5 application to SAP Cloud Platform Cloud Foundry.
