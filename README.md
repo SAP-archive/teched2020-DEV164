@@ -78,6 +78,12 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 11.6 - Build your Application](exercises/ex11#exercise-116---build-your-application)
     - [Exercise 11.7 - Deploy your Application](exercises/ex11#exercise-117---deploy-your-application)
 
+## Download and Installation
+Follow these [steps](https://github.com/SAP-samples/teched2020-DEV164/tree/code) to get the code or do the exercises step by step.
+
+## Known Issues
+No known issues.
+
 ## How to obtain support
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
