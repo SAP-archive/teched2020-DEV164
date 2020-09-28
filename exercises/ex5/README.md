@@ -37,10 +37,9 @@ To give the customer the best possible overview, add some color to your applicat
             <Title text="{sensorModel>location}"/>
             <Label text="{i18n>distanceLabel}:"/>
         </VBox>
-        <core:Icon src="sap-icon://temperature" size="2.5rem"
-            class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
+        <core:Icon src="sap-icon://temperature" size="2.5rem" class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
     </HBox>
-  <HBox justifyContent="SpaceBetween" class="sapUiTinyMarginTop sapUiSmallMarginBottom sapUiSmallMarginBeginEnd">
+    <HBox justifyContent="SpaceBetween" class="sapUiTinyMarginTop sapUiSmallMarginBottom sapUiSmallMarginBeginEnd">
         <ObjectNumber number="{sensorModel>distance}" unit="{i18n>distanceUnit}"/>
     </HBox>
 </CustomListItem>
@@ -144,9 +143,9 @@ formatIconColor: function(iTemperature) {
     var oThreshold = this.getSensorModel().getProperty("/threshold");
     if (!oThreshold) {
         return IconColor.Neutral;
-    } else if (iTemperature < oThreshold.heated) {
+    } else if (iTemperature < oThreshold.warm) {
         return IconColor.Default;
-    } else if (iTemperature >= oThreshold.heated && iTemperature < oThreshold.hot) {
+    } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
         return IconColor.Critical;
     } else {
         return IconColor.Negative;

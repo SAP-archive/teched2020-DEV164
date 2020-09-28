@@ -32,7 +32,7 @@ A dialog is a perfect scenario in which to use a `sap.ui.core.Fragment`. This UI
         items="{
             path: 'sensorModel>/customers',
             sorter: {path:'name'}
-        }" >
+        }">
         <StandardListItem title="{sensorModel>name}"/>
     </SelectDialog>
 </core:FragmentDefinition>
@@ -94,7 +94,7 @@ After implementing the dialog opening logic, you need to assign this logic to a 
 ````xml
 <Page>
     <headerContent>
-        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}" />
+        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}"/>
     </headerContent>
     <content>
 ````
@@ -162,9 +162,9 @@ onSensorSelect: function (oEvent) {
         oThreshold = this.getSensorModel().getProperty("/threshold");
 
     if (sKey === "Cold") {
-        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.heated, false)];
+        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
     } else if (sKey === "Critical") {
-        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.heated, oThreshold.hot, false)];
+        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
     } else if (sKey === "Warning") {
         this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
     } else {

@@ -21,8 +21,8 @@ For this, we enhance our `sap.m.IconTabBar` control.
         <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All"/>
         <IconTabSeparator/>
         <IconTabFilter icon="sap-icon://fridge" iconColor="Default" text="{i18n>msgFilterCold}" key="Cold"/>
-        <IconTabFilter icon="sap-icon://blur" iconColor="Critical" text="{i18n>msgFilterCritical}" key="Critical"/>
-        <IconTabFilter icon="sap-icon://warning" iconColor="Negative" text="{i18n>msgFilterWarning}" key="Warning"/>
+        <IconTabFilter icon="sap-icon://blur" iconColor="Critical" text="{i18n>msgFilterWarm}" key="Warm"/>
+        <IconTabFilter icon="sap-icon://warning" iconColor="Negative" text="{i18n>msgFilterHot}" key="Hot"/>
     </items>
     <content>
 ````
@@ -34,7 +34,7 @@ For this, we enhance our `sap.m.IconTabBar` control.
 
 In the previous section you've added all necessary controls. Next, you'll implement the filtering logic.
 
-1. 1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
+1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
 2. Add the module `sap/ui/model/Filter` as a dependency to `Sensors.controller.js`.
 
@@ -64,9 +64,9 @@ onSensorSelect: function (oEvent) {
         oThreshold = this.getSensorModel().getProperty("/threshold");
 
     if (sKey === "Cold") {
-        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.heated, false)];
+        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
     } else if (sKey === "Critical") {
-        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.heated, oThreshold.hot, false)];
+        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
     } else if (sKey === "Warning") {
         this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
     } else {

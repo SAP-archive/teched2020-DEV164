@@ -22,9 +22,7 @@ Create a new view as follows:
 ***SensorManager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mvc:View displayBlock="true"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
+<mvc:View displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
   <Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true">
   </Page>
 </mvc:View>
@@ -133,10 +131,7 @@ sap.ui.define([
 6. Using the `controllerName` attribute, assign the newly created controller to the view.
 
 ````xml
-<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" 
-  displayBlock="true" 
-  xmlns:mvc="sap.ui.core.mvc" 
-  xmlns="sap.m">
+<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 ````
 
 ## Exercise 8.6 - Implement the Back-Navigation to Sensors.view.xml
