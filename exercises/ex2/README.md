@@ -84,7 +84,7 @@ You will use several UI5 libraries like `sap.m` or `sap.f` in your application. 
 
 UI5 comes with a powerful routing API that helps you control the state of your application efficiently. It takes care of displaying the desired UI5 view based on the given browser hash.
 
-Let's adjust the `manifest.json` to enable the routing feature for the newly created view.
+Let's adjust the `manifest.json` to enable the routing feature for your newly created view.
 
 1. Open `SensorManager/webapp/manifest.json`.
 2. Go to the section `sap.ui5`.
