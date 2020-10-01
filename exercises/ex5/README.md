@@ -110,7 +110,7 @@ Now you need to tell your view which controller is associated with it.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Add the `controllerName` attribute to the view and enter the controller name `keepcool.SensorManager.controller.Sensors`. The Controller's functions can then be used in your View. UI5 maps this path to the `SensorManager/webapp/controller/Sensors.controller.js`.
+2. Add the `controllerName` attribute to the view and enter the controller name `keepcool.SensorManager.controller.Sensors`. The Controller's functions can then be used in your View. UI5 maps this path to the `SensorManager/webapp/controller/Sensors.controller.js` file.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
