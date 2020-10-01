@@ -4,23 +4,23 @@ In this exercise, you will logon to your SAP Business Application Studio account
 
 ## Logon
 
-After completing these steps, you will know how to open SAP Business Application Studio.
+After completing these steps you will know how to open SAP Business Application Studio and prepare it for development.
 
 1. Open a browser of your choice (Google Chrome, Microsoft Edge, Apple Safari, etc).
 
 2. Open [SAP Business Application Studio](https://triallink.eu10.trial.applicationstudio.cloud.sap/) and login with your credentials. If the login doesn't work, make sure you fulfill the [requirements](../../README.md#requirements). 
 
 3. Now you can create your dev space! Click *Create Dev Space*.
-<br>![](images/00_01_0010.png)
+<br><br>![](images/00_01_0010.png)
 
 4. Enter the new name of your dev space, e.g. *UI5development*, select *SAP Fiori* as application type, and click *Create Dev Space*.
-<br>![](images/00_01_0020.png)
+<br><br>![](images/00_01_0020.png)
 
 5. Your dev space is being prepared and starts up. This might take a few minutes. Wait until the status shows *RUNNING*.
-<br>![](images/00_01_0030.png)
+<br><br>![](images/00_01_0030.png)
 
-6. Click on your dev space name e.g. *UI5development*. You'll be redirected to your newly created SAP Business Application Studio dev space.
-<br>![](images/00_01_0040.png)
+6. Click on your dev space name, e.g. *UI5development*. You'll be redirected to your newly created SAP Business Application Studio dev space.
+<br><br><br>![](images/00_01_0040.png)
 
 7. Bookmark this URL, so it'll be easier for you to access your dev space within SAP Business Application Studio.
 
