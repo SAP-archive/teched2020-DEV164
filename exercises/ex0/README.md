@@ -20,7 +20,7 @@ After completing these steps you will know how to open SAP Business Application 
 <br><br>![](images/00_01_0030.png)
 
 6. Click on your dev space name, e.g. *UI5development*. You'll be redirected to your newly created SAP Business Application Studio dev space.
-<br>![](images/00_01_0040.png)
+<br><br>![](images/00_01_0040.png)
 
 7. Bookmark this URL, so it'll be easier for you to access your dev space within SAP Business Application Studio.
 
