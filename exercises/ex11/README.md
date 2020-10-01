@@ -1,6 +1,6 @@
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex11/TechEd2020)
 
-# Exercise 11 - Deploy Your App to SAP Cloud Platform Cloud Foundry
+# Exercise 11 - Deploy Your App to SAP Cloud Platform
 
 In this exercise you'll learn how easy it is to deploy your application directly from SAP Business Application Studio to a Cloud Foundry environment hosted by SAP Cloud Platform.
 
