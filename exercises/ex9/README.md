@@ -174,7 +174,7 @@ sap.ui.define([
 
 Yay! You've successfully completed [Exercise 9 - Card with NumericHeader](#exercise-9---card-with-numericheader). Stay tuned! 
 
-Continue to [Exercise 10 - Chart with DataBinding](../ex10/README.md).
+Continue to [Exercise 10 - Chart with Data Binding](../ex10/README.md).
 
 ## Further Information
 * Cards: https://ui5.sap.com/#/topic/5b46b03f024542ba802d99d67bc1a3f4
