@@ -21,7 +21,7 @@ After completing these steps you'll have created your first UI5 application.
 <br>![](images/01_01_0020.png)
 
 3. Enter the following settings in the *Target Running Environment* step: 
-    1. Select *Cloud Foundry* as *target running environment*.
+    1. Select *Cloud Foundry* as target running environment.
     2. Select *SAPUI5 Application* as application template and click *Next*.</ol>
 <br>![](images/01_01_0030.png)<ol>
 
