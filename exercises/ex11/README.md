@@ -117,7 +117,7 @@ The build step has created a file named `TechEd2020_0.0.1.mtar` located under `m
 1. Right-click `mta_archives/TechEd2020_0.0.1.mtar` and select *Deploy MTA Archive*. Deployment starts.
 <br>![](images/11_07_0010.png)
 
-2. After a few minutes deployment has finished, of which you'll be notified by a popup in the lower right corner.
+2. Deployment should have finished after a few minutes, of which you'll be notified by a popup in the lower right corner.
 <br>![](images/11_07_0020.png)
 
 3. In the deployment logs you'll find the URL of your deployed application. Copy it from the logs and paste it into a new browser tab.
