@@ -1,23 +1,23 @@
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex7/TechEd2020)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-dev164/exercises/ex7/TechEd2020/SensorManager/webapp/)
 
-# Exercise 7 - Fragment containing a SelectDialog
+# Exercise 7 - Fragment Containing a SelectDialog
 
-For the employees of your customer, not all of their icehouse customers might be relevant for them. You have to add some kind of basic personalization to the application, by providing a dialog, in which they can select only the relevant icehouses customers.
+Not all the icehouse data might be relevant for every employee of your customer. You should add some kind of basic personalization to the application. You can do this by providing a dialog in which users can select only the icehouse clients relevant for them.
 
 ## Exercise 7.1 - Create a new Fragment Definition
 
-A dialog is a perfect scenario, where you can use a `sap.ui.core.Fragment`. This UI5 artefacts allows you to modularize your code in smaller resuable pieces.
+A dialog is a perfect scenario in which to use a `sap.ui.core.Fragment`. This UI5 artefact allows you to modularize your code in smaller reusable pieces.
 
 1. Go to folder `SensorManager/webapp/view/`.
 
-2. Perform a right click on the `view` folder and click on `New File`.
+2. Right-click on the `view` folder and select `New File`.
 <br>![](images/07_01_0010.png)
 
 3. Enter `CustomerSelectDialog.fragment.xml` as file name.
 <br>![](images/07_01_0020.png)
 
-4. Copy and paste following content into the newly created `CustomerSelectDialog.fragment.xml`. With that you create a `sap.m.SelectDialog` which offeres functionality to select the prefered icehouse customers.
+4. Copy and paste the following content into the newly created `CustomerSelectDialog.fragment.xml`. With that you create a `sap.m.SelectDialog`, which offers functionality to help users select their preferred icehouse clients.
 
 ***SensorManager/webapp/view/CustomerSelectDialog.fragment.xml***
 
@@ -40,11 +40,11 @@ A dialog is a perfect scenario, where you can use a `sap.ui.core.Fragment`. This
 
 ## Exercise 7.2 - Implement the Dialog Opening Logic
 
-After creating the dialog you have to implement the coding to open the dialog.
+After creating the dialog, you need to implement the coding to open the dialog.
 
 1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
-2. Add module `sap/ui/core/Fragment`.
+2. Add the module `sap/ui/core/Fragment`.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -58,7 +58,7 @@ sap.ui.define([
 ], function (Controller, IconColor, Toast, Filter, Fragment) {
 ````
 
-3. Implement the `onCustomerSelect` function to open the dialog. In there you have to load the Fragment and set the according model and properties.
+3. Implement the `onCustomerSelect` function to open the dialog. It loads the Fragment and sets the required model and properties.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -83,11 +83,11 @@ onCustomerSelect: function (oEvent) {
 ````
 
 ## Exercise 7.3 - Add a Dialog Opening Button
-After implementing the dialog opening logic its time for assigning this logic to a control.
+After implementing the dialog opening logic, you need to assign this logic to a control.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Add a new menu button to the paage header and bind the `press` event to the newly created `onCustomerSelect` function.
+2. Add a new menu button to the page header and bind its `press` event to the newly created `onCustomerSelect` function.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -99,17 +99,17 @@ After implementing the dialog opening logic its time for assigning this logic to
     <content>
 ````
 
-3. Switch the browser tab to the application preview and perform a refresh to see how the UI5 application changed its user interface. Click on the menu button in upper right corner.
+3. Switch the browser tab to the application preview and refresh the page to see how the user interface of your application changes. Click the menu button in upper right corner.
 <br>![](images/07_03_0010.png)
 
-## Exercise 7.4 - Implement the Filter Customer Logic
+## Exercise 7.4 - Implement the 'Filter Customer' Logic
 
-The Dialog contains an input field where the user can search for the customer name.
-Now, its on you to implement this logic.
+The Dialog contains an input field where the user can search for a customer name.
+For this, you need to implement the filter logic.
 
 1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
 
-2. Add the `onCustomerSelectChange` function with following content.
+2. Add an `onCustomerSelectChange` function with the following content:
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -122,13 +122,13 @@ onCustomerSelectChange: function(oEvent) {
 }
 ````
 
-## Exercise 7.5 - Implement the Select Customer Logic
+## Exercise 7.5 - Implement the 'Select Customer' Logic
 
-Now, you have to implement the logic to filter your sensors after selecting your prefered customers.
+After providing an option to select preferred customers, you also need to add the logic to filter the sensors.
 
 1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
 
-2. Add the `onCustomerSelectConfirm` function with following content.
+2. Add an `onCustomerSelectConfirm` function with the following content:
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -143,7 +143,7 @@ onCustomerSelectConfirm: function(oEvent) {
 }
 ````
 
-3. To ensure that both filters (customer and status) are applied you need to make two more adaptations in the `Sensors.controller.js` by declaring the `_aCustomerFilters` and `_aStatusFilters` in the `onInit` function to ensure that these fields are defined and merging the `_aCustomerFilters` with the `_aStatusFilters` before performing the fitering on the binding.
+3. To ensure that both filters (customer and status) are applied, you need to make two more adaptations in `Sensors.controller.js`.  Here, you declare the `_aCustomerFilters` and `_aStatusFilters` in the `onInit` function to ensure that they are defined. You also merge the `_aCustomerFilters` with the `_aStatusFilters` before performing the filtering on the binding.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -175,9 +175,9 @@ onSensorSelect: function (oEvent) {
 }
 ````
 
-## Exercise 7.6 - Assign the Customer Change and Select Logic to the Dialog
+## Exercise 7.6 - Assign the 'Customer Change and Select' Logic to the Dialog
 
-One last thing is missing. You've to assign the newly created functions to the dialog.
+One last thing is missing: You need to assign the newly created functions to the dialog.
 
 1. Open `SensorManager/webapp/view/CustomerSelectDialog.fragment.xml`
 
@@ -194,18 +194,18 @@ One last thing is missing. You've to assign the newly created functions to the d
     liveChange=".onCustomerSelectChange">
 ````
 
-3. Its demo time! Switch the browser tab to the application preview and perform a refresh to see how the UI5 application changed its user interface. Click on the *menu* button in upper right corner. Enter some parts of customers and see if the customer list is filtered.
+3. It's demo time! Switch the browser tab to the application preview and refresh the page to see how the user interface of your UI5 application changes. Select the *menu* button in upper right corner. Enter some parts of customer names and check if the customer list is filtered.
 <br>![](images/07_06_0010.png)
 
-4. Select your prefered customers and click on the *Select* button
+4. Select some preferred customers and click the *Select* button
 <br>![](images/07_06_0020.png)
 
-5. The list of sensors is filtered by the temperature state and the prefered customers.
+5. The list of sensors is filtered by both temperature status and preferred customers.
 <br>![](images/07_06_0030.png)
 
 ## Summary
 
-Yay! You've accomplished successfully [Exercise 7 - Fragment containing a SelectDialog](#exercise-7---fragment-containing-a-selectdialog).
+Yay! You've successfully completed [Exercise 7 - Fragment containing a SelectDialog](#exercise-7---fragment-containing-a-selectdialog).
 
 Continue to [Exercise 8 - Second View with Navigation](../ex8/README.md).
 

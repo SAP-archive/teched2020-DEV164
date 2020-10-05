@@ -1,13 +1,13 @@
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex10/TechEd2020)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-dev164/exercises/ex10/TechEd2020/SensorManager/webapp/)
 
-# Exercise 10 - Chart with DataBinding
+# Exercise 10 - Chart with Data Binding
 
-In this exercise you'll put some analytical flavour to your UI5 application by using a chart.
+In this exercise you'll add some analytical flavor to your UI5 application by using a chart.
 
 ## Exercise 10.1 - Create the Chart
 
-To be able to show some historical data you can leverage the `temperatureLog` of the sensor data. You'll use an `sap.suite.ui.microchart.InteractiveLineChart`to add the datapoints.
+To show some historical data you can use the `temperatureLog` of the sensor data. You'll use an `sap.suite.ui.microchart.InteractiveLineChart`to add the data points.
 
 1. Open `SensorManager/webapp/view/SensorStatus.view.xml`. 
 
@@ -25,7 +25,7 @@ To be able to show some historical data you can leverage the `temperatureLog` of
     xmlns:mc="sap.suite.ui.microchart">
 ````
 
-3. Add the chart to the content aggregation of the card which is placed inside the `SensorStatus.view.xml` and bind the `temperatureLog` to the points aggregation. For each point we display the `temperature` property.
+3. Add the chart to the content aggregation of the card and bind the `temperatureLog` to the `points` aggregation. For each point we'll display the `temperature` property.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
@@ -39,16 +39,16 @@ To be able to show some historical data you can leverage the `temperatureLog` of
 </f:content>
 ````
 
-4. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a chart with a temperature history.
+4. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history.
 <br>![](images/10_01_0010.png)
 
 ## Exercise 10.2 - Master the Chart
 
-After completing the previous exercises you are quite experienced in pimping your UI5 application, master your chart to show what you've learned.
+After completing the previous exercises, you are quite experienced in enhancing your UI5 application. Master your chart to show what you've learned.
 
 1. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
 
-2. Add a formatting for every datapoint to improve the readability. You can use an expression binding to achieve this leveraging default JavaScript functionality.
+2. Add formatting to every data point to improve readability. You can use expression binding to achieve this.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
@@ -57,10 +57,10 @@ After completing the previous exercises you are quite experienced in pimping you
     value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"/>
 ````
 
-3. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a chart with a temperature history with better readability.
+3. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with better readability.
 <br>![](images/10_02_0010.png)
 
-4. Add some semantic color for the data points with your formatter function.
+4. Add semantic coloring to the data points with a formatter function.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
@@ -70,10 +70,10 @@ After completing the previous exercises you are quite experienced in pimping you
     color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], formatter:'.formatValueColor'}"/>
 ````
 
-5. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a chart with a temperature history with colored data points.
+5. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with colored data points.
 <br>![](images/10_02_0020.png)
 
-6. Add labels for the data points to provide some contextual info to the user.
+6. Add labels to the chart to provide some contextual info to the user.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
@@ -84,10 +84,10 @@ After completing the previous exercises you are quite experienced in pimping you
     label="{sensorModel>time}"/>
 ````
 
-7. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a chart with a temperature history with x-axis labels. 
+7. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with x-axis labels. 
 <br>![](images/10_02_0030.png)
 
-8. Displaying the date as a number value makes not much sense. To improve the readability you can format the label using a `UI5 DataType`. These types are predefined and can be configured individually regarding the input and output format.
+8. Displaying the time as a date makes not much sense here. To improve readability you should format the label using a `UI5 DataType`. These types are predefined and can be configured individually regarding the input and output format.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
@@ -105,12 +105,12 @@ After completing the previous exercises you are quite experienced in pimping you
         }"/>
 ````
 
-9. Switch the browser tab where the application preview is opened. Click on a sensor. Now, the sensor status page contains a chart with a temperature history with readable x-axis labels. 
+9. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with readable x-axis labels. 
 <br>![](images/10_02_0040.png)
 
 ## Summary
 
-Congratulations! You've completed successfully [Exercise 10 - Chart with DataBinding](#exercise-10---chart-with-databinding).
+Congratulations, you've completed successfully [Exercise 10 - Chart with DataBinding](#exercise-10---chart-with-databinding)!
 
 Continue to [Exercise 11 - Deployment to SAP Cloud Platform Cloud Foundry](../ex11/README.md).
 

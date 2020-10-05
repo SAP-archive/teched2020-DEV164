@@ -13,17 +13,17 @@ In this session, you will learn about developing web applications with SAPUI5. W
 ## Requirements
 
 The requirements to follow the exercises in this repository are:
-- Get a Free Trial Account on SAP Cloud Platform [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html)
-- Enable Cloud Foundry and create an Organization e.g. *ui5-cloud-foundry* [help portal](https://help.sap.com/viewer/a96b1df8525f41f79484717368e30626/Cloud/en-US/dc18bac42270468d84b6c030a668e003.html)
-- Set Up SAP Business Application Studio for Development [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html)
-- Be excited about the power of SAP technologies which will make your developer life easier
+- Get a free trial account on SAP Cloud Platform; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+- Enable Cloud Foundry and create an organization e.g. *ui5-cloud-foundry*; see the [help portal](https://help.sap.com/viewer/a96b1df8525f41f79484717368e30626/Cloud/en-US/dc18bac42270468d84b6c030a668e003.html).
+- Set Up SAP Business Application Studio for development; see this [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
+- Be excited about the power of SAP technologies to make your developer life easier.
 
 
 ## Exercises
 
 - [Getting Started](exercises/ex0/)
-- [Exercise 1 - Project Setup using Business Application Studio](exercises/ex1/)
-    - [Exercise 1.1 - Create a new UI5 application](exercises/ex1#exercise-11---create-a-new-ui5-application)
+- [Exercise 1 - Project Setup Using Business Application Studio](exercises/ex1/)
+    - [Exercise 1.1 - Create a New UI5 Application](exercises/ex1#exercise-11---create-a-new-ui5-application)
     - [Exercise 1.2 - Create a Run Configuration](exercises/ex1#exercise-12---create-a-run-configuration)
 - [Exercise 2 - Basic UI5 Configuration and  View Creation](exercises/ex2/)
     - [Exercise 2.1 - Switch to SAP Fiori 3](exercises/ex2#exercise-21---switch-to-sap-fiori-3)
@@ -37,7 +37,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 3.4 - Add Data Binding](exercises/ex3#exercise-34---add-data-binding)
 - [Exercise 4 - Introduce Localization](exercises/ex4/)
     - [Exercise 4.1 - Replacing Hard Coded Text with i18n Variables](exercises/ex4#exercise-41---replacing-hard-coded-text-with-i18n-variables)
-    - [Exercise 4.2 - Add New Languages](exercises/ex4#exercise-42---add-new-languages)
+    - [Exercise 4.2 - Add Additional Languages](exercises/ex4#exercise-42---add-new-languages)
     - [Exercise 4.3 - Configure Supported Languages](exercises/ex4#exercise-43---configure-supported-languages)
 - [Exercise 5 - Improve Visualization](exercises/ex5/)
     - [Exercise 5.1 - Enhance Sensors.view.xml](exercises/ex5#exercise-51---enhance-sensorsviewxml)
@@ -45,12 +45,12 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 5.3 - Assign Controller to View](exercises/ex5#exercise-53---assign-controller-to-view)
     - [Exercise 5.4 - Create your first Formatter](exercises/ex5#exercise-54---create-your-first-formatter)
     - [Exercise 5.5 - Add the Formatter in your View](exercises/ex5#exercise-55---add-the-formatter-in-your-view)
-- [Exercise 6 - Filtering with the IconTabBar](exercises/ex6/)
+- [Exercise 6 - Filtering With the IconTabBar](exercises/ex6/)
     - [Exercise 6.1 - Add new IconTabFilters to the Sensors.view.xml](exercises/ex6#exercise-61---add-new-icontabfilters-to-the-sensorsviewxml)
     - [Exercise 6.2 - Implement the Filtering](exercises/ex6#exercise-62---implement-the-filtering)
     - [Exercise 6.3 - Assign the Filtering to the IconTabBar](exercises/ex6#exercise-63---assign-the-filtering-to-the-icontabbar)
-    - [Exercise 6.4 - Display the total number of sensors in every IconTabFilter](exercises/ex6#exercise-64---display-the-total-number-of-sensors-in-every-icontabfilter)
-- [Exercise 7 - Fragment containing a SelectDialog](exercises/ex7/)
+    - [Exercise 6.4 - Display the Total Number of Sensors in Every IconTabFilter](exercises/ex6#exercise-64---display-the-total-number-of-sensors-in-every-icontabfilter)
+- [Exercise 7 - Fragment Containing a SelectDialog](exercises/ex7/)
     - [Exercise 7.1 - Create a new Fragment Definition](exercises/ex7#exercise-71---create-a-new-fragment-definition)
     - [Exercise 7.2 - Implement the Dialog Opening Logic](exercises/ex7#exercise-72---implement-the-dialog-opening-logic)
     - [Exercise 7.3 - Add a Dialog Opening Button](exercises/ex7#exercise-73---add-a-dialog-opening-button)
@@ -60,10 +60,10 @@ The requirements to follow the exercises in this repository are:
 - [Exercise 8 - Second View with Navigation](exercises/ex8/)
     - [Exercise 8.1 - Create SensorStatus.view.xml](exercises/ex8#exercise-81---create-sensorstatusviewxml)
     - [Exercise 8.2 - Configure the manifest.json](exercises/ex8#exercise-82---configure-the-manifestjson)
-    - [Exercise 8.3 - Implement the navigation to the new view](exercises/ex8#exercise-83---implement-the-navigation-to-the-new-view)
-    - [Exercise 8.4 - Assign the navigation logic to the sensor items](exercises/ex8#exercise-84---assign-the-navigation-logic-to-the-sensor-items)
+    - [Exercise 8.3 - Implement the Navigation to the New View](exercises/ex8#exercise-83---implement-the-navigation-to-the-new-view)
+    - [Exercise 8.4 - Assign the Navigation Logic to the Sensor Items](exercises/ex8#exercise-84---assign-the-navigation-logic-to-the-sensor-items)
     - [Exercise 8.5 - Create SensorStatus.controller.js](exercises/ex8#exercise-85---create-sensorstatuscontrollerjs)
-    - [Exercise 8.6 - Implement navigation back to Sensors.view.xml](exercises/ex8#exercise-86---implement-navigation-back-to-sensorsviewxml)
+    - [Exercise 8.6 - Implement Navigation Back to Sensors.view.xml](exercises/ex8#exercise-86---implement-navigation-back-to-sensorsviewxml)
 - [Exercise 9 - Card with NumericHeader](exercises/ex9/)
     - [Exercise 9.1 - Add a Card to SensorStatus.view.xml](exercises/ex9#exercise-91---add-a-card-to-sensorstatusviewxml)
     - [Exercise 9.2 - Enhance SensorStatus.controller.js](exercises/ex9#exercise-92---enhance-sensorstatuscontrollerjs)
@@ -75,10 +75,10 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 11.1 - Create Space in Cloud Foundry](exercises/ex11#exercise-111---create-space-in-cloud-foundry)
     - [Exercise 11.2 - Login to Cloud Foundry](exercises/ex11#exercise-112---login-to-cloud-foundry)
     - [Exercise 11.3 - Set Organization and Space](exercises/ex11#exercise-113---set-organization-and-space)
-    - [Exercise 11.4 - Configure Approuter for Redirect](exercises/ex11#exercise-114---configure-approuter-for-redirect)
-    - [Exercise 11.5 - Configure UI5 Application](exercises/ex11#exercise-115---configure-ui5-application)
-    - [Exercise 11.6 - Build your Application](exercises/ex11#exercise-116---build-your-application)
-    - [Exercise 11.7 - Deploy your Application](exercises/ex11#exercise-117---deploy-your-application)
+    - [Exercise 11.4 - Configure App Router for Redirect](exercises/ex11#exercise-114---configure-approuter-for-redirect)
+    - [Exercise 11.5 - Configure Your UI5 Application](exercises/ex11#exercise-115---configure-ui5-application)
+    - [Exercise 11.6 - Build Your Application](exercises/ex11#exercise-116---build-your-application)
+    - [Exercise 11.7 - Deploy Your Application](exercises/ex11#exercise-117---deploy-your-application)
 
 ## Download and Installation
 Follow these [steps](https://github.com/SAP-samples/teched2020-DEV164/tree/code) to get the code or do the exercises step by step.

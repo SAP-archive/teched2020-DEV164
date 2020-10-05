@@ -3,15 +3,15 @@
 
 # Exercise 4 - Introduce Localization
 
-In this exercise, you will learn how easy it is to enable your UI5 application for localization.
+In this exercise you'll learn how easy it is to enable  localization for your UI5 application.
 
-## Exercise 4.1 - Replacing Hard Coded Text with i18n Variables
+## Exercise 4.1 - Replacing Hard-Coded Text With i18n Variables
 
-In your existing UI5 application you've used hard coded text values. Thats ok, if you wanna implement a fast proof of concept. If you wanna build a productive application no hard coded text values should be used because they will be displayed no matter which browser language is configured. Your goal is to build an enterprise ready application which offeres also localization features, like text translation. UI5 comes with a huge set of localization features out of the box which are enabled by default. To benefit from these features you have to replace all occurrences of hard coded texts in your UI5 application. Luckily, its only one occurrence 😃. However, its a good reminder to start directly with localization in mind before refactoring many places in your application afterwards.
+In your existing UI5 application you've used hard-coded text values. That's OK if you'd like to implement a fast proof of concept. In your productive application no hard-coded text should be used, however, because it would be displayed regardless of the actual browser language the user has configured. Your goal is to build an enterprise-ready application which includes localization features, such as text translation. UI5 comes with a huge set of localization features out of the box, which are enabled by default. To benefit from these features, you need to replace all occurrences of hard-coded text in your UI5 application. Luckily, there's only one occurrence 😃 However, it's good practice to start directly with localization in mind instead of refactoring many places in your application afterwards.
 
 1. Open the `Sensors.view.xml` located under `SensorManager/webapp/view/`.
 
-2. Replace the `noDataText` value with the i18n-key `noSensorDataText`.
+2. Replace the `noDataText` value with the i18n key `noSensorDataText`.
 
 ````xml
 <f:GridList id="sensorsList"
@@ -19,7 +19,7 @@ In your existing UI5 application you've used hard coded text values. Thats ok, i
     noDataText="{i18n>noSensorDataText}">
 ````
 
-3. Now, you've to add the newly introduced i18n-key also to your `i18n.properties` files which is located under `SensorManager/webapp/i18n/` and by the way lets also give your name a better title.
+3. Add the newly introduced i18n key also to your `i18n.properties` file, which is located under `SensorManager/webapp/i18n/`, and by the way, let's also pick a better title.
 
 ***SensorManager/webapp/i18n/i18n.properties***
 
@@ -44,25 +44,25 @@ cardSubTitle={0}: {1}, {2}: {3}{4}
 temperatureUnit=°C
 ````
 
-4. Switch the browser tab and perform a refresh to see how the UI5 application changed its user interface.
+4. Switch browser tabs and refresh the page to see the changed user interface of your UI5 application.
 <br>![](images/04_01_0010.png)
 
 ## Exercise 4.2 - Add New Languages
 
-Your UI5 application is prepared for localization. No matter with which browser language is configured your UI5 application displays the texts of the `i18n.properties`-file.
-Lets provide new language for english and german.
+Your UI5 application is prepared for localization. No matter which browser language is configured, your UI5 application currently displays the texts of the `i18n.properties` file.
+Let's provide new language files for English and German.
 
-1. Go to folder `SensorManager/webapp/i18n/` and perform a right click.
+1. Go to folder `SensorManager/webapp/i18n/` and right-click.
 
-2. In the opened popup, click on `New File`.
+2. In the popup, click `New File`.
 
 3. Enter `i18n_en.properties` as file name.
 
-4. Repeat steps 1. and 2.
+4. Repeat Steps 1 and 2.
 
 5. Enter `i18n_de.properties` as file name.
 
-6. Open `i18n_en.properties` and paste following content.
+6. Open `i18n_en.properties` and paste the following content:
 
 ***SensorManager/webapp/i18n/i18n_en.properties***
 
@@ -87,7 +87,7 @@ cardSubTitle={0}: {1}, {2}: {3}{4}
 temperatureUnit=°C
 ````
 
-7. Open `i18n_de.properties` and paste following content.
+7. Open `i18n_de.properties` and paste the following content:
 
 ***SensorManager/webapp/i18n/i18n_de.properties***
 
@@ -112,19 +112,19 @@ cardSubTitle={0}: {1}, {2}: {3}{4}
 temperatureUnit=°C
 ````
 
-8. Depending on which browser language you've configured you would see a different texts on user interface.
-    * If your language is English the content of `i18n_en.properties` is used
-    * If your language is German the content of `i18n_de.properties` is used
-    * If you any other language than English or German the content of `i18n.properties` is used
+8. Depending on the browser language you've configured, you'd now be able to see different text on your user interface.
+    * If your browser language is English, the content of `i18n_en.properties` is used.
+    * If your browser language is German, the content of `i18n_de.properties` is used.
+    * For any other language, the content of `i18n.properties` is used.
 
 ## Exercise 4.3 - Configure Supported Languages
 
-Usually, only the `i18n.properties` file is maintained by developers. The language dependent files will be filled by native speakers or translators. You as an application developer can configure which languages are supported by your application and which language is your default (aka fallback) language. In your case English will be the default language and additionaly German should be supported.
+Usually, only the `i18n.properties` file is maintained by developers. The language-dependent files will be filled by native speakers or translators. As an application developer, you can configure which languages are supported by your application, and which language is your default (aka fallback) language. In this session English will be the default language, and additionally German should be supported.
 
 1. Open the `manifest.json` located under `SensorManager/webapp`.
 
-2. Go to section `sap.ui5` / `models` / `i18n`. Here you have to add two new configurations inside your settings object.
-      1. Add the property `supportedLocales` and assigne the locales for German and English `["de", "en"]`
+2. Go to section `sap.ui5` / `models` / `i18n`. Here, add two new configurations inside your settings object.
+      1. Add the property `supportedLocales` and assign the locales for German and English `["de", "en"]`
       2. Add the property `fallbackLocale` and assign the English locale `"en"`
 
 ***SensorManager/webapp/manifest.json***
@@ -140,19 +140,19 @@ Usually, only the `i18n.properties` file is maintained by developers. The langua
 }
 ````
 
-3. Lets see if your UI5 application is able to start in English and German. Therefore switch to the browser tab with opened application preview. Perform a page reload. The UI5 application should start in English or in German if you have configured German as your browser language.
+3. Let's see if your UI5 application is able to start in English and German! Switch to the browser tab with an opened application preview and reload the page. The UI5 application should start in English or in German, depending on your browser language.
 <br>![](images/04_03_0010.png) 
 
-4. UI5 provides an URL parameter to simulate another browser language. Therefore, add `?sap-ui-language=de` behind the URL in the browser. Now, the UI5 should start in German no matter which language you have configured as your browser language.
+4. UI5 provides a URL parameter to simulate another browser language. Add `?sap-ui-language=de` to the URL shown in your browser. UI5 should now start in German regardless of the language you have configured as your browser language.
 <br>![](images/04_03_0020.png) 
 
-5. You can simulate any other language e.g. English. Therefore, add `?sap-ui-language=en` behind the URL in the browser. Now, the UI5 should start in English no matter which language you have configured as your browser language.
+5. You can simulate any other language, e.g. English. Add `?sap-ui-language=en` to the URL shown in your browser. UI5 should now start in English regardless of the language you have configured as your browser language.
 <br>![](images/04_03_0010.png)
 
-5. Lets try to start the application in another not configured language. e.g Indian. Therefore, add `?sap-ui-language=in` behind the URL in the browser. Now, the UI5 should start in English, because you have configured English as your fallback locale. 
+5. Let's try to start the application in another language, e.g Hindi. Add `?sap-ui-language=hi` to the URL shown in your browser. UI5 should now start in English, because you have configured English as your fallback locale. 
 <br>![](images/04_03_0010.png) 
 
-If you wanna support Indian or any other prefered language feel free to repeat the steps described in [Exercise 4.2 Add New Languages](#exercise-42---add-new-languages) with the desired language.
+If you'd like to support Hindi, or any other language of your choice, feel free to repeat the steps described in [Exercise 4.2 Add New Languages](#exercise-42---add-new-languages) with your desired language.
 
 ## Summary
 

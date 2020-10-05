@@ -1,17 +1,17 @@
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex8/TechEd2020)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-dev164/exercises/ex8/TechEd2020/SensorManager/webapp/)
 
-# Exercise 8 - Second View with Navigation
+# Exercise 8 - Add a Second View with Navigation
 
-For sure, the customer does not only want to have the broad overview of all their icehouses. In case of an error they would like to inspect a sensor for how the temperature developed recently. You'll introduce a second view, where you display even more of the available data.
+Your customer does not only want to have a broad overview of all their icehouses. In case of an error they'd like to inspect a sensor for recent temperature data. You'll add a second view to display more available data.
 
 ## Exercise 8.1 - Create SensorStatus.view.xml
 
-Offering a new view leads to creating a new one.
+Create a new view as follows:
 
 1. Go to folder `SensorManager/webapp/view/`.
 
-2. Perform a right click on the `view` folder and click on `New File`.
+2. Right-click on the `view` folder and select `New File`.
 <br>![](images/08_01_0010.png)
 
 3. Enter `SensorStatus.view.xml` as file name.
@@ -28,15 +28,15 @@ Offering a new view leads to creating a new one.
 </mvc:View>
 ````
 
-## Exercise 8.2 - Configure the manifest.json
+## Exercise 8.2 - Configure the `manifest.json` file
 
-After creating the new view, you have to configure the view in the `manifest.json` to support routing for this view.
+After creating the new view, you'll next add routing information for it to the `manifest.json` file.
 
 1. Open `SensorManager/webapp/manifest.json`.
 
 2. Go to section `sap.ui5` / `routing` / `routes`.
 
-3. Add a new entry in the `routes` configuration. Note, that the new route contains a patch segment in brackets: `{index}`. This will later pass the currently selected sensor as a parameter in the browser hash.
+3. Add a new entry to the `routes` configuration. Note that the new route contains a patch segment in brackets: `{index}`. This will later pass the currently selected sensor as a parameter in the browser hash.
 
 ***SensorManager/webapp/manifest.json***
 
@@ -50,7 +50,7 @@ After creating the new view, you have to configure the view in the `manifest.jso
 
 4. Go to section `sap.ui5` / `routing` / `targets`.
 
-5. Add a new entry in the `targets` configuration where you have to pass `SensorStatus` as the `viewName`.
+5. Add a new entry to the `targets` configuration. Here, you need to pass `SensorStatus` as the `viewName`.
 
 ***SensorManager/webapp/manifest.json***
 
@@ -62,16 +62,16 @@ After creating the new view, you have to configure the view in the `manifest.jso
 }
 ````
 
-6. Lets see if the newly created view can be opened. Therefore switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the browser hash. Perform a reload of the page. The UI5 application is refreshed and the newly created page is displayed.
+6. Let's see if the newly created view can be opened. Switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the browser hash and reload the page. The UI5 application is refreshed, and the newly created page is displayed.
 <br>![](images/08_02_0010.png)
 
-## Exercise 8.3 - Implement the navigation to the new view
+## Exercise 8.3 - Implement Navigation to the New View
 
-Fine. You can access the newly created view. Now, you have to implement logic to navigate from your first view to the newly created view.
+Fine. You can access the newly created view. Next, you need to implement logic to navigate from your first view to the newly created one.
 
 1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
-2. Create the function `navToSensorStatus`. Here you get the index of the currently selected sensor and navigate to new view by passing also the index of the sensor.
+2. Create the function `navToSensorStatus`. Here, you get the index of the currently selected sensor and navigate to the new view by passing the index.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -82,13 +82,13 @@ navToSensorStatus: function(oEvent) {
 }
 ````
 
-## Exercise 8.4 - Assign the navigation logic to the sensor items
+## Exercise 8.4 - Assign the Navigation Logic to the Sensor Items
 
-After implementing the navigation logic you have to assign it to a control.
+After implementing the navigation logic you'll need to assign it to a control, so it can be triggered by the user.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Add the `press` attribute to the `sap.m.CustomListItem` and assign the newly created function.
+2. Add the `press` event to the `sap.m.CustomListItem` control and assign the newly created function.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -96,21 +96,21 @@ After implementing the navigation logic you have to assign it to a control.
 <CustomListItem type="Active" press=".navToSensorStatus">
 ````
 
-3. Lets see if the navigation logic works. Therefore switch to the browser tab with the opened application preview. Remove any entered content after the `index.html`. Perform a reload of the page. Click on any prefered sensor. The navigation took place and you see the newly created view.
+3. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page. Click any sensor. The navigation takes place, and you see the newly created view.
 <br>![](images/08_04_0010.png)
 
 ## Exercise 8.5 - Create SensorStatus.controller.js
-Nice. Now, lets implement the navigation back to the `Sensors.view.xml`. Therefore you need a new controller for the newly created view.
+Nice. Now let's implement the navigation back to `Sensors.view.xml`. To do this, you'll need a new controller for the newly created view.
 
 1. Go to folder `SensorManager/webapp/controller/`.
 
-2. Perform a right click on the `controller` folder and click on `New File`.
+2. Right-click on the `controller` folder and select `New File`.
 <br>![](images/08_05_0010.png)
 
 3. Enter `SensorStatus.controller.js` as file name.
 <br>![](images/08_05_0020.png)
 
-4. Copy and paste the empty controller definition into the newly created `SensorStatus.controller.js`.
+4. Copy and paste the controller definition given below into the newly created `SensorStatus.controller.js`.
 
 ***SensorManager/webapp/controller/SensorStatus.controller.js***
 
@@ -128,19 +128,19 @@ sap.ui.define([
 
 5. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
 
-6. Assign the newly created controller to the view with the attribute `controllerName`.
+6. Using the `controllerName` attribute, assign the newly created controller to the view.
 
 ````xml
 <mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 ````
 
-## Exercise 8.6 - Implement navigation back to Sensors.view.xml
+## Exercise 8.6 - Implement the Back-Navigation to Sensors.view.xml
 
-Now, you have to implement the navigation logic.
+Next you need to implement the navigation logic.
 
 1. Open `SensorManager/webapp/controller/SensorStatus.controller.js`.
 
-2. Add the function `navToSensors` which uses the `navTo` function to navigate to the `RouteSensors` route which points to the `Sensors.view.xml`.
+2. Add a `navToSensors` function, which uses the `navTo` method to navigate the `RouteSensors` route, which points to the `Sensors.view.xml` view.
 
 ***SensorManager/webapp/controller/SensorStatus.controller.js***
 
@@ -154,7 +154,7 @@ return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
 
 3. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
 
-4. Add the `navButtonPress` attribute to the `sap.m.Page` and assign the newly created function `navToSensors`.
+4. Add the `navButtonPress` event to the `sap.m.Page` control and assign the newly created `navToSensors` function to it.
 
 ***SensorManager/webapp/view/SensorStatus.view.xml***
 
@@ -163,18 +163,18 @@ return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
 </Page>
 ````
 
-5. Lets see if the navigation logic works. Therefore switch to the browser tab with the opened application preview. Remove any entered content after the `index.html`. Perform a reload of the page. 
+5. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page. 
 <br>![](images/08_06_0010.png)
 
-6. Click on any prefered sensor. The navigation took place and you see the newly created view.
+6. Click any sensor. The navigation takes place, and you see the newly created view.
 <br>![](images/08_06_0020.png)
 
-7. Now, press the "&#8592;" button and with that you'll navigate back to the sensor list.
+7. Click the "&#8592;" button to navigate back to the sensor list.
 <br>![](images/08_06_0030.png)
 
 ## Summary
 
-Congratulations, you achieved the [Exercise 8 - Second View with Navigation](#exercise-8---second-view-with-navigation) exercise.
+Congratulations, you completed [Exercise 8 - Second View with Navigation](#exercise-8---second-view-with-navigation)!
 
 Continue to [Exercise 9 - Card with NumericHeader](../ex9/README.md).
 

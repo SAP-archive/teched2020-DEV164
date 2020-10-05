@@ -3,11 +3,11 @@
 
 # Exercise 5 - Improve Visualization
 
-You achieved a lot in the previous exercises. Now, its time to pimp your UI5 application with some visual effects.
+You achieved a lot in the previous exercises. Now it's time to dress up your UI5 application with some visual effects!
 
 ## Exercise 5.1 - Enhance Sensors.view.xml
 
-To give the customer the best possible overview, add some color to your application! Therefore you introduce a new layout and structure for the item and also show an `sap.ui.core.Icon` there.
+To give the customer the best possible overview, add some color to your application. Introduce a new layout and structure for the item, and also show an `sap.ui.core.Icon` there.
 
 1. Open `Sensors.view.xml` and add the xml namespace `xmlns:core="sap.ui.core` to the view to have the `sap.ui.core.Icon` available.
 
@@ -23,7 +23,7 @@ To give the customer the best possible overview, add some color to your applicat
     displayBlock="true">
 ````
 
-2. Add a temperature icon and layouting to the `sap.m.CustomListItem`. `sapUiSmallMarginTop` and `sapUiSmallMarginEnd` are predefined device agnostic css classes which add spacing to controls. `sap.m.HBox`and `sap.m.VBox` are helpers for layouting your application.
+2. Add a temperature icon as well as layouting to the `sap.m.CustomListItem` control. `sapUiSmallMarginTop` and `sapUiSmallMarginEnd` are predefined device agnostic css classes, which add spacing to controls. `sap.m.HBox`and `sap.m.VBox` are helpers for layouting your application.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -51,13 +51,13 @@ In this exercise you'll enhance your application with some additional controller
 
 1. Go to folder `SensorManager/webapp/controller/`.
 
-2. Perform a right click on the `controller` folder and click on `New File`.
+2. Right-click on the `controller` folder and select `New File`.
 <br>![](images/05_02_0010.png)
 
-3. Enter `Sensors.controller.js` as file name.
+3. Enter `Sensors.controller.js` as the file name.
 <br>![](images/05_02_0020.png)
 
-4. All functions defined in the Controller can be used in your View. This gives you more flexibility to implement specific functionality to improve the visualization in your View. Copy and paste following code into `Sensors.controller.js`.
+4. All functions defined in the Controller can be used in your View. This gives you more flexibility to implement specific functionality to improve the visualization in your View. Copy and paste the following code into `Sensors.controller.js`:
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -76,7 +76,7 @@ sap.ui.define([
   });
 ````
 
-5. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them lateron during this exercise.
+5. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them later on during this exercise.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -89,7 +89,7 @@ sap.ui.define([
     "use strict";
 ````
 
-6. Your next goal is to show a `sap.m.MessageToast` when your sensor data is loaded. Therefore paste following content to the `onInit` function in the `Sensors.controller.js` and add function `getSensorModel` to get the sensor model.
+6. Your next goal is to show an `sap.m.MessageToast` when your sensor data is loaded. Paste the following content into the `onInit` function of `Sensors.controller.js`. This also adds a function `getSensorModel` to retrieve the sensor model.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -106,11 +106,11 @@ getSensorModel: function(){
 
 ## Exercise 5.3 - Assign Controller to View
 
-Now, its time to tell the view which controller is associated with it. 
+Now you need to tell your view which controller is associated with it. 
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Add the `controllerName` attribute to the view and give the controller name `keepcool.SensorManager.controller.Sensors`. This is necessary as then the Controller's functions can be used in the View. UI5 maps this path to the `SensorManager/webapp/controller/Sensors.controller.js`.
+2. Add the `controllerName` attribute to the view and enter the controller name `keepcool.SensorManager.controller.Sensors`. The Controller's functions can then be used in your View. UI5 maps this path to the `SensorManager/webapp/controller/Sensors.controller.js` file.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -125,12 +125,12 @@ Now, its time to tell the view which controller is associated with it.
     displayBlock="true">
 ````
 
-3. Lets see if your UI5 application is able to show the `sap.m.MessageToast`. Therefore switch to the browser tab with the opened application preview. Perform a page reload. The `sap.m.MessageToast` should be displayed and confirms that your sensor data is loaded successfully.
+3. Let's see if your UI5 application is able to show the `sap.m.MessageToast`! Switch to the browser tab with the opened application preview and reload the page. The `sap.m.MessageToast` should be displayed to confirm that your sensor data has been loaded successfully.
 <br>![](images/05_03_0010.png)
 
-## Exercise 5.4 - Create your first Formatter
+## Exercise 5.4 - Create your First Formatter
 
-Now, your goal is to bring some color to the user interface. Based on the actual temperature of the sensor you want to display the icon in the according color. Therefore you can use the formatter concept of UI5.
+Your next goal is to bring some color to the user interface. You'd like to display the icon in a suitable color which is based on the actual temperature of the sensor. To do this, you can use the formatter concept of UI5.
 
 1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
 
@@ -156,11 +156,11 @@ formatIconColor: function(iTemperature) {
 ## Exercise 5.5 - Add the Formatter in your View
 
 
-You're almost at the finish. The last piece is adding the newly created formatter function to the binding of your icon.
+You're almost done. The last piece is adding the newly created formatter function to the binding of your icon.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`. 
 
-2. Add the `color` property to the `sap.ui.core.Icon` definition, bind the `color` property to path `sensors>temperature/value` and assign the formatter function to the binding.
+2. Add the `color` property to the `sap.ui.core.Icon` definition, bind the `color` property to the path `sensors>temperature/value`, and assign the formatter function to the binding.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -170,12 +170,12 @@ You're almost at the finish. The last piece is adding the newly created formatte
     class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
 ````
 
-3. Lets see if your UI5 application is showing colored icons depending on the sensor data. Therefore switch to the browser tab with the opened application preview. Perform a page reload. The icons of the sensors are displayed either in blue (neutral), yellow (hot) or red (negative).
+3. Let's see if your UI5 application can now color icons depending on the sensor data! Switch to the browser tab with the opened application preview and reload the page. The sensor icons should be displayed either in blue (neutral), yellow (hot) or red (negative).
 <br>![](images/05_05_0010.png)
 
 ## Summary
 
-Congratulations, you achieved the [Exercise 5 - Improve Visualization](#xxercise-5---improve-visualization) exercise.
+Congratulations, you completed the [Exercise 5 - Improve Visualization](#xxercise-5---improve-visualization) exercise!
 
 Continue to [Exercise 6 - Filtering with the IconTabBar](../ex6/README.md).
 

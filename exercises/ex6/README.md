@@ -1,17 +1,17 @@
 [![code](https://flat.badgen.net/badge/code/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex6/TechEd2020)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-dev164/exercises/ex6/TechEd2020/SensorManager/webapp/)
 
-# Exercise 6 - Filtering with the IconTabBar
+# Exercise 6 - Filtering With the IconTabBar
 
-As your customer needs the full overview to make decisions quickly, you will give him an option to narrow down the list of sensors, based on the actual temperature of a sensor.
+As your customer needs the full overview to make decisions quickly, you will give them an option to narrow down the list of sensors based on the current sensor temperature.
 
 ## Exercise 6.1 - Add new IconTabFilters to the Sensors.view.xml
 
-Therefore we enhance our `sap.m.IconTabBar`.
+For this, we enhance our `sap.m.IconTabBar` control.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Add `sap.m.IconTabFilter` elements to the items aggregation of the `sap.m.IconTabBar`. Those will be visible as Icons on top of the bar and the user can click them to filter the list.
+2. Add `sap.m.IconTabFilter` elements to the `items` aggregation of the `sap.m.IconTabBar` control. They will be visible as icons above the bar, so that the user can click them to filter the list.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -27,16 +27,16 @@ Therefore we enhance our `sap.m.IconTabBar`.
     <content>
 ````
 
-3. Lets see if your UI5 application is showing the newly introduced `sap.m.IconTabBarFilter` Therefore switch to the browser tab with the opened application preview. Perform a page reload.
+3. Let's see if your UI5 application now displays the newly introduced `sap.m.IconTabFilter` elements! Switch to the browser tab with the opened application preview and reload the page.
 <br>![](images/06_01_0010.png)
 
 ## Exercise 6.2 - Implement the Filtering
 
-In previous section you've added all necessary controls. Now, you've to implement the filtering logic.
+In the previous section you've added all necessary controls. Next, you'll implement the filtering logic.
 
 1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
-2. Add the module `sap/ui/model/Filter` as dependency to the `Sensors.controller.js`.
+2. Add the module `sap/ui/model/Filter` as a dependency to `Sensors.controller.js`.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -50,7 +50,7 @@ sap.ui.define([
     "use strict";
 ````
 
-3. Implement the `onSensorSelect` function for filtering the sensor list items checking the `status` property. We make also use of the previously defined threshold and use some settings of the filter to narrow down the result. `LT` for example means "lower-than".
+3. Implement the `onSensorSelect` function for filtering the sensor list items by checking their `status` property. We'll also make use of the previously defined threshold and use some filter settings to narrow down the result. `LT` for example means "less than".
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -79,11 +79,11 @@ onSensorSelect: function (oEvent) {
 
 ## Exercise 6.3 - Assign the Filtering to the IconTabBar
 
-The filtering logic is writtem. Now, you have to assign the filtering function to the binding of the `sap.m.IconTabBar`.
+The filtering logic is written. Next, you need to assign the filtering function to the binding of the `sap.m.IconTabBar`.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
-2. Bind the `onSensorSelect` function to `select` event of the `IconTabBar`. Each time one of the `sap.m.IconTabBarFilter` is clicked, this function will be called.
+2. Bind the `onSensorSelect` function to the `select` event of the `IconTabBar`. Whenever one of the `sap.m.IconTabFilter` elements is clicked, this function will be called.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
@@ -91,12 +91,12 @@ The filtering logic is writtem. Now, you have to assign the filtering function t
 <IconTabBar id="idIconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">
 ````
 
-3. Lets see if your UI5 application is filtering the sensor data correctly. Therefore switch to the browser tab with the opened application preview. Perform a page reload. Click on the *Error* icon. Only sensors with too high temperature are displayed.
+3. Let's see if your UI5 application is now able to filter the sensor data correctly. Switch to the browser tab with the opened application preview and reload the page. Click the *Error* icon. Only sensors with too high a temperature are displayed.
 <br>![](images/06_03_0010.png)
 
-## Exercise 6.4 - Display the total number of sensors in every IconTabFilter
+## Exercise 6.4 - Display the Total Number of Sensors
 
-Your customer wishes to display the amount of sensors. Therefore, you can introduce the `count` property of `sap.m.IconTabFilter`.
+Your customer wishes to display the total number of sensors as well. For this, you can introduce the `count` property of `sap.m.IconTabFilter`.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
@@ -110,12 +110,12 @@ Your customer wishes to display the amount of sensors. Therefore, you can introd
         <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All" count="{=${sensorModel>/sensors}.length}"/>
 ````
 
-3. Lets see if your UI5 application is displaying the total number of sensors correctly. Therefore switch to the browser tab with the opened application preview. Perform a page reload. Do you see *100*? Yeah!
+3. Let's see if your UI5 application can display the total number of sensors correctly. Switch to the browser tab with the opened application preview and reload the page. Do you see *100*? Yeah!
 <br>![](images/06_04_0010.png)
 
 ## Summary
 
-Hooray! You've successfully accomplished [Exercise 6 - Filtering with the IconTabBar](#exercise-6---filtering-with-the-icontabbar). 
+Hooray! You've successfully completed [Exercise 6 - Filtering with the IconTabBar](#exercise-6---filtering-with-the-icontabbar). 
 
 Continue to [Exercise 7 - Fragment containing a SelectDialog](../ex7/README.md).
 
