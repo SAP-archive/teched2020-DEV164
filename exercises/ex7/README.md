@@ -163,9 +163,9 @@ onSensorSelect: function (oEvent) {
 
     if (sKey === "Cold") {
         this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
-    } else if (sKey === "Critical") {
+    } else if (sKey === "Warm") {
         this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
-    } else if (sKey === "Warning") {
+    } else if (sKey === "Hot") {
         this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
     } else {
         this._aStatusFilters = [];
