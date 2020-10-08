@@ -23,7 +23,7 @@ After completing these steps you'll have created your first UI5 application.
 3. Enter the following settings in the *Target Running Environment* step: 
     1. Select *Cloud Foundry* as target running environment.
     2. Select *SAPUI5 Application* as application template and click *Next*.</ol>
-<br><br>![](images/01_01_0030.png)<br><br><ol>
+<br>![](images/01_01_0030.png)<br><br><ol>
 
 4. Enter *TechEd2020* as project name and click *Next*.
 <br><br>![](images/01_01_0040.png)<br><br>
@@ -36,7 +36,7 @@ After completing these steps you'll have created your first UI5 application.
     2. Choose *No* for authentication usage.
     3. Enter *keepcool* as your namespace.
     4. Choose *Yes* for Karma support and press *Next*.</ol>
-<br><br>![](images/01_01_0060.png)<br><br><ol>
+<br>![](images/01_01_0060.png)<br><br><ol>
 
 7. Enter *App* as your view name, choose *No* for data service usage, and press *Next*.
 <br><br>![](images/01_01_0070.png)<br><br>
