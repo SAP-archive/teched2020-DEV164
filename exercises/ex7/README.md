@@ -12,10 +12,10 @@ A dialog is a perfect scenario in which to use a `sap.ui.core.Fragment`. This UI
 1. Go to folder `SensorManager/webapp/view/`.
 
 2. Right-click on the `view` folder and select `New File`.
-<br>![](images/07_01_0010.png)
+<br><br>![](images/07_01_0010.png)<br><br><br>
 
 3. Enter `CustomerSelectDialog.fragment.xml` as file name.
-<br>![](images/07_01_0020.png)
+<br><br>![](images/07_01_0020.png)<br><br><br>
 
 4. Copy and paste the following content into the newly created `CustomerSelectDialog.fragment.xml`. With that you create a `sap.m.SelectDialog`, which offers functionality to help users select their preferred icehouse clients.
 
@@ -100,7 +100,7 @@ After implementing the dialog opening logic, you need to assign this logic to a 
 ````
 
 3. Switch the browser tab to the application preview and refresh the page to see how the user interface of your application changes. Click the menu button in upper right corner.
-<br>![](images/07_03_0010.png)
+<br><br>![](images/07_03_0010.png)<br><br><br>
 
 ## Exercise 7.4 - Implement the 'Filter Customer' Logic
 
@@ -195,13 +195,13 @@ One last thing is missing: You need to assign the newly created functions to the
 ````
 
 3. It's demo time! Switch the browser tab to the application preview and refresh the page to see how the user interface of your UI5 application changes. Select the *menu* button in upper right corner. Enter some parts of customer names and check if the customer list is filtered.
-<br>![](images/07_06_0010.png)
+<br><br>![](images/07_06_0010.png)<br><br><br>
 
 4. Select some preferred customers and click the *Select* button
-<br>![](images/07_06_0020.png)
+<br><br>![](images/07_06_0020.png)<br><br><br>
 
 5. The list of sensors is filtered by both temperature status and preferred customers.
-<br>![](images/07_06_0030.png)
+<br><br>![](images/07_06_0030.png)<br><br><br>
 
 ## Summary
 

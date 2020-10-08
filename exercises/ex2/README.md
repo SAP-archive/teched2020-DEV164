@@ -32,10 +32,10 @@ SAP Fiori 3 is SAP’s new target design system. It evolves the SAP Fiori design
 After completing these steps you'll have written your first UI5 view.
 
 1. Right-click on the `SensorManager/webapp/view` folder and select `New File`.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+<br><br>![](/exercises/ex2/images/02_02_0010.png)<br><br><br>
 
 2. Enter `Sensors.view.xml` as file name and confirm.
-<br>![](/exercises/ex2/images/02_02_0020.png)
+<br><br>![](/exercises/ex2/images/02_02_0020.png)<br><br><br>
 
 3. Now we'll add some content to your newly created UI5 view. Let's start with an empty `sap.m.IconTabBar`.
 
@@ -120,7 +120,7 @@ Let's adjust the `manifest.json` to enable the routing feature for your newly cr
 4. Open the tab with the application preview and reload it. The application is being updated, and you can see an empty `sap.m.IconTabBar`.
   * [Optional] If you have closed the tab with the application preview accidentally, click in the header toolbar on *View* and then select *Find Command...*. Enter here *Ports: Preview* and confirm. A new tab with the application preview opens.</ul>
 
-<br>![](images/02_02_0030.png)
+<br><br>![](images/02_02_0030.png)<br><br><br>
 
 ## Summary
 

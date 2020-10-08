@@ -45,7 +45,7 @@ temperatureUnit=°C
 ````
 
 4. Switch browser tabs and refresh the page to see the changed user interface of your UI5 application.
-<br>![](images/04_01_0010.png)
+<br><br>![](images/04_01_0010.png)<br><br><br>
 
 ## Exercise 4.2 - Add New Languages
 
@@ -141,16 +141,16 @@ Usually, only the `i18n.properties` file is maintained by developers. The langua
 ````
 
 3. Let's see if your UI5 application is able to start in English and German! Switch to the browser tab with an opened application preview and reload the page. The UI5 application should start in English or in German, depending on your browser language.
-<br>![](images/04_03_0010.png) 
+<br><br>![](images/04_03_0010.png)<br><br><br> 
 
 4. UI5 provides a URL parameter to simulate another browser language. Add `?sap-ui-language=de` to the URL shown in your browser. UI5 should now start in German regardless of the language you have configured as your browser language.
-<br>![](images/04_03_0020.png) 
+<br><br>![](images/04_03_0020.png)<br><br><br> 
 
 5. You can simulate any other language, e.g. English. Add `?sap-ui-language=en` to the URL shown in your browser. UI5 should now start in English regardless of the language you have configured as your browser language.
-<br>![](images/04_03_0010.png)
+<br><br>![](images/04_03_0010.png)<br><br><br>
 
 5. Let's try to start the application in another language, e.g Hindi. Add `?sap-ui-language=hi` to the URL shown in your browser. UI5 should now start in English, because you have configured English as your fallback locale. 
-<br>![](images/04_03_0010.png) 
+<br><br>![](images/04_03_0010.png)<br><br><br> 
 
 If you'd like to support Hindi, or any other language of your choice, feel free to repeat the steps described in [Exercise 4.2 Add New Languages](#exercise-42---add-new-languages) with your desired language.
 

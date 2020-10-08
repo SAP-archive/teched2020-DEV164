@@ -12,10 +12,10 @@ Create a new view as follows:
 1. Go to folder `SensorManager/webapp/view/`.
 
 2. Right-click on the `view` folder and select `New File`.
-<br>![](images/08_01_0010.png)
+<br><br>![](images/08_01_0010.png)<br><br><br>
 
 3. Enter `SensorStatus.view.xml` as file name.
-<br>![](images/08_01_0020.png)
+<br><br>![](images/08_01_0020.png)<br><br><br>
 
 4. Add an empty `sap.m.Page` to the newly created view.
 
@@ -63,7 +63,7 @@ After creating the new view, you'll next add routing information for it to the `
 ````
 
 6. Let's see if the newly created view can be opened. Switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the browser hash and reload the page. The UI5 application is refreshed, and the newly created page is displayed.
-<br>![](images/08_02_0010.png)
+<br><br>![](images/08_02_0010.png)<br><br><br>
 
 ## Exercise 8.3 - Implement Navigation to the New View
 
@@ -97,7 +97,7 @@ After implementing the navigation logic you'll need to assign it to a control, s
 ````
 
 3. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page. Click any sensor. The navigation takes place, and you see the newly created view.
-<br>![](images/08_04_0010.png)
+<br><br>![](images/08_04_0010.png)<br><br><br>
 
 ## Exercise 8.5 - Create SensorStatus.controller.js
 Nice. Now let's implement the navigation back to `Sensors.view.xml`. To do this, you'll need a new controller for the newly created view.
@@ -105,10 +105,10 @@ Nice. Now let's implement the navigation back to `Sensors.view.xml`. To do this,
 1. Go to folder `SensorManager/webapp/controller/`.
 
 2. Right-click on the `controller` folder and select `New File`.
-<br>![](images/08_05_0010.png)
+<br><br>![](images/08_05_0010.png)<br><br><br>
 
 3. Enter `SensorStatus.controller.js` as file name.
-<br>![](images/08_05_0020.png)
+<br><br>![](images/08_05_0020.png)<br><br><br>
 
 4. Copy and paste the controller definition given below into the newly created `SensorStatus.controller.js`.
 
@@ -164,13 +164,13 @@ return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
 ````
 
 5. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page. 
-<br>![](images/08_06_0010.png)
+<br><br>![](images/08_06_0010.png)<br><br><br>
 
 6. Click any sensor. The navigation takes place, and you see the newly created view.
-<br>![](images/08_06_0020.png)
+<br><br>![](images/08_06_0020.png)<br><br><br>
 
 7. Click the "&#8592;" button to navigate back to the sensor list.
-<br>![](images/08_06_0030.png)
+<br><br>![](images/08_06_0030.png)<br><br><br>
 
 ## Summary
 

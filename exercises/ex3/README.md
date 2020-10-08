@@ -14,10 +14,10 @@ To simulate a source providing sensor data, you'll now add some sensor data to y
 2. Right-click on the `localService` folder.
 
 3. Select `New File`.
-<br>![](images/03_01_0010.png)
+<br><br>![](images/03_01_0010.png)<br><br><br>
 
 4. Enter `sensors.json` as file name.
-<br>![](images/03_01_0020.png)
+<br><br>![](images/03_01_0020.png)<br><br><br>
 
 5. Copy and paste the content of [sensors.json](data/sensors.json) into the newly created file.
 
@@ -93,7 +93,7 @@ After configuring the data service, it's now time to enrich your `Sensors.view.x
 ````
 
 4. Switch browser tabs and refresh to see the updated UI5 application.
-<br>![](images/03_03_0010.png)
+<br><br>![](images/03_03_0010.png)<br><br><br>
 
 ## Exercise 3.4 - Add Data Binding
 
@@ -122,7 +122,7 @@ After adding the `sap.f.GridList` control, you'll need to connect the control to
 ````
 
 4. Let's see if our UI5 application displays the correct sensor data. Switch to the browser tab with the opened application preview and reload the page.
-<br>![](images/03_04_0010.png) 
+<br><br>![](images/03_04_0010.png)<br><br><br> 
 
 ## Summary
 
