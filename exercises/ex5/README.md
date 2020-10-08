@@ -170,7 +170,7 @@ You're almost done. The last piece is adding the newly created formatter functio
     class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
 ````
 
-3. Let's see if your UI5 application can now color icons depending on the sensor data! Switch to the browser tab with the opened application preview and reload the page. The sensor icons should be displayed either in blue (neutral), yellow (hot) or red (negative).
+3. Let's see if your UI5 application can now color icons depending on the sensor data! Switch to the browser tab with the opened application preview and reload the page. The sensor icons should be displayed either in blue (default), yellow (critical) or red (negative).
 <br><br>![](images/05_05_0010.png)<br><br>
 
 ## Summary

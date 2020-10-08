@@ -170,7 +170,7 @@ return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
 6. Click any sensor. The navigation takes place, and you see the newly created view.
 <br><br>![](images/08_06_0020.png)<br><br>
 
-7. Click the "&#8592;" button to navigate back to the sensor list.
+7. Click the "<" button to navigate back to the sensor list.
 <br><br>![](images/08_06_0030.png)<br><br>
 
 ## Summary

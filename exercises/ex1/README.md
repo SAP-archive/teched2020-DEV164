@@ -51,10 +51,10 @@ After completing these steps you'll have created your first UI5 application.
 
 It's time for a first preview of your newly created application!
 
-1. Click the "&#9654;" icon in the left icon bar.
+1. Click the &#9654; icon in the left icon bar.
 <br><br>![](images/01_02_0010.png)<br><br>
 
-2. Click the "&plusb;" icon to add a new configuration to *Run Configurations*.
+2. Click the &plusb; icon to add a new configuration to *Run Configurations*.
 <br><br>![](images/01_02_0020.png)<br><br>
 
 3. After a short delay, a list pops up at the top in the center of your screen. Here, select the module *SensorsTest* that you've just created.

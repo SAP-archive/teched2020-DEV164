@@ -65,9 +65,9 @@ onSensorSelect: function (oEvent) {
 
     if (sKey === "Cold") {
         this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
-    } else if (sKey === "Critical") {
+    } else if (sKey === "Warm") {
         this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
-    } else if (sKey === "Warning") {
+    } else if (sKey === "Hot") {
         this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
     } else {
         this._aStatusFilters = [];
@@ -91,7 +91,7 @@ The filtering logic is written. Next, you need to assign the filtering function 
 <IconTabBar id="idIconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">
 ````
 
-3. Let's see if your UI5 application is now able to filter the sensor data correctly. Switch to the browser tab with the opened application preview and reload the page. Click the *Error* icon. Only sensors with too high a temperature are displayed.
+3. Let's see if your UI5 application is now able to filter the sensor data correctly. Switch to the browser tab with the opened application preview and reload the page. Click the *Too Hot* icon. Only sensors with too high a temperature are displayed.
 <br><br>![](images/06_03_0010.png)<br><br>
 
 ## Exercise 6.4 - Display the Total Number of Sensors
