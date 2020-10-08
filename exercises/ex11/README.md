@@ -61,7 +61,7 @@ After logging in you're asked to specify your desired Cloud Foundry organization
 <br><br>![](images/11_03_0040.png)<br><br>
 
 
-## Exercise 11.4 - Configure the Approuter for Redirect
+## Exercise 11.4 - Configure the App Router for Redirect
 
 Your application will be available at `https://<approuter-url>/<app/id>`, and the application router will not redirect any traffic that hits the root URL. In this exercise, you will change this, so that your application will also be available at `https://<approuter-url>/`.
 
@@ -97,7 +97,7 @@ builder:
       - "/test/**"
 ````
 
-## Exercise 11.6 - Build your Application
+## Exercise 11.6 - Build Your Application
 
 Now it's time to build your application. Yeah!
 
@@ -110,7 +110,7 @@ Now it's time to build your application. Yeah!
 <br><br>![](images/11_06_0020.png)<br><br>
 
 
-## Exercise 11.7 - Deploy your Application
+## Exercise 11.7 - Deploy Your Application
 
 The build step has created a file named `TechEd2020_0.0.1.mtar` located under `mta_archives`. This file contains your build.
 

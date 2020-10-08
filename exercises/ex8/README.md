@@ -65,7 +65,7 @@ After creating the new view, you'll next add routing information for it to the `
 6. Let's see if the newly created view can be opened. Switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the browser hash and reload the page. The UI5 application is refreshed, and the newly created page is displayed.
 <br><br>![](images/08_02_0010.png)<br><br>
 
-## Exercise 8.3 - Implement Navigation to the New View
+## Exercise 8.3 - Implement the Navigation to the New View
 
 Fine. You can access the newly created view. Next, you need to implement logic to navigate from your first view to the newly created one.
 

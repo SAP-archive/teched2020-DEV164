@@ -47,7 +47,7 @@ temperatureUnit=°C
 4. Switch browser tabs and refresh the page to see the changed user interface of your UI5 application.
 <br><br>![](images/04_01_0010.png)<br><br>
 
-## Exercise 4.2 - Add New Languages
+## Exercise 4.2 - Add Additional Languages
 
 Your UI5 application is prepared for localization. No matter which browser language is configured, your UI5 application currently displays the texts of the `i18n.properties` file.
 Let's provide new language files for English and German.
