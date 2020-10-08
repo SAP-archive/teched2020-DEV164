@@ -52,10 +52,10 @@ In this exercise you'll enhance your application with some additional controller
 1. Go to folder `SensorManager/webapp/controller/`.
 
 2. Right-click on the `controller` folder and select `New File`.
-<br><br>![](images/05_02_0010.png)<br><br><br>
+<br><br>![](images/05_02_0010.png)<br><br>
 
 3. Enter `Sensors.controller.js` as the file name.
-<br><br>![](images/05_02_0020.png)<br><br><br>
+<br><br>![](images/05_02_0020.png)<br><br>
 
 4. All functions defined in the Controller can be used in your View. This gives you more flexibility to implement specific functionality to improve the visualization in your View. Copy and paste the following code into `Sensors.controller.js`:
 
@@ -126,7 +126,7 @@ Now you need to tell your view which controller is associated with it.
 ````
 
 3. Let's see if your UI5 application is able to show the `sap.m.MessageToast`! Switch to the browser tab with the opened application preview and reload the page. The `sap.m.MessageToast` should be displayed to confirm that your sensor data has been loaded successfully.
-<br><br>![](images/05_03_0010.png)<br><br><br>
+<br><br>![](images/05_03_0010.png)<br><br>
 
 ## Exercise 5.4 - Create your First Formatter
 
@@ -171,7 +171,7 @@ You're almost done. The last piece is adding the newly created formatter functio
 ````
 
 3. Let's see if your UI5 application can now color icons depending on the sensor data! Switch to the browser tab with the opened application preview and reload the page. The sensor icons should be displayed either in blue (neutral), yellow (hot) or red (negative).
-<br><br>![](images/05_05_0010.png)<br><br><br>
+<br><br>![](images/05_05_0010.png)<br><br>
 
 ## Summary
 

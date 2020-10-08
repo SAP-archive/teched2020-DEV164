@@ -85,7 +85,7 @@ sap.ui.define([
 ````
 
 3. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with the customer name.
-<br><br>![](images/09_02_0010.png)<br><br><br>
+<br><br>![](images/09_02_0010.png)<br><br>
 
 ## Exercise 9.3 - Add a NumericHeader to the Card
 
@@ -113,7 +113,7 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 ````
 
 2. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card which includes temperature information.
-<br><br>![](images/09_03_0010.png)<br><br><br>
+<br><br>![](images/09_03_0010.png)<br><br>
 
 3. Add a formatter to provide semantic coloring for the card header.
 The formatter fetches both the threshold and the current temperature from the model. On the basis of these values it then returns the `sap.m.ValueColor`. 
@@ -168,7 +168,7 @@ sap.ui.define([
 ````
 
 6. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with fancy-colored temperature information depending on the value of the temperature.
-<br><br>![](images/09_03_0020.png)<br><br><br>
+<br><br>![](images/09_03_0020.png)<br><br>
 
 ## Summary
 
