@@ -31,7 +31,7 @@ Now you can login to your Cloud Foundry environment directly from SAP Business A
 1. Open SAP Business Application Studio. Click in the header toolbar on *View* and then select *Find Command...*. Enter *CF: Login to cloud foundry*.
 <br><br>![](images/11_02_0010.png)<br><br>
 
-2. Enter the Cloud Foundry endpoint you'd like to use. If your environment runs in the EU10 region, this is `https://api.cf.eu10.hana.ondemand.com`.
+2. Enter the Cloud Foundry API endpoint you'd like to use. If your environment runs in the EU10 region, this is `https://api.cf.eu10.hana.ondemand.com`. If you wanna host your application in another region, please check following [site](https://help.sap.com/viewer/3504ec5ef16548778610c7e89cc0eac3/LATEST/en-US/350356d1dc314d3199dca15bd2ab9b0e.html) to get an overview about all available regions and respective API endpoints.
 <br><br>![](images/11_02_0020.png)<br><br>
 
 3. Enter the email address you have used for registering your SAP Cloud Platform account.

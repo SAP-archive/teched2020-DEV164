@@ -56,7 +56,7 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 7.3 - Add a Dialog Opening Button](exercises/ex7#exercise-73---add-a-dialog-opening-button)
     - [Exercise 7.4 - Implement the 'Filter Customer' Logic](exercises/ex7#exercise-74---implement-the-filter-customer-logic)
     - [Exercise 7.5 - Implement the 'Select Customer' Logic](exercises/ex7#exercise-75---implement-the-select-customer-logic)
-    - [Exercise 7.6 - Assign the Customer Change and Select Logic to the Dialog](exercises/ex7#exercise-76---assign-the-customer-change-and-select-logic-to-the-dialog)
+    - [Exercise 7.6 - Assign the 'Customer Change' and 'Customer Select' Logic to the Dialog](exercises/ex7#exercise-76---assign-the-customer-change-and-select-logic-to-the-dialog)
 - [Exercise 8 - Second View with Navigation](exercises/ex8/)
     - [Exercise 8.1 - Create SensorStatus.view.xml](exercises/ex8#exercise-81---create-sensorstatusviewxml)
     - [Exercise 8.2 - Configure the 'manifest.json' file](exercises/ex8#exercise-82---configure-the-manifestjson-file)
