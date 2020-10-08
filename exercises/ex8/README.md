@@ -131,7 +131,8 @@ sap.ui.define([
 6. Using the `controllerName` attribute, assign the newly created controller to the view.
 
 ````xml
-<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" displayBlock="true" 
+  xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 ````
 
 ## Exercise 8.6 - Implement the Back-Navigation to Sensors.view.xml
