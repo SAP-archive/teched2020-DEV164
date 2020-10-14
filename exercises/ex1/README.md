@@ -45,7 +45,7 @@ After completing these steps you'll have created your first UI5 application.
    * [Optional] If you have closed the notification window accidentally, click in the header toolbar on *View*, and select *Open...* and select the generated project.  </ul>
 <br><br>![](images/01_01_0080.png)<br><br>
 
-1. The newly created UI5 application is displayed in the File Explorer.
+9. The newly created UI5 application is displayed in the File Explorer.
 <br><br>![](images/01_01_0090.png)<br><br>
 
 ## Exercise 1.2 - Create a Run Configuration
@@ -80,7 +80,7 @@ It's time for a first preview of your newly created application!
     * [Optional] If you have closed the tab with the application preview accidentally, click in the header toolbar on View and then select *Find Command...*. Enter here Ports: Preview and confirm. A new tab with the application preview opens.
 <br><br>![](images/01_02_0090.png)<br><br>
 
-1.  The UI5 application is opened in a new tab.
+10.  The UI5 application is opened in a new tab.
 <br><br>![](images/01_02_0100.png)<br><br>
 
 ## Summary
