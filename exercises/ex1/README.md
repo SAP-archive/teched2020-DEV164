@@ -42,9 +42,10 @@ After completing these steps you'll have created your first UI5 application.
 <br><br>![](images/01_01_0070.png)<br><br>
 
 8. The project is generated, and a notification window appears in the lower right corner. Click *Open in New Workspace*.
+   * [Optional] If you have closed the notification window accidentally, click in the header toolbar on *View*, and select *Open...* and select the generated project.  </ul>
 <br><br>![](images/01_01_0080.png)<br><br>
 
-9. The newly created UI5 application is displayed in the File Explorer.
+1. The newly created UI5 application is displayed in the File Explorer.
 <br><br>![](images/01_01_0090.png)<br><br>
 
 ## Exercise 1.2 - Create a Run Configuration
@@ -54,10 +55,10 @@ It's time for a first preview of your newly created application!
 1. Click the &#9654; icon in the left icon bar.
 <br><br>![](images/01_02_0010.png)<br><br>
 
-2. Click the &plusb; icon to add a new configuration to *Run Configurations*.
+2. Click the &plusb; icon to add a new configuration to *Run Configurations*, after a short delay, a list pops up at the top in the center of your screen. 
 <br><br>![](images/01_02_0020.png)<br><br>
 
-3. After a short delay, a list pops up at the top in the center of your screen. Here, select the module *SensorsTest* that you've just created.
+3. Select the module *SensorsManager* that you've just created.
 <br><br>![](images/01_02_0030.png)<br><br>
 
 4. Specify your desired html site. Select *index.html* as the runnable file.
@@ -76,9 +77,10 @@ It's time for a first preview of your newly created application!
 <br><br>![](images/01_02_0080.png)<br><br>
 
 9. After a short delay, a popup for some optional input opens. Leave it empty and press *Enter*.
+    * [Optional] If you have closed the tab with the application preview accidentally, click in the header toolbar on View and then select *Find Command...*. Enter here Ports: Preview and confirm. A new tab with the application preview opens.
 <br><br>![](images/01_02_0090.png)<br><br>
 
-10. The UI5 application is opened in a new tab.
+1.  The UI5 application is opened in a new tab.
 <br><br>![](images/01_02_0100.png)<br><br>
 
 ## Summary
