@@ -55,7 +55,8 @@ sap.ui.define([
     "sap/m/MessageToast",
     "sap/ui/model/Filter",
     "sap/ui/core/Fragment"
-], function (Controller, IconColor, Toast, Filter, Fragment) {
+], function (Controller, IconColor, MessageToast, Filter, Fragment) {
+    "use strict"
 ````
 
 3. Implement the `onCustomerSelect` function to open the dialog. It loads the Fragment and sets the required model and properties.
@@ -92,7 +93,7 @@ After implementing the dialog opening logic, you need to assign this logic to a 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
 ````xml
-<Page>
+<Page id="page" title="{i18n>title}">
     <headerContent>
         <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}"/>
     </headerContent>
@@ -191,7 +192,11 @@ One last thing is missing: You need to assign the newly created functions to the
     contentHeight="38.3%"
     rememberSelections="true"
     confirm=".onCustomerSelectConfirm"
-    liveChange=".onCustomerSelectChange">
+    liveChange=".onCustomerSelectChange"
+    items="{
+        path: 'sensorModel>/customers',
+        sorter: {path:'name'}
+    }">
 ````
 
 3. It's demo time! Switch the browser tab to the application preview and refresh the page to see how the user interface of your UI5 application changes. Select the *menu* button in upper right corner. Enter some parts of customer names and check if the customer list is filtered.

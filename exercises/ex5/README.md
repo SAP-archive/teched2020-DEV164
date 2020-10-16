@@ -64,16 +64,16 @@ In this exercise you'll enhance your application with some additional controller
 ````js
 sap.ui.define([
     "sap/ui/core/mvc/Controller"
-  ],
-  function (Controller) {
-    "use strict";
+],
+    function (Controller) {
+        "use strict";
 
-    return Controller.extend("keepcool.SensorsTest.controller.Sensors", {
-      onInit: function () {
+        return Controller.extend("keepcool.SensorsTest.controller.Sensors", {
+            onInit: function () {
 
-      }
+            }
+        });
     });
-  });
 ````
 
 5. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them later on during this exercise.

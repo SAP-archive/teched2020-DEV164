@@ -116,13 +116,13 @@ Nice. Now let's implement the navigation back to `Sensors.view.xml`. To do this,
 
 ````js
 sap.ui.define([
-  "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller"
 ], function (Controller) {
-  "use strict";
+    "use strict";
 
-  return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
+    return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
 
-  });
+    });
 });
 ````
 
@@ -147,9 +147,9 @@ Next you need to implement the navigation logic.
 
 ````js
 return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
-  navToSensors: function() {
-    this.getOwnerComponent().getRouter().navTo("RouteSensors");
-  }
+    navToSensors: function () {
+        this.getOwnerComponent().getRouter().navTo("RouteSensors");
+    }
 });
 ````
 
