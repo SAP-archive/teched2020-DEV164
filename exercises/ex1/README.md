@@ -42,7 +42,7 @@ After completing these steps you'll have created your first UI5 application.
 <br><br>![](images/01_01_0070.png)<br><br>
 
 8. The project is generated, and a notification window appears in the lower right corner. Click *Open in New Workspace*.
-   * [Optional] If you have closed the notification window accidentally, click in the header toolbar on *View*, and select *Open...* and select the generated project.  </ul>
+   * [Optional] If you have closed the notification window accidentally, click *View* in the header toolbar, select *Open...* and pick the generated project.  </ul>
 <br><br>![](images/01_01_0080.png)<br><br>
 
 9. The newly created UI5 application is displayed in the File Explorer.
