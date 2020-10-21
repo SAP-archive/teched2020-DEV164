@@ -20,7 +20,7 @@ The requirements to follow the exercises in this repository are:
 
 
 ## Exercises
-
+- [Introduction](DEV164.pdf)
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Project Setup Using Business Application Studio](exercises/ex1/)
     - [Exercise 1.1 - Create a New UI5 Application](exercises/ex1#exercise-11---create-a-new-ui5-application)
