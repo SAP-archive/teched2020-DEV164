@@ -146,7 +146,7 @@ Next you need to implement the navigation logic.
 ***SensorManager/webapp/controller/SensorStatus.controller.js***
 
 ````js
-return Controller.extend("keepcool.SensorsTest.controller.SensorStatus", {
+return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
     navToSensors: function () {
         this.getOwnerComponent().getRouter().navTo("RouteSensors");
     }
