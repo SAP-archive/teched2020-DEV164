@@ -92,6 +92,22 @@ The content of this repository is targeting the session *DEV164 - Developing App
 ## How to obtain support
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
+## Stay in touch
+Stay in touch with the community by choosing your favourite channel.
+
+**UI5**:
+Landing page: [OpenUI5 Website](https://openui5.org/)
+Podcasts series: [UI5 Newscast](https://podcast.opensap.info/ui5-newscast/)
+Blog posts: [UI5ers Buzz](https://blogs.sap.com/tag/ui5ers-buzz/)
+Twitter: [@openui5](https://twitter.com/openui5)
+Slack: [Get Access to OpenUI5 Slack Workspace](https://ui5-slack-invite.cfapps.eu10.hana.ondemand.com/)
+
+**SAP Open Source**:
+Landing page: [Run better together with open source](https://developers.sap.com/open-source.html)
+Podcasts series: *[The Open Source Way](https://podcast.opensap.info/open-source-way/2020/10/28/corona-warn-app-behind-the-scenes/)*
+Blog posts: [open source on SAP Community](https://blogs.sap.com/tags/b2aac474-1581-4b1b-8932-de5f60b52558/)
+Twitter: [@sapopensource](https://twitter.com/sapopensource)
+
 ## License
 
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSES/Apache-2.0.txt) file.
