@@ -32,7 +32,7 @@ After completing these steps you'll have created your first UI5 application.
 <br><br>![](images/01_01_0050.png)<br><br>
 
 6. Enter the following settings in the *Basic Attributes* step:
-    1. Enter *SensorsTest* as *HTML5 module name*. 
+    1. Enter *SensorManager* as *HTML5 module name*. 
     2. Choose *No* for authentication usage.
     3. Enter *keepcool* as your namespace.
     4. Choose *Yes* for Karma support and press *Next*.</ol>
@@ -42,7 +42,7 @@ After completing these steps you'll have created your first UI5 application.
 <br><br>![](images/01_01_0070.png)<br><br>
 
 8. The project is generated, and a notification window appears in the lower right corner. Click *Open in New Workspace*.
-   * [Optional] If you have closed the notification window accidentally, click *View* in the header toolbar, select *Open...* and pick the generated project.  </ul>
+   * [Optional] If you have closed the notification window accidentally, click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
 <br><br>![](images/01_01_0080.png)<br><br>
 
 9. The newly created UI5 application is displayed in the File Explorer.
@@ -70,14 +70,14 @@ It's time for a first preview of your newly created application!
 6. Enter *Run TechEd2020-SensorManager* as the name of your new run configuration.
 <br><br>![](images/01_02_0060.png)<br><br>
 
-7. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Click the green icon *Run Module*.
+7. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
 <br><br>![](images/01_02_0070.png)<br><br>
 
 8. The application is initialized. After a few seconds, some notifications are displayed in the lower right corner. Click *Expose and Open*.
 <br><br>![](images/01_02_0080.png)<br><br>
 
 9. After a short delay, a popup for some optional input opens. Leave it empty and press *Enter*.
-    * [Optional] If you have closed the tab with the application preview accidentally, click *View* in the header toolbar, select *Find Command...* and enter: "Preview and confirm". A new tab with the application preview opens.
+    * [Optional] If you have closed the tab with the application preview accidentally, click *View* in the header toolbar, select *Find Command...*, enter: "Ports: Preview" and select your active port. A new tab with the application preview opens.
 <br><br>![](images/01_02_0090.png)<br><br>
 
 10.  The UI5 application is opened in a new tab.
