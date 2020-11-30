@@ -17,7 +17,7 @@ After completing these steps you'll have created your first UI5 application.
     * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *SAP Business Application Studio: Welcome Page*.</ul>
 <br><br>![](images/01_01_0010.png)<br><br>
 
-2. Choose *SAP Fiori Freestyle - Project Generator* and click *Next*.
+2. Choose *SAP Fiori Freestyle Project* and click *Next*.
 <br><br>![](images/01_01_0020.png)<br><br>
 
 3. Enter the following settings in the *Target Running Environment* step: 

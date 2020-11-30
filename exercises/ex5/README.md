@@ -9,7 +9,7 @@ You achieved a lot in the previous exercises. Now it's time to dress up your UI5
 
 To give the customer the best possible overview, add some color to your application. Introduce a new layout and structure for the item, and also show an `sap.ui.core.Icon` there.
 
-1. Open `Sensors.view.xml` and add the xml namespace `xmlns:core="sap.ui.core` to the view to have the `sap.ui.core.Icon` available.
+1. Open `Sensors.view.xml` and add the xml namespace `xmlns:core="sap.ui.core"` to the view to have the `sap.ui.core.Icon` available.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 

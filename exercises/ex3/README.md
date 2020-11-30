@@ -27,7 +27,7 @@ After adding the sensor data to your application, you'll need to configure the d
 
 1. Open the `manifest.json` file located under `SensorManager/webapp`.
 
-2. Go to the section `sap.app`. Here, you add a new data source with name `sensorSource`, which points to the sensor data.
+2. Go to the section `sap.app`. Here, you add a new data source with name `sensorSource`, which points to the sensor data. (Please ensure that the whole attribute(s) in the manifest should be replaced that are provided in the code snippets.)
 
 ***SensorManager/webapp/manifest.json***
 
@@ -42,7 +42,7 @@ After adding the sensor data to your application, you'll need to configure the d
 }
 ````
 
-3. Go to the section `sap.ui5`. Here, you add a new JSONModel with name `sensorModel`, which points to the newly created data source.
+1. Go to the section `sap.ui5`. Here, you add a new JSONModel with name `sensorModel`, which points to the newly created data source.
 
 ***SensorManager/webapp/manifest.json***
 
@@ -76,7 +76,7 @@ After configuring the data service, it's now time to enrich your `Sensors.view.x
     displayBlock="true">
 ````
 
-3. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar.
+3. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar. An aggregation is a special relation between two UI element types. It is used to define the parent-child relationship within the tree structure. The parent end of the aggregation has cardinality 0..1, while the child end may have 0..1 or 0..*. The element's API offers convenient and consistent methods to deal with aggregations (e.g. to get, set, or remove target elements). Examples are table rows and cells, or the content of a table cell.
 
 ***SensorManager/webapp/view/Sensors.view.xml***
 
