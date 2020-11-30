@@ -42,7 +42,7 @@ After adding the sensor data to your application, you'll need to configure the d
 }
 ````
 
-1. Go to the section `sap.ui5`. Here, you add a new JSONModel with name `sensorModel`, which points to the newly created data source.
+3. Go to the section `sap.ui5`. Here, you add a new JSONModel with name `sensorModel`, which points to the newly created data source.
 
 ***SensorManager/webapp/manifest.json***
 
