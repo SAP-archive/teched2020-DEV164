@@ -1,4 +1,4 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV164)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV164)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV164/)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV164/)
 
 # DEV164 - Developing Apps with SAPUI5
 
