@@ -64,22 +64,22 @@ sap.ui.define([
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
 ````js
-onCustomerSelect: function (oEvent) {
-    if (this._oDialog) {
-        this._oDialog.open();
-    } else {
-        Fragment.load({
+onCustomerSelect: function(){
+    if(!this._pDialog) {
+        this._pDialog = Fragment.load({
             type: "XML",
             name: "keepcool.SensorManager.view.CustomerSelectDialog",
             controller: this
-        }).then(function(oDialog) {
-            this._oDialog = oDialog;
-            this._oDialog.setModel(this.getSensorModel(), "sensorModel");
-            this._oDialog.setModel(this.getView().getModel("i18n"), "i18n");
-            this._oDialog.setMultiSelect(true);
-            this._oDialog.open();
+        }).then(function(oDialog){
+            oDialog.setModel(this.getSensorModel(), "sensorModel");
+            oDialog.setModel(this.getView().getModel("i18n"), "i18n");
+            oDialog.setMultiSelect(true);
+            return oDialog;
         }.bind(this));
     }
+    this._pDialog.then(function(oDialog){
+        oDialog.open();
+    });
 }
 ````
 
