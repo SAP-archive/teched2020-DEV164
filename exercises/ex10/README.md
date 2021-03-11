@@ -112,7 +112,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
 
 Congratulations, you've completed successfully [Exercise 10 - Chart with DataBinding](#exercise-10---chart-with-databinding)!
 
-Continue to [Exercise 11 - Deployment to SAP Cloud Platform Cloud Foundry](../ex11/README.md).
+Continue to [Exercise 11 - Deployment to SAP BTP, Cloud Foundry runtime](../ex11/README.md).
 
 
 ## Further Information

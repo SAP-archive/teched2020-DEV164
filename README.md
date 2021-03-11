@@ -13,7 +13,7 @@ In this session, you will learn about developing web applications with SAPUI5. W
 ## Requirements
 
 The requirements to follow the exercises in this repository are:
-- Get a free trial account on SAP Cloud Platform; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+- Get a free trial account on SAP BTP; see this [tutorial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
 - Enable Cloud Foundry and create an organization e.g. *ui5-cloud-foundry*; see the [help portal](https://help.sap.com/viewer/a96b1df8525f41f79484717368e30626/Cloud/en-US/dc18bac42270468d84b6c030a668e003.html).
 - Set Up SAP Business Application Studio for development; see this [tutorial](https://developers.sap.com/tutorials/appstudio-onboarding.html).
 - Be excited about the power of SAP technologies to make your developer life easier.
@@ -71,7 +71,7 @@ The requirements to follow the exercises in this repository are:
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
     - [Exercise 10.1 - Create the Chart](exercises/ex10#exercise-101---create-the-chart)
     - [Exercise 10.2 - Master the Chart](exercises/ex10#exercise-102---master-the-chart)
-- [Exercise 11 - Deployment to SAP Cloud Platform Cloud Foundry](exercises/ex11/)
+- [Exercise 11 - Deployment to SAP BTP, Cloud Foundry runtime](exercises/ex11/)
     - [Exercise 11.1 - Create Space in Cloud Foundry](exercises/ex11#exercise-111---create-space-in-cloud-foundry)
     - [Exercise 11.2 - Login to Cloud Foundry](exercises/ex11#exercise-112---login-to-cloud-foundry)
     - [Exercise 11.3 - Set Organization and Space](exercises/ex11#exercise-113---set-organization-and-space)

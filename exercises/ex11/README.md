@@ -1,20 +1,20 @@
 [![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex11/TechEd2020)
 
-# Exercise 11 - Deploy Your App to SAP Cloud Platform
+# Exercise 11 - Deploy Your App to SAP BTP, Cloud Foundry runtime
 
-In this exercise you'll learn how easy it is to deploy your application directly from SAP Business Application Studio to a Cloud Foundry environment hosted by SAP Cloud Platform.
+In this exercise you'll learn how easy it is to deploy your application directly from SAP Business Application Studio to the SAP BTP, Cloud Foundry runtime.
 
 ## Exercise 11.1 - Create Space in Cloud Foundry
 
 First of all, you need to create the space in your Cloud Foundry environment to host your newly created UI5 application.
 
-1. Open the SAP Cloud Platform Trial by opening *https://cockpit.hanatrial.ondemand.com/cockpit/#/home/trial* in a new browser tab and click *Enter Your Trial Account*.
+1. Open the SAP BTP Trial by opening *https://cockpit.hanatrial.ondemand.com/cockpit/#/home/trial* in a new browser tab and click *Enter Your Trial Account*.
 <br><br>![](images/11_01_0010.png)<br><br>
 
-2. You're redirected to your personal SAP Cloud Platform Cockpit where your subaccounts are listed. Click on the prefered subaccount, e.g. *trial*.
+2. You're redirected to your personal SAP BTP Cockpit where your subaccounts are listed. Click on the prefered subaccount, e.g. *trial*.
 <br><br>![](images/11_01_0020.png)<br><br>
 
-3. Click the menu item *Spaces*. Until now, no space was created by you. Click *Create Space*.
+3. Click the menu item *Cloud Foundry* and then *Spaces*. Until now, no space was created by you. Click *Create Space*.
 <br><br>![](images/11_01_0030.png)<br><br>
 
 4. In the popup, enter the space name, e.g. *ui5-apps*. Click *Create*.
@@ -34,10 +34,10 @@ Now you can login to your Cloud Foundry environment directly from SAP Business A
 2. Enter the Cloud Foundry API endpoint you'd like to use. If your environment runs in the EU10 region, this is `https://api.cf.eu10.hana.ondemand.com`. If you wanna host your application in another region, please check following [site](https://help.sap.com/viewer/3504ec5ef16548778610c7e89cc0eac3/LATEST/en-US/350356d1dc314d3199dca15bd2ab9b0e.html) to get an overview about all available regions and respective API endpoints.
 <br><br>![](images/11_02_0020.png)<br><br>
 
-3. Enter the email address you have used for registering your SAP Cloud Platform account.
+3. Enter the email address you have used for registering your SAP BTP account.
 <br><br>![](images/11_02_0030.png)<br><br>
 
-4. Enter the password for your SAP Cloud Platform account.
+4. Enter the password for your SAP BTP account.
 <br><br>![](images/11_02_0040.png)<br><br>
 
 5. After a few seconds a small window appears in the lower right corner notifying you that the login was successful.
@@ -123,11 +123,11 @@ The build step has created a file named `TechEd2020_0.0.1.mtar` located under `m
 3. In the deployment logs you'll find the URL of your deployed application. Copy it from the logs and paste it into a new browser tab.
 <br><br>![](images/11_07_0030.png)<br><br>
 
-4. Congratulations! You've deployed your UI5 application to SAP Cloud Platform Cloud Foundry.
+4. Congratulations! You've deployed your UI5 application to the SAP BTP, Cloud Foundry runtime.
 <br><br>![](images/11_07_0040.png)<br><br>
 
 ## Summary
 
-Hooray! You've completed successfully [Exercise 11 - Deployment to SAP Cloud Platform Cloud Foundry](#exercise-11---deployment-to-sap-cloud-platform-cloud-foundry).
+Hooray! You've completed successfully [Exercise 11 - Deployment to SAP BTP, Cloud Foundry runtime](../ex11/README.md).
 
 And now it's time to celebrate! By mastering this session you've reached the first level in becoming a UI5 expert.
