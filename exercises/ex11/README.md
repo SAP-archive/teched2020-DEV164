@@ -11,7 +11,7 @@ First of all, you need to create the space in your Cloud Foundry environment to 
 1. Open the SAP BTP Trial by opening *https://cockpit.hanatrial.ondemand.com/cockpit/#/home/trial* in a new browser tab and click *Enter Your Trial Account*.
 <br><br>![](images/11_01_0010.png)<br><br>
 
-2. You're redirected to your personal SAP BTP Cockpit where your subaccounts are listed. Click on the prefered subaccount, e.g. *trial*.
+2. You're redirected to your personal SAP BTP cockpit where your subaccounts are listed. Click on the prefered subaccount, e.g. *trial*.
 <br><br>![](images/11_01_0020.png)<br><br>
 
 3. Click the menu item *Spaces*. Until now, no space was created by you. Click *Create Space*.
