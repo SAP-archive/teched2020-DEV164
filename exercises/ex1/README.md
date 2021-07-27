@@ -17,12 +17,29 @@ After completing these steps you'll have created your first UI5 application.
     * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *SAP Business Application Studio: Welcome Page*.</ul>
 <br><br>![](images/01_01_0010b.png)<br><br>
 
-3. Enter the following settings in the *Floorplan Selection* step: 
+2. Enter the following settings in the *Floorplan Selection* step: 
     1. Select *SAPUI5 freestyle* from the dropdown box.
     2. Select *SAPUI5 Application* as application template and click *Next*.</ol>
 <br>![](images/01_01_0020b.png)<br><br><ol>
 
-4. Enter *TechEd2020* as project name and click *Next*.
+3. Select *None* as Data Source, since we start without an external data source.
+<br><br>![](images/01_01_0025b.png)<br><br>
+   
+4. Enter *App* as view name in the next step. (wo don't select an entity set, since we start without a data service).
+<br><br>![](images/01_01_0030b.png)<br><br>
+
+5. Enter the following settings in the *Project Attributes* step:
+    1. Enter *sensormanager* as *Module name*. 
+    2. Choose *Sensoe Manager* as *Application title*.
+    3. Enter *keepcool* as your namespace.
+    4. You can leave the description
+    5. Leave the Project folder path as */home/user/projects* .</ol>
+<br>![](images/01_01_0050b.png)<br><br><ol>
+
+   
+
+   
+   6. Enter *TechEd2020* as project name and click *Next*.
 <br><br>![](images/01_01_0040.png)<br><br>
 
 5. Choose the *Standalone Approuter* as your *HTML 5 Applications Runtime* and click *Next*.
