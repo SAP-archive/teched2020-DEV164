@@ -48,6 +48,10 @@ After completing these steps you'll have created your first UI5 application.
 It's time for a first preview of your newly created application!
 
 1. Click the &#9654; icon in the left icon bar.
+    1. Click the ![](images/01_02_0005b.png) icon in the left icon bar.
+    2. Click on *Create Configuration* 
+    3. select *sensormanager (Fiori Tools)* from the dropdown at the top</ol>
+
 <br><br>![](images/01_02_0010b.png)<br><br>
 
 2. Click the &plusb; icon to add a new configuration to *Run Configurations*. After a short delay, a list pops up in the top center of your screen. 
