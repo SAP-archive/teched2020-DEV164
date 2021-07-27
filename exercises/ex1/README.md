@@ -60,15 +60,9 @@ It's time for a first preview of your newly created application!
 3. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
 <br><br>![](images/01_02_0020b.png)<br><br>
 
-8. The application is initialized. After a few seconds, some notifications are displayed in the lower right corner. Click *Expose and Open*.
-<br><br>![](images/01_02_0080.png)<br><br>
+4. The application is initialized. After a few seconds, the application is started in a new tab of your browser.
+<br><br>![](images/01_02_0040b.png)<br><br>
 
-9. After a short delay, a popup for some optional input opens. Leave it empty and press *Enter*.
-    * [Optional] If you have closed the tab with the application preview accidentally, click *View* in the header toolbar, select *Find Command...*, enter: "Ports: Preview" and select your active port. A new tab with the application preview opens.
-<br><br>![](images/01_02_0090.png)<br><br>
-
-10.  The UI5 application is opened in a new tab.
-<br><br>![](images/01_02_0100.png)<br><br>
 
 ## Summary
 
