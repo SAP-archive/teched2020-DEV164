@@ -17,13 +17,10 @@ After completing these steps you'll have created your first UI5 application.
     * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *SAP Business Application Studio: Welcome Page*.</ul>
 <br><br>![](images/01_01_0010b.png)<br><br>
 
-2. Select *SAPUI5 freestyle* from the dropdown box and click *SAPUI5 Application*.
-<br><br>![](images/01_01_0020b.png)<br><br>
-
-3. Enter the following settings in the *Target Running Environment* step: 
-    1. Select *Cloud Foundry* as target running environment.
+3. Enter the following settings in the *Floorplan Selection* step: 
+    1. Select *SAPUI5 freestyle* from the dropdown box.
     2. Select *SAPUI5 Application* as application template and click *Next*.</ol>
-<br>![](images/01_01_0030.png)<br><br><ol>
+<br>![](images/01_01_0020b.png)<br><br><ol>
 
 4. Enter *TechEd2020* as project name and click *Next*.
 <br><br>![](images/01_01_0040.png)<br><br>
