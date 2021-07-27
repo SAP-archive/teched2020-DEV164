@@ -5,26 +5,28 @@
 
 In this exercise you'll add some content to your application. A new UI5 view showing multiple sensors will be the first part of your app.
 
-## Exercise 2.1 - Switch to SAP Fiori 3
+## Exercise 2.1 - Check SAP Fiori 3
 
-SAP Fiori 3 is SAP’s new target design system. It evolves the SAP Fiori design for all SAP products to fully support the Intelligent Suite, running on any device. SAP Business Application Studio by default generates UI5 projects based on SAP Fiori 2.0. In your UI5 application the SAP Fiori version is controlled by the UI5 theme. The configuration of the UI5 theme is done in `SensorManager/webapp/index.html`. In case you'd like to stick with SAP Fiori 2.0, continue with [Exercise 2.2 - Create Sensors.view.xml](#exercise-22---create-sensorsviewxml).
+SAP Fiori 3 is SAP’s new target design system. It evolves the SAP Fiori design for all SAP products to fully support the Intelligent Suite, running on any device. SAP Business Application Studio by default generates UI5 projects based on SAP Fiori 3. In your UI5 application the SAP Fiori version is controlled by the UI5 theme. 
 
 1. Open `SensorManager/webapp/index.html`.
 
-2. Replace the `sap_belize` value of the attribute `data-sap-ui-theme` with `sap_fiori_3`.
+2. Check that the attribute `data-sap-ui-theme` has the value `sap_fiori_3`.
 
 ***SensorManager/webapp/index.html***
 
 ````html
-<script id="sap-ui-bootstrap"
-    src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-    data-sap-ui-theme="sap_fiori_3"
-    data-sap-ui-resourceroots='{"keepcool.SensorManager": "./"}'
-    data-sap-ui-compatVersion="edge"
-    data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-    data-sap-ui-async="true"
-    data-sap-ui-frameOptions="trusted">
-</script>
+    <script
+        id="sap-ui-bootstrap"
+        src="resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_fiori_3"
+        data-sap-ui-resourceroots='{"keepcool.sensormanager": "./"}'
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+        data-sap-ui-async="true"
+        data-sap-ui-preload="async"
+        data-sap-ui-frameOptions="trusted">
+    </script>
 ````
 
 ## Exercise 2.2 - Create Sensors.view.xml
@@ -69,7 +71,7 @@ You will use several UI5 libraries like `sap.m` or `sap.f` in your application. 
 
 ````json
 "dependencies": {
-    "minUI5Version": "1.60.1",
+    "minUI5Version": "1.66.0",
     "libs": {
         "sap.ui.core": {},
         "sap.ui.layout": {},
@@ -99,7 +101,7 @@ Let's adjust the `manifest.json` to enable the routing feature for your newly cr
         "viewType": "XML",
         "async": true,
         "transition": "slide",
-        "viewPath": "keepcool.SensorManager.view",
+        "viewPath": "keepcool.sensormanager.view",
         "controlAggregation": "pages",
         "controlId": "app"
     },
@@ -110,8 +112,11 @@ Let's adjust the `manifest.json` to enable the routing feature for your newly cr
     }],
     "targets": {
         "TargetSensors": {
-            "viewId": "Sensors",
-            "viewName": "Sensors"
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Sensors",
+          "viewName": "Sensors"
         }
     }
 }
