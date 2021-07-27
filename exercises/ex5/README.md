@@ -73,7 +73,8 @@ sap.ui.define([
 
             }
         });
-    });
+    }
+);
 ````
 
 5. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them later on during this exercise.
@@ -116,7 +117,7 @@ Now you need to tell your view which controller is associated with it.
 
 ````xml
 <mvc:View
-    controllerName="keepcool.SensorManager.controller.Sensors"
+    controllerName="keepcool.sensormanager.controller.Sensors"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:grid="sap.ui.layout.cssgrid"
