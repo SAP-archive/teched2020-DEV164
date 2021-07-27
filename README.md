@@ -1,10 +1,10 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV164/)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV164/)
 
-# DEV164 - Developing Apps with SAPUI5
+# Developing Apps with SAPUI5
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**.
+This repository contains the material for a beginner workshop about developing applications with SAPUI5 based on the the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**.
 
 ## Overview
 
