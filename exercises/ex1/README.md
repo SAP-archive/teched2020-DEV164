@@ -13,12 +13,12 @@ Your customer "Keep Cool, Inc." is an operator of several icehouses across the c
 
 After completing these steps you'll have created your first UI5 application.
 
-1. Click on *Create project from template* on the *Welcome* page.
+1. Click on *Start from template* on the *Welcome* page.
     * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *SAP Business Application Studio: Welcome Page*.</ul>
 <br><br>![](images/01_01_0010b.png)<br><br>
 
-2. Choose *SAP Fiori Freestyle Project* and click *Next*.
-<br><br>![](images/01_01_0020.png)<br><br>
+2. Select *SAPUI5 freestyle* from the dropdown box and click *SAPUI5 Application*.
+<br><br>![](images/01_01_0020b.png)<br><br>
 
 3. Enter the following settings in the *Target Running Environment* step: 
     1. Select *Cloud Foundry* as target running environment.
