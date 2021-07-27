@@ -40,7 +40,7 @@ After completing these steps you'll have created your first UI5 application.
    * [Optional] If you have closed the notification window accidentally, click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
 <br><br>![](images/01_01_0060b.png)<br><br>
 
-7. Select the *project* folder in the dialog
+7. Select the *projects* folder in the dialog and click *open*
 <br><br>![](images/01_01_0070b.png)<br><br>
 
 ## Exercise 1.2 - Create a Run Configuration
@@ -48,7 +48,7 @@ After completing these steps you'll have created your first UI5 application.
 It's time for a first preview of your newly created application!
 
 1. Click the &#9654; icon in the left icon bar.
-<br><br>![](images/01_02_0010.png)<br><br>
+<br><br>![](images/01_02_0010b.png)<br><br>
 
 2. Click the &plusb; icon to add a new configuration to *Run Configurations*. After a short delay, a list pops up in the top center of your screen. 
 <br><br>![](images/01_02_0020.png)<br><br>
