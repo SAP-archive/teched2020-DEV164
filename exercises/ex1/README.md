@@ -47,30 +47,18 @@ After completing these steps you'll have created your first UI5 application.
 
 It's time for a first preview of your newly created application!
 
-1. Click the &#9654; icon in the left icon bar.
+1. Create a Run Configuration in the Business Application Studio.
     1. Click the ![](images/01_02_0005b.png) icon in the left icon bar.
     2. Click on *Create Configuration* 
     3. select *sensormanager (Fiori Tools)* from the dropdown at the top</ol>
 
 <br><br>![](images/01_02_0010b.png)<br><br>
 
-2. Click the &plusb; icon to add a new configuration to *Run Configurations*. After a short delay, a list pops up in the top center of your screen. 
-<br><br>![](images/01_02_0020.png)<br><br>
+2. Select *latest* as your UI5 version.
+<br><br>![](images/01_02_0025b.png)<br><br>
 
-3. Select the module *SensorManager* that you've just created.
-<br><br>![](images/01_02_0030.png)<br><br>
-
-4. Specify your desired html site. Select *index.html* as the runnable file.
-<br><br>![](images/01_02_0040.png)<br><br>
-
-5. Select *latest* as your UI5 version.
-<br><br>![](images/01_02_0050.png)<br><br>
-
-6. Enter *Run TechEd2020-SensorManager* as the name of your new run configuration.
-<br><br>![](images/01_02_0060.png)<br><br>
-
-7. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
-<br><br>![](images/01_02_0070.png)<br><br>
+3. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
+<br><br>![](images/01_02_0020b.png)<br><br>
 
 8. The application is initialized. After a few seconds, some notifications are displayed in the lower right corner. Click *Expose and Open*.
 <br><br>![](images/01_02_0080.png)<br><br>
