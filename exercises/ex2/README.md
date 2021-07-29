@@ -65,7 +65,7 @@ You will use several UI5 libraries like `sap.m` or `sap.f` in your application. 
 
 1. Open `SensorManager/webapp/manifest.json`.
 2. Go to the section `sap.ui5`.
-3. Add the `sap.m`, `sap.f` and `sap.suite.ui.microchart` libraries to the `dependencies/libs` section. UI5 will take care of loading all the libraries listed here when your app is started.
+3. Add the `sap.f` and `sap.suite.ui.microchart` libraries to the `dependencies/libs` section. UI5 will take care of loading all the libraries listed here when your app is started.
 
 ***SensorManager/webapp/manifest.json***
 
