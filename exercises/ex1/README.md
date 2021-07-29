@@ -60,10 +60,10 @@ It's time for a first preview of your newly created application!
 2. Select *latest* as your UI5 version.
 <br><br>![](images/01_02_0025b.png)<br><br>
 
-3. Select the first line *Skip* in the next dropdown list.
+3. Select *Skip* in the next dropdown listand leave the proposed name *sensormanager* in the next step.
 <br><br>![](images/01_02_0027b.png)<br><br>
 
-4. A new configuration *Run TechEd2020-SensorManager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
+4. A new configuration *sensormanager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
 <br><br>![](images/01_02_0020b.png)<br><br>
 
 5. The application is initialized. After a few seconds, the application is started in a new tab of your browser.
