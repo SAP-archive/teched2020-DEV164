@@ -68,7 +68,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("keepcool.SensorManager.controller.Sensors", {
+        return Controller.extend("keepcool.sensormanager.controller.Sensors", {
             onInit: function () {
 
             }
