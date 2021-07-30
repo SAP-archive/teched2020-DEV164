@@ -68,7 +68,7 @@ onCustomerSelect: function(){
     if(!this._pDialog) {
         this._pDialog = Fragment.load({
             type: "XML",
-            name: "keepcool.SensorManager.view.CustomerSelectDialog",
+            name: "keepcool.sensormanager.view.CustomerSelectDialog",
             controller: this
         }).then(function(oDialog){
             oDialog.setModel(this.getSensorModel(), "sensorModel");
