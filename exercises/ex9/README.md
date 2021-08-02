@@ -9,15 +9,15 @@ In this exercise you'll enhance the sensor status page with an `sap.f.Card` to s
 
 Now you'll dress up the `SensorStatus.view.xml` view.
 
-1. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
+1. Open `sensormanager/webapp/view/SensorStatus.view.xml`.
 
 2. Add the `sap.f` and `sap.f.cards` libraries to `SensorStatus.view.xml`.
 
-***SensorManager/webapp/view/SensorStatus.view.xml***
+***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
 <mvc:View displayBlock="true"       
-  controllerName="keepcool.SensorManager.controller.SensorStatus"
+  controllerName="keepcool.sensormanager.controller.SensorStatus"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   xmlns:f="sap.f"
@@ -26,7 +26,7 @@ Now you'll dress up the `SensorStatus.view.xml` view.
 
 3. Add an `sap.f.Card` with a card header to `SensorStatus.view.xml`. Enter the customer name as the header title via data binding.
 
-***SensorManager/webapp/view/SensorStatus.view.xml***
+***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
 <Page id="SensorStatusPage" title="{i18n>title}" showNavButton="true" navButtonPress=".navToSensors">
@@ -49,11 +49,11 @@ Now you'll dress up the `SensorStatus.view.xml` view.
 
 To be able to show the data in your card, you need to assign the correct binding context using the information provided by the navigation step.
 
-1. Open `SensorManager/webapp/controller/SensorStatus.controller.js`.
+1. Open `sensormanager/webapp/controller/SensorStatus.controller.js`.
 
 2. Attach a callback function to the `routeMatched` event to retrieve the selected index and bind it to the current view. Also add the module `sap/base/strings/formatMessage`, which formats your localized text nicely.
 
-***SensorManager/webapp/controller/SensorStatus.controller.js***
+***sensormanager/webapp/controller/SensorStatus.controller.js***
 
 ````js
 sap.ui.define([
@@ -62,7 +62,7 @@ sap.ui.define([
 ], function (Controller, formatMessage) {
     "use strict";
 
-  return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
+  return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
       
     formatMessage: formatMessage,
 
@@ -91,9 +91,9 @@ sap.ui.define([
 
 To improve the visualization further, you will replace the `sap.f.card.Header` by the `sap.f.cards.NumericHeader` in your newly created card.
 
-1. Open `SensorManager/webapp/view/SensorStatus.view.xml` and add the following content:
+1. Open `sensormanager/webapp/view/SensorStatus.view.xml` and add the following content:
 
-***SensorManager/webapp/view/SensorStatus.view.xml***
+***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
 <f:header>
@@ -117,9 +117,9 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 
 3. Add a formatter to provide semantic coloring for the card header.
 The formatter fetches both the threshold and the current temperature from the model. On the basis of these values it then returns the `sap.m.ValueColor`. 
-Open `SensorManager/webapp/controller/SensorStatus.controller.js` and add the formatter function given below. Don't forget to import the `sap.m.ValueColor` module, which provides nice color support!
+Open `sensormanager/webapp/controller/SensorStatus.controller.js` and add the formatter function given below. Don't forget to import the `sap.m.ValueColor` module, which provides nice color support!
 
-***SensorManager/webapp/controller/SensorStatus.controller.js***
+***sensormanager/webapp/controller/SensorStatus.controller.js***
 
 ````js
 sap.ui.define([
@@ -140,11 +140,11 @@ sap.ui.define([
   }
 ````
 
-4. The `sap.f.cards.NumericHeader` control provides a `state` property, which allows you to render the state of your control in a fancy way. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
+4. The `sap.f.cards.NumericHeader` control provides a `state` property, which allows you to render the state of your control in a fancy way. Open `sensormanager/webapp/view/SensorStatus.view.xml`.
 
 5. Add the `state` property to your numeric header and enter data binding information pointing to your newly created formatter function.
 
-***SensorManager/webapp/view/SensorStatus.view.xml***
+***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
 <f:header>

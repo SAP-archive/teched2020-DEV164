@@ -9,7 +9,7 @@ Not all the icehouse data might be relevant for every employee of your customer.
 
 A dialog is a perfect scenario in which to use a `sap.ui.core.Fragment`. This UI5 artefact allows you to modularize your code in smaller reusable pieces.
 
-1. Go to folder `SensorManager/webapp/view/`.
+1. Go to folder `sensormanager/webapp/view/`.
 
 2. Right-click on the `view` folder and select `New File`.
 <br><br>![](images/07_01_0010.png)<br><br>
@@ -19,7 +19,7 @@ A dialog is a perfect scenario in which to use a `sap.ui.core.Fragment`. This UI
 
 4. Copy and paste the following content into the newly created `CustomerSelectDialog.fragment.xml`. With that you create a `sap.m.SelectDialog`, which offers functionality to help users select their preferred icehouse clients.
 
-***SensorManager/webapp/view/CustomerSelectDialog.fragment.xml***
+***sensormanager/webapp/view/CustomerSelectDialog.fragment.xml***
 
 ````xml
 <core:FragmentDefinition
@@ -42,11 +42,11 @@ A dialog is a perfect scenario in which to use a `sap.ui.core.Fragment`. This UI
 
 After creating the dialog, you need to implement the coding to open the dialog.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
+1. Open `sensormanager/webapp/controller/Sensors.controller.js`.
 
 2. Add the module `sap/ui/core/Fragment`.
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 sap.ui.define([
@@ -61,7 +61,7 @@ sap.ui.define([
 
 3. Implement the `onCustomerSelect` function to open the dialog. It loads the Fragment and sets the required model and properties.
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 onCustomerSelect: function(){
@@ -86,11 +86,11 @@ onCustomerSelect: function(){
 ## Exercise 7.3 - Add a Dialog Opening Button
 After implementing the dialog opening logic, you need to assign this logic to a control.
 
-1. Open `SensorManager/webapp/view/Sensors.view.xml`.
+1. Open `sensormanager/webapp/view/Sensors.view.xml`.
 
 2. Add a new menu button to the page header and bind its `press` event to the newly created `onCustomerSelect` function.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <Page id="page" title="{i18n>title}">
@@ -108,11 +108,11 @@ After implementing the dialog opening logic, you need to assign this logic to a 
 The Dialog contains an input field where the user can search for a customer name.
 For this, you need to implement the filter logic.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
+1. Open `sensormanager/webapp/controller/Sensors.controller.js`. 
 
 2. Add an `onCustomerSelectChange` function with the following content:
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 onCustomerSelectChange: function(oEvent) {
@@ -127,11 +127,11 @@ onCustomerSelectChange: function(oEvent) {
 
 After providing an option to select preferred customers, you also need to add the logic to filter the sensors.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
+1. Open `sensormanager/webapp/controller/Sensors.controller.js`. 
 
 2. Add an `onCustomerSelectConfirm` function with the following content:
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 onCustomerSelectConfirm: function(oEvent) {
@@ -146,7 +146,7 @@ onCustomerSelectConfirm: function(oEvent) {
 
 3. To ensure that both filters (customer and status) are applied, you need to make two more adaptations in `Sensors.controller.js`.  Here, you declare the `_aCustomerFilters` and `_aStatusFilters` in the `onInit` function to ensure that they are defined. You also merge the `_aCustomerFilters` with the `_aStatusFilters` before performing the filtering on the binding.
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 onInit: function () {
@@ -154,7 +154,7 @@ onInit: function () {
     this._aStatusFilters = [];
 ````
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 onSensorSelect: function (oEvent) {
@@ -180,11 +180,11 @@ onSensorSelect: function (oEvent) {
 
 One last thing is missing: You need to assign the newly created functions to the dialog.
 
-1. Open `SensorManager/webapp/view/CustomerSelectDialog.fragment.xml`
+1. Open `sensormanager/webapp/view/CustomerSelectDialog.fragment.xml`
 
 2. Add the newly created functions to the `confirm` and `liveChange` events.
 
-***SensorManager/webapp/view/CustomerSelectDialog.fragment.xml***
+***sensormanager/webapp/view/CustomerSelectDialog.fragment.xml***
 
 ````xml
 <SelectDialog

@@ -7,11 +7,11 @@ In this exercise you'll learn how easy it is to enable  localization for your UI
 
 ## Exercise 4.1 - Replacing Hard-Coded Text With i18n Variables
 
-In your existing UI5 application you've used hard-coded text values. That's OK if you'd like to implement a fast proof of concept. In your productive application no hard-coded text should be used, however, because it would be displayed regardless of the actual browser language the user has configured. Your goal is to build an enterprise-ready application which includes localization features, such as text translation. UI5 comes with a huge set of localization features out of the box, which are enabled by default. To benefit from these features, you need to replace all occurrences of hard-coded text in your UI5 application. Luckily, there's only one occurrence 😃 However, it's good practice to start directly with localization in mind instead of refactoring many places in your application afterwards.
+In your existing UI5 application you've used hard-coded text values. That's OK if you'd like to implement a fast proof of concept. In your productive application no hard-coded text should be used, however, because it would be displayed regardless of the actual browser language the user has configured. Your goal is to build an enterprise-ready application which is fully localized. UI5 comes with a huge set of localization features out of the box, one of which is automatic language selection and text localization. To benefit from it, you need to replace all occurrences of hard-coded text in your UI5 application. Luckily, there's only one occurrence 😃 However, it's good practice to start directly with localization in mind instead of refactoring many places in your application afterwards.
 
-1. Open the `Sensors.view.xml` located under `SensorManager/webapp/view/`.
+1. Open the `Sensors.view.xml` located under `sensormanager/webapp/view/`.
 
-2. Replace the `noDataText` value with the i18n key `noSensorDataText`.
+2. Replace the `noDataText` value with the i18n key `noSensorDataText`. "i18n" is a common abbreviation of "internationalization".
 
 ````xml
 <f:GridList id="sensorsList"
@@ -19,9 +19,9 @@ In your existing UI5 application you've used hard-coded text values. That's OK i
     noDataText="{i18n>noSensorDataText}">
 ````
 
-3. Add the newly introduced i18n key also to your `i18n.properties` file, which is located under `SensorManager/webapp/i18n/`, and by the way, let's also pick a better title.
+3. Add the newly introduced i18n key also to your `i18n.properties` file, which is located under `sensormanager/webapp/i18n/`, and by the way, let's also pick a better title and prepare some other strings we'll need later.
 
-***SensorManager/webapp/i18n/i18n.properties***
+***sensormanager/webapp/i18n/i18n.properties***
 
 ````ini
 title=Keep Cool Inc. Sensor Manager
@@ -52,7 +52,7 @@ temperatureUnit=°C
 Your UI5 application is prepared for localization. No matter which browser language is configured, your UI5 application currently displays the texts of the `i18n.properties` file.
 Let's provide new language files for English and German.
 
-1. Go to folder `SensorManager/webapp/i18n/` and right-click.
+1. Go to folder `sensormanager/webapp/i18n/` and right-click.
 
 2. In the popup, click `New File`.
 
@@ -64,7 +64,7 @@ Let's provide new language files for English and German.
 
 6. Open `i18n_en.properties` and paste the following content:
 
-***SensorManager/webapp/i18n/i18n_en.properties***
+***sensormanager/webapp/i18n/i18n_en.properties***
 
 ````ini
 title=Keep Cool Inc. Sensor Manager
@@ -89,7 +89,7 @@ temperatureUnit=°C
 
 7. Open `i18n_de.properties` and paste the following content:
 
-***SensorManager/webapp/i18n/i18n_de.properties***
+***sensormanager/webapp/i18n/i18n_de.properties***
 
 ````ini
 title=Keep Cool Inc. Sensor Verwalter
@@ -121,19 +121,19 @@ temperatureUnit=°C
 
 Usually, only the `i18n.properties` file is maintained by developers. The language-dependent files will be filled by native speakers or translators. As an application developer, you can configure which languages are supported by your application, and which language is your default (aka fallback) language. In this session English will be the default language, and additionally German should be supported.
 
-1. Open the `manifest.json` located under `SensorManager/webapp`.
+1. Open the `manifest.json` located under `sensormanager/webapp`.
 
 2. Go to section `sap.ui5` / `models` / `i18n`. Here, add two new configurations inside your settings object.
       1. Add the property `supportedLocales` and assign the locales for German and English `["de", "en"]`
       2. Add the property `fallbackLocale` and assign the English locale `"en"`
 
-***SensorManager/webapp/manifest.json***
+***sensormanager/webapp/manifest.json***
 
 ````json
 "i18n": {
   "type": "sap.ui.model.resource.ResourceModel",
   "settings": {
-      "bundleName": "keepcool.SensorManager.i18n.i18n",
+      "bundleName": "keepcool.sensormanager.i18n.i18n",
       "supportedLocales": ["de", "en"],
       "fallbackLocale": "en"
   }

@@ -9,11 +9,11 @@ In this exercise you'll add some content to your application. A new UI5 view sho
 
 SAP Fiori 3 is SAP’s new target design system. It evolves the SAP Fiori design for all SAP products to fully support the Intelligent Suite, running on any device. SAP Business Application Studio by default generates UI5 projects based on SAP Fiori 3. In your UI5 application the SAP Fiori version is controlled by the UI5 theme. 
 
-1. Open `SensorManager/webapp/index.html`.
+1. Open `sensormanager/webapp/index.html`.
 
 2. Check that the attribute `data-sap-ui-theme` has the value `sap_fiori_3`.
 
-***SensorManager/webapp/index.html***
+***sensormanager/webapp/index.html***
 
 ````html
     <script
@@ -33,7 +33,7 @@ SAP Fiori 3 is SAP’s new target design system. It evolves the SAP Fiori design
 
 After completing these steps you'll have written your first UI5 view.
 
-1. Right-click on the `SensorManager/webapp/view` folder and select `New File`.
+1. Right-click on the `sensormanager/webapp/view` folder and select `New File`.
 <br><br>![](/exercises/ex2/images/02_02_0010.png)<br><br>
 
 2. Enter `Sensors.view.xml` as file name and confirm.
@@ -41,7 +41,7 @@ After completing these steps you'll have written your first UI5 view.
 
 3. Now we'll add some content to your newly created UI5 view. Let's start with an empty `sap.m.IconTabBar`.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <mvc:View
@@ -61,13 +61,13 @@ After completing these steps you'll have written your first UI5 view.
 
 ## Exercise 2.3 - Add Dependencies
 
-You will use several UI5 libraries like `sap.m` or `sap.f` in your application. The central point for configuring your UI5 application is the `manifest.json` file, which is located at `SensorManager/webapp/manifest.json`.
+You will use several UI5 libraries like `sap.m` or `sap.f` in your application. The central point for configuring your UI5 application is the `manifest.json` file, which is located at `sensormanager/webapp/manifest.json`.
 
-1. Open `SensorManager/webapp/manifest.json`.
+1. Open `sensormanager/webapp/manifest.json`.
 2. Go to the section `sap.ui5`.
 3. Add the `sap.f` and `sap.suite.ui.microchart` libraries to the `dependencies/libs` section. UI5 will take care of loading all the libraries listed here when your app is started.
 
-***SensorManager/webapp/manifest.json***
+***sensormanager/webapp/manifest.json***
 
 ````json
 "dependencies": {
@@ -84,15 +84,15 @@ You will use several UI5 libraries like `sap.m` or `sap.f` in your application. 
 
 ## Exercise 2.4 - Enable Routing for Sensors.view.xml
 
-UI5 comes with a powerful routing API that helps you control the state of your application efficiently. It takes care of displaying the desired UI5 view based on the given browser hash.
+UI5 comes with a powerful routing API that helps you control the state of your application efficiently. It takes care of displaying the desired UI5 view based on the given browser URL hash.
 
 Let's adjust the `manifest.json` to enable the routing feature for your newly created view.
 
-1. Open `SensorManager/webapp/manifest.json`.
+1. Open `sensormanager/webapp/manifest.json`.
 2. Go to the section `sap.ui5`.
 3. Replace all content inside the `routing` property with the following content:
 
-***SensorManager/webapp/manifest.json***
+***sensormanager/webapp/manifest.json***
 
 ````json
 "routing": {

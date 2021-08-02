@@ -9,7 +9,7 @@ In this exercise you'll add some analytical flavor to your UI5 application by us
 
 To show some historical data you can use the `temperatureLog` of the sensor data. You'll use an `sap.suite.ui.microchart.InteractiveLineChart`to add the data points.
 
-1. Open `SensorManager/webapp/view/SensorStatus.view.xml`. 
+1. Open `sensormanager/webapp/view/SensorStatus.view.xml`. 
 
 2. Add the `sap.suite.ui.microchart` library to the `SensorStatus.view.xml`.
 
@@ -17,7 +17,7 @@ To show some historical data you can use the `temperatureLog` of the sensor data
 
 ````xml
 <mvc:View displayBlock="true" 
-    controllerName="keepcool.SensorManager.controller.SensorStatus"
+    controllerName="keepcool.sensormanager.controller.SensorStatus"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.f"
@@ -46,7 +46,7 @@ To show some historical data you can use the `temperatureLog` of the sensor data
 
 After completing the previous exercises, you are quite experienced in enhancing your UI5 application. Master your chart to show what you've learned.
 
-1. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
+1. Open `sensormanager/webapp/view/SensorStatus.view.xml`.
 
 2. Add formatting to every data point to improve readability. You can use expression binding to achieve this.
 
