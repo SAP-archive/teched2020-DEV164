@@ -36,14 +36,15 @@ After completing these steps you'll have created your first UI5 application.
     2. Choose *Sensor Manager* as *Application title*.
     3. Enter *keepcool* as your namespace.
     4. You can leave the description
-    5. Leave the Project folder path as */home/user/projects* .</ol>
+    5. Leave the Project folder path as */home/user/projects* .
+    6. Click *Finish*. </ol>
 <br>![](images/01_01_0050b.png)<br><br><ol>
 
-7. The project is generated, and a notification window appears in the lower right corner. Click *Open Folder*.
-   * [Optional] If you have closed the notification window accidentally, click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
+7. The project is generated, and a notification window appears in the lower right corner. Click the blue *Open Folder* button at the top left of the screen.
+   * [Optional] Click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
 <br><br>![](images/01_01_0060b.png)<br><br>
 
-8. Select the *projects* folder in the dialog and click *open*
+8. Open the *projects* folder and select the *sensormanager* folder in the dialog and click *open*
 <br><br>![](images/01_01_0070b.png)<br><br>
 
 ## Exercise 1.2 - Create a Run Configuration
