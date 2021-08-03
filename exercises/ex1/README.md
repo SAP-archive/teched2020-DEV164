@@ -47,27 +47,17 @@ After completing these steps you'll have created your first UI5 application.
 8. Open the *projects* folder and select the *sensormanager* folder in the dialog and click *open*
 <br><br>![](images/01_01_0071b.png)<br><br>
 
-## Exercise 1.2 - Create a Run Configuration
+## Exercise 1.2 - Try out the generated application
 
 It's time for a first preview of your newly created application!
 
-1. Create a Run Configuration in the Business Application Studio.
+1. The Business Application Studio has altready created three so called Run Configurations.
     1. Click the ![](images/01_02_0005b.png) icon in the left icon bar.
-    2. Click on *Create Configuration* 
-    3. select *sensormanager (Fiori Tools)* from the dropdown at the top</ol>
+    2. Click on the first runconfiguration named *Start sensormanager*
 
 <br><br>![](images/01_02_0010b.png)<br><br>
 
-2. Select *latest* as your UI5 version.
-<br><br>![](images/01_02_0025b.png)<br><br>
-
-3. Select *Skip* in the next dropdown listand leave the proposed name *sensormanager* in the next step.
-<br><br>![](images/01_02_0027b.png)<br><br>
-
-4. A new configuration *sensormanager* should appear on the left. Select the new configuration and click the green icon *Run Module*.
-<br><br>![](images/01_02_0020b.png)<br><br>
-
-5. The application is initialized. After a few seconds, the application is started in a new tab of your browser.
+2. The application is initialized. After a few seconds, the application is started in a new tab of your browser.
 <br><br>![](images/01_02_0040b.png)<br><br>
 
 
