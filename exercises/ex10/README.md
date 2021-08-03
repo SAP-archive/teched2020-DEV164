@@ -87,7 +87,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
 7. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with x-axis labels. 
 <br><br>![](images/10_02_0030.png)<br><br>
 
-8. Displaying the time as a date makes not much sense here. To improve readability you should format the label using a `UI5 DataType`. These types are predefined and can be configured individually regarding the input and output format.
+8. Displaying timestamps on the x-axis does not make much sense. To improve readability you should format the label using a UI5 "DataType". These types are predefined and can be configured individually regarding the input and output format.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
