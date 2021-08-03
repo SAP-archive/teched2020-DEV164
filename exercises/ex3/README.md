@@ -9,7 +9,7 @@ In this exercise you'll add a local data service to the application and display 
 
 To simulate a source providing sensor data, you'll now add some sensor data to your application.
 
-1. Go to folder `SensorManager/webapp/localService`.
+1. Go to folder `sensormanager/webapp/localService`.
 
 2. Right-click on the `localService` folder.
 
@@ -25,14 +25,15 @@ To simulate a source providing sensor data, you'll now add some sensor data to y
 
 After adding the sensor data to your application, you'll need to configure the data service which provides the sensor data.
 
-1. Open the `manifest.json` file located under `SensorManager/webapp`.
+1. Open the `manifest.json` file located under `sensormanager/webapp`.
 
-2. Go to the section `sap.app`. Here, you add a new data source with name `sensorSource`, which points to the sensor data. (Please ensure that the whole attribute(s) in the manifest should be replaced that are provided in the code snippets.)
+2. Go to the section `sap.app`. Here, you add a new `dataSources` section containing a data source with name `sensorSource`, which points to the sensor data.
 
-***SensorManager/webapp/manifest.json***
+***sensormanager/webapp/manifest.json***
 
 ````json
 "sap.app": {
+    ...,
     "dataSources": {
         "sensorSource": {
             "type": "JSON",
@@ -44,11 +45,12 @@ After adding the sensor data to your application, you'll need to configure the d
 
 3. Go to the section `sap.ui5`. Here, you add a new JSONModel with name `sensorModel`, which points to the newly created data source.
 
-***SensorManager/webapp/manifest.json***
+***sensormanager/webapp/manifest.json***
 
 ````json
 "sap.ui5": {
     "models": {
+	    ...,
         "sensorModel": {
             "type": "sap.ui.model.json.JSONModel",
             "dataSource": "sensorSource"
@@ -61,11 +63,11 @@ After adding the sensor data to your application, you'll need to configure the d
 
 After configuring the data service, it's now time to enrich your `Sensors.view.xml` with some fancy UI5 controls!
 
-1. Open the `Sensors.view.xml` located under `SensorManager/webapp/view`.
+1. Open the `Sensors.view.xml` located under `sensormanager/webapp/view`.
 
 2. Add `sap.f` and `sap.ui.layout.cssgrid` to the xml namespace declarations to make sure that the required resources are available in your view.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <mvc:View
@@ -76,9 +78,9 @@ After configuring the data service, it's now time to enrich your `Sensors.view.x
     displayBlock="true">
 ````
 
-3. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar. An aggregation is a special relation between two UI element types. It is used to define the parent-child relationship within the tree structure. The parent end of the aggregation has cardinality 0..1, while the child end may have 0..1 or 0..*. The element's API offers convenient and consistent methods to deal with aggregations (e.g. to get, set, or remove target elements). Examples are table rows and cells, or the content of a table cell.
+3. Add `sap.f.GridList` to the `content` aggregation of the IconTabBar. An aggregation is a relation between two UI elements. It is used to define the parent-child relationship within the tree structure. The child end of the relation may have cardinality 0..1 or 0..*. The elements' API offers convenient and consistent methods to deal with aggregations (e.g. to get, set, or remove child elements). Examples are table rows and cells, or the content of a table cell.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <f:GridList id="sensorsList" noDataText="No sensors">
@@ -99,11 +101,11 @@ After configuring the data service, it's now time to enrich your `Sensors.view.x
 
 After adding the `sap.f.GridList` control, you'll need to connect the control to the sensor data. For this, UI5 provides a mechanism called *Data Binding*.
 
-1. Open the `Sensors.view.xml` located under `SensorManager/webapp/view`.
+1. Open the `Sensors.view.xml` located under `sensormanager/webapp/view`.
 
 2. Bind the `items` aggregation of the `sap.f.GridList` to the path `sensorModel>/sensors`. Here, `sensorModel` is  the name of your recently defined data model, and `/sensors` points to a property inside it. As this is an array with several entries, you'd probably like to define sorting and grouping as well. In the `sorter` you can configure this by using the properties available:
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <f:GridList id="sensorsList"
@@ -113,7 +115,7 @@ After adding the `sap.f.GridList` control, you'll need to connect the control to
 
 3. The list items are defined once as a template, which is then repeated multiple times to represent each entry of the sensors array. We also add some location details to our `sap.m.CustomListItem`. Here, `location` references the location property of each of the displayed sensor items.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <CustomListItem>

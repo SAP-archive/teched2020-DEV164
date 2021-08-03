@@ -8,7 +8,7 @@ In this exercise you'll learn how easy it is to deploy your application directly
 
 First of all, you need to create the space in your Cloud Foundry environment to host your newly created UI5 application.
 
-1. Open the SAP BTP Trial by opening *https://cockpit.hanatrial.ondemand.com/cockpit/#/home/trial* in a new browser tab and click *Enter Your Trial Account*.
+1. Open the SAP BTP Trial by opening *https://cockpit.hanatrial.ondemand.com/cockpit/#/home/trial* in a new browser tab and click *Go To Your Trial Account*.
 <br><br>![](images/11_01_0010.png)<br><br>
 
 2. You're redirected to your personal SAP BTP Cockpit where your subaccounts are listed. Click on the prefered subaccount, e.g. *trial*.
@@ -31,13 +31,13 @@ Now you can login to your Cloud Foundry environment directly from SAP Business A
 1. Open SAP Business Application Studio. Click in the header toolbar on *View* and then select *Find Command...*. Enter *CF: Login to cloud foundry*.
 <br><br>![](images/11_02_0010.png)<br><br>
 
-2. Enter the Cloud Foundry API endpoint you'd like to use. If your environment runs in the EU10 region, this is `https://api.cf.eu10.hana.ondemand.com`. If you wanna host your application in another region, please check following [site](https://help.sap.com/viewer/3504ec5ef16548778610c7e89cc0eac3/LATEST/en-US/350356d1dc314d3199dca15bd2ab9b0e.html) to get an overview about all available regions and respective API endpoints.
+2. Enter the Cloud Foundry API endpoint you'd like to use. If your environment runs in the EU10 region, this is `https://api.cf.eu10.hana.ondemand.com`. If you wanna host your application in another region, please check following [site](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/350356d1dc314d3199dca15bd2ab9b0e.html) to get an overview about all available regions and respective API endpoints.
 <br><br>![](images/11_02_0020.png)<br><br>
 
 3. Enter the email address you have used for registering your SAP BTP account.
 <br><br>![](images/11_02_0030.png)<br><br>
 
-4. Enter the password for your SAP BTP account.
+4. Enter the password for your SAP BTP account. Remember that you have to enter your password followed by your 2FA code in case you have set up 2-Factor-Authentication!
 <br><br>![](images/11_02_0040.png)<br><br>
 
 5. After a few seconds a small window appears in the lower right corner notifying you that the login was successful.
@@ -48,10 +48,10 @@ Now you can login to your Cloud Foundry environment directly from SAP Business A
 
 After logging in you're asked to specify your desired Cloud Foundry organization and space.
 
-1. Open SAP Business Application Studio and click in the header toolbar on *View* and then select *Find Command...*. Enter *CF: Set Org and Space*.
+1. If you are not asked right away to select the organization, then click in the header toolbar on *View* and then select *Find Command...*. Enter *CF: Set Org and Space*.
 <br><br>![](images/11_03_0010.png)<br><br>
 
-2. Enter your Cloud Foundry organization name e.g. *ui5-cloud-foundry*.
+2. Enter your Cloud Foundry organization name e.g. *ui5-cloud-foundry* - or select the ID of your trial account (the first part of the Business Application Studio URL)
 <br><br>![](images/11_03_0020.png)<br><br>
 
 3. Select your newly created space, e.g. *ui5-apps*.
@@ -65,9 +65,9 @@ After logging in you're asked to specify your desired Cloud Foundry organization
 
 Your application will be available at `https://<approuter-url>/<app/id>`, and the application router will not redirect any traffic that hits the root URL. In this exercise, you will change this, so that your application will also be available at `https://<approuter-url>/`.
 
-1. Open the file `SensorManager/webapp/manifest.json`.
+1. Open the file `sensormanager/webapp/manifest.json`.
 
-2. Copy the value of the `sap.app/id` property. In your case, this should be *keepcool.SensorManager*.
+2. Copy the value of the `sap.app/id` property. In your case, this should be *keepcool.sensormanager*.
 <br><br>![](images/11_04_0010.png)<br><br>
 
 3. Open the file `teched2020-approuter/xs-app.json`, add a property `welcomeFile` to define the redirect, paste the copied value of the previous step, and remove the dot from the value.
@@ -75,20 +75,20 @@ Your application will be available at `https://<approuter-url>/<app/id>`, and th
 ````json
 {
   "authenticationMethod": "none",
-  "welcomeFile": "keepcoolSensorManager",
+  "welcomeFile": "keepcoolsensormanager",
   "routes": []
 }
 ````
 
 ## Exercise 11.5 - Configure Your UI5 Application
 
-Since you created your app using one of the application templates available in SAP Business Application Studio, all files which are located under `SensorManager/test/` and `SensorManager/localService/` are excluded from any build, because in a productive application these files are usually not needed. In our case the sensor data is placed in a local JSON file, so the `sensors.json` file needs to be included in the build. 
+Since you created your app using one of the application templates available in SAP Business Application Studio, all files which are located under `sensormanager/test/` and `sensormanager/localService/` are excluded from any build, because in a productive application these files are usually not needed. In our case the sensor data is placed in a local JSON file, so the `sensors.json` file needs to be included in the build. 
 
-1. Open `SensorManager/ui5.yaml`. 
+1. Open `sensormanager/ui5.yaml`. 
 
 2. Remove the `"/localService/**"` entry for the `builder` section.
 
-***SensorManager/ui5.yaml***
+***sensormanager/ui5.yaml***
 
 ````yaml
 builder:

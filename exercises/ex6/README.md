@@ -9,11 +9,11 @@ As your customer needs the full overview to make decisions quickly, you will giv
 
 For this, we enhance our `sap.m.IconTabBar` control.
 
-1. Open `SensorManager/webapp/view/Sensors.view.xml`.
+1. Open `sensormanager/webapp/view/Sensors.view.xml`.
 
 2. Add `sap.m.IconTabFilter` elements to the `items` aggregation of the `sap.m.IconTabBar` control. They will be visible as icons above the bar, so that the user can click them to filter the list.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <IconTabBar id="idIconTabBar" class="sapUiResponsiveContentPadding">
@@ -34,11 +34,11 @@ For this, we enhance our `sap.m.IconTabBar` control.
 
 In the previous section you've added all necessary controls. Next, you'll implement the filtering logic.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
+1. Open `sensormanager/webapp/controller/Sensors.controller.js`.
 
 2. Add the module `sap/ui/model/Filter` as a dependency to `Sensors.controller.js`.
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 sap.ui.define([
@@ -52,7 +52,7 @@ sap.ui.define([
 
 3. Implement the `onSensorSelect` function for filtering the sensor list items by checking their `status` property. We'll also make use of the previously defined threshold and use some filter settings to narrow down the result. `LT` for example means "less than".
 
-***SensorManager/webapp/controller/Sensors.controller.js***
+***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
 onSensorSelect: function (oEvent) {
@@ -81,11 +81,11 @@ onSensorSelect: function (oEvent) {
 
 The filtering logic is written. Next, you need to assign the filtering function to the binding of the `sap.m.IconTabBar`.
 
-1. Open `SensorManager/webapp/view/Sensors.view.xml`.
+1. Open `sensormanager/webapp/view/Sensors.view.xml`.
 
 2. Bind the `onSensorSelect` function to the `select` event of the `IconTabBar`. Whenever one of the `sap.m.IconTabFilter` elements is clicked, this function will be called.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <IconTabBar id="idIconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">
@@ -98,11 +98,11 @@ The filtering logic is written. Next, you need to assign the filtering function 
 
 Your customer wishes to display the total number of sensors as well. For this, you can introduce the `count` property of `sap.m.IconTabFilter`.
 
-1. Open `SensorManager/webapp/view/Sensors.view.xml`.
+1. Open `sensormanager/webapp/view/Sensors.view.xml`.
 
 2. Make use of an expression binding by adding the `count` property and the expression binding `{=${sensorModel>/sensors}.length}`.
 
-***SensorManager/webapp/view/Sensors.view.xml***
+***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
 <IconTabBar id="idIconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">

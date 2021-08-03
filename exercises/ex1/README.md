@@ -28,12 +28,12 @@ After completing these steps you'll have created your first UI5 application.
 4. Select *None* as Data Source, since we start without an external data source.
 <br><br>![](images/01_01_0025b.png)<br><br>
    
-5. Enter *App* as view name in the next step. (wo don't really select an entity set, since we start without a data service).
+5. Enter *App* as view name in the next step. (we don't really select an entity set, since we start without a data service).
 <br><br>![](images/01_01_0030b.png)<br><br>
 
 6. Enter the following settings in the *Project Attributes* step:
     1. Enter *sensormanager* as *Module name*. 
-    2. Choose *Sensoe Manager* as *Application title*.
+    2. Choose *Sensor Manager* as *Application title*.
     3. Enter *keepcool* as your namespace.
     4. You can leave the description
     5. Leave the Project folder path as */home/user/projects* .</ol>
