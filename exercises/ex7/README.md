@@ -173,7 +173,7 @@ onSensorSelect: function (oEvent) {
     }
 
     oBinding.filter(this._aStatusFilters.concat(this._aCustomerFilters));
-}
+},
 ````
 
 ## Exercise 7.6 - Assign the 'Customer Change and Select' Logic to the Dialog

@@ -127,12 +127,16 @@ sap.ui.define([
   "sap/base/strings/formatMessage",
   "sap/m/ValueColor"
 ], function (Controller, formatMessage, ValueColor) {
-  
-  formatValueColor: function (oTreshold, iTemperature) {
-    oTreshold = oTreshold || {};
-    if (iTemperature < oTreshold.warm) {
+````
+
+and
+
+````js
+  formatValueColor: function (oThreshold, iTemperature) {
+    oThreshold = oThreshold || {};
+    if (iTemperature < oThreshold.warm) {
         return ValueColor.Neutral;
-    } else if (iTemperature >= oTreshold.warm && iTemperature < oTreshold.hot) {
+    } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
         return ValueColor.Critical;
     } else {
         return ValueColor.Error;
@@ -167,7 +171,7 @@ sap.ui.define([
 </f:header>
 ````
 
-6. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with fancy-colored temperature information depending on the value of the temperature.
+6. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with colored temperature information depending on the value of the temperature.
 <br><br>![](images/09_03_0020.png)<br><br>
 
 ## Summary

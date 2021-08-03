@@ -62,7 +62,7 @@ After creating the new view, you'll next add routing information for it to the `
 }
 ````
 
-6. Let's see if the newly created view can be opened. Switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the browser hash and reload the page. The UI5 application is refreshed, and the newly created page is displayed.
+6. Let's see if the newly created view can be opened. Switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the URL in the browser's location bar and open that URL. The UI5 application is refreshed, and the newly created page is displayed.
 <br><br>![](images/08_02_0010.png)<br><br>
 
 ## Exercise 8.3 - Implement the Navigation to the New View
@@ -170,7 +170,7 @@ return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
 6. Click any sensor. The navigation takes place, and you see the newly created view.
 <br><br>![](images/08_06_0020.png)<br><br>
 
-7. Click the "<" button to navigate back to the sensor list.
+7. Click the "<" button to navigate back to the sensor list. Thanks to how the Router works, you can also use the "Back" button of the browser or your mobile device instead.
 <br><br>![](images/08_06_0030.png)<br><br>
 
 ## Summary

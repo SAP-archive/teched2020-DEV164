@@ -7,7 +7,7 @@ You achieved a lot in the previous exercises. Now it's time to dress up your UI5
 
 ## Exercise 5.1 - Enhance Sensors.view.xml
 
-To give the customer the best possible overview, add some color to your application. Introduce a new layout and structure for the item, and also show an `sap.ui.core.Icon` there.
+To give the customer the best possible overview, add some color to your application. Introduce a new layout and structure for the items, and also show an `sap.ui.core.Icon` there.
 
 1. Open `Sensors.view.xml` and add the xml namespace `xmlns:core="sap.ui.core"` to the view to have the `sap.ui.core.Icon` available.
 
@@ -23,7 +23,7 @@ To give the customer the best possible overview, add some color to your applicat
     displayBlock="true">
 ````
 
-2. Add a temperature icon as well as layouting to the `sap.m.CustomListItem` control. `sapUiSmallMarginTop` and `sapUiSmallMarginEnd` are predefined device agnostic css classes, which add spacing to controls. `sap.m.HBox`and `sap.m.VBox` are helpers for layouting your application.
+2. Add a temperature icon as well as layouting to the `sap.m.CustomListItem` control. `sapUiSmallMarginTop` and `sapUiSmallMarginEnd` are predefined responsive css classes, which add screen size dependent spacing to controls. `sap.m.HBox`and `sap.m.VBox` are helpers for layouting your application.
 
 ***sensormanager/webapp/view/Sensors.view.xml***
 
@@ -49,15 +49,13 @@ To give the customer the best possible overview, add some color to your applicat
 
 In this exercise you'll enhance your application with some additional controller coding. 
 
-1. Go to folder `sensormanager/webapp/controller/`.
-
-2. Right-click on the `controller` folder and select `New File`.
+1. Right-click the `sensormanager/webapp/controller/` folder and select `New File`.
 <br><br>![](images/05_02_0010.png)<br><br>
 
-3. Enter `Sensors.controller.js` as the file name.
+2. Enter `Sensors.controller.js` as the file name.
 <br><br>![](images/05_02_0020.png)<br><br>
 
-4. All functions defined in the Controller can be used in your View. This gives you more flexibility to implement specific functionality to improve the visualization in your View. Copy and paste the following code into `Sensors.controller.js`:
+3. All functions defined in the Controller can be used in your View. This gives you more flexibility to implement specific functionality to improve the visualization in your View. Copy and paste the following code into `Sensors.controller.js`:
 
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
@@ -77,7 +75,7 @@ sap.ui.define([
 );
 ````
 
-5. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them later on during this exercise.
+4. Add the modules `sap/ui/core/IconColor` and `sap/m/MessageToast` as dependencies to the `Sensors.controller.js`. You'll use them later on during this exercise.
 
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
@@ -86,11 +84,11 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/core/IconColor",
     "sap/m/MessageToast"
-    ], function (Controller, IconColor, MessageToast) {
+], function (Controller, IconColor, MessageToast) {
     "use strict";
 ````
 
-6. Your next goal is to show an `sap.m.MessageToast` when your sensor data is loaded. Paste the following content into the `onInit` function of `Sensors.controller.js`. This also adds a function `getSensorModel` to retrieve the sensor model.
+5. Your next goal is to show an `sap.m.MessageToast` when your sensor data is loaded. Replace the `onInit` function of `Sensors.controller.js` with the following content. This also adds a function `getSensorModel` to retrieve the sensor model.
 
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
@@ -135,7 +133,7 @@ Your next goal is to bring some color to the user interface. You'd like to displ
 
 1. Open `sensormanager/webapp/controller/Sensors.controller.js`. 
 
-2. Add the new function `formatIconColor`. 
+2. Add the new function `formatIconColor` after the `getSensorModel` function (don't forget adding a comma after the `getSensorModel` function!). 
 
 ***sensormanager/webapp/controller/Sensors.controller.js***
 

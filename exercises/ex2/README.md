@@ -112,11 +112,11 @@ Let's adjust the `manifest.json` to enable the routing feature for your newly cr
     }],
     "targets": {
         "TargetSensors": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "Sensors",
-          "viewName": "Sensors"
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "Sensors",
+            "viewName": "Sensors"
         }
     }
 }
