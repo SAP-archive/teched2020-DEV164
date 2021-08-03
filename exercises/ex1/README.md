@@ -45,7 +45,7 @@ After completing these steps you'll have created your first UI5 application.
 <br><br>![](images/01_01_0060b.png)<br><br>
 
 8. Open the *projects* folder and select the *sensormanager* folder in the dialog and click *open*
-<br><br>![](images/01_01_0070b.png)<br><br>
+<br><br>![](images/01_01_0071b.png)<br><br>
 
 ## Exercise 1.2 - Create a Run Configuration
 
