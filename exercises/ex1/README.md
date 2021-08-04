@@ -40,7 +40,7 @@ After completing these steps you'll have created your first UI5 application.
     6. Click *Finish*. </ol>
 <br>![](images/01_01_0050b.png)<br><br><ol>
 
-7. The project is generated, and a notification window appears in the lower right corner. Click the blue *Open Folder* button at the top left of the screen.
+7. The project is generated, and a notification window appears in the lower right corner which will inform you when the project has been generated. Click the blue *Open Folder* button at the top left of the screen.
    * [Optional] Click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
 <br><br>![](images/01_01_0060b.png)<br><br>
 
