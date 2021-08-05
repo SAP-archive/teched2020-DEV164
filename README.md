@@ -79,6 +79,8 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 11.5 - Configure Your UI5 Application](exercises/ex11#exercise-115---configure-your-ui5-application)
     - [Exercise 11.6 - Build Your Application](exercises/ex11#exercise-116---build-your-application)
     - [Exercise 11.7 - Deploy Your Application](exercises/ex11#exercise-117---deploy-your-application)
+- [Exercise 12 - Deployment your own Control(exercises/ex12/)
+
 
 ## Download and Installation
 Follow these [steps](https://github.com/SAP-samples/teched2020-DEV164/tree/code) to get the code or do the exercises step by step.
