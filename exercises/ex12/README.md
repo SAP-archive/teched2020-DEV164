@@ -20,6 +20,7 @@ sap.ui.define([
 		metadata : {
 			properties : {
                 value: 	{type : "float", defaultValue : 0},
+                color: {type : "string"}
 			},
 			aggregations : {
 			},
@@ -87,7 +88,7 @@ sap.ui.define([
 
 ````
 
-4. Replace the icon control with your thermometer control in the view 
+4. Replace the icon control with your thermometer control in the view. It will use the same properties as the icon control.
    
 ***sensormanager/webapp/view/Sensors.view.xml***
 
@@ -99,7 +100,7 @@ sap.ui.define([
     </VBox>
     <cc:Thermometer 
       value="{sensorModel>temperature/value}"
-      color="{path: 'sensorModel>temperature/value'}"/>
+      color="{path: 'sensorModel>temperature/value', formatter:'.formatIconColor'}"/>
     <!--core:Icon 
       src="sap-icon://temperature" 
       color="{path: 'sensorModel>temperature/value', formatter:'.formatIconColor'}"
@@ -109,7 +110,7 @@ sap.ui.define([
 
 ````
 
-5. Reload the preview page and you see the first versin of your thermometer control. 
+1. Reload the preview page and you see the first versin of your thermometer control. 
 <br><br>![](images/12_01_0010.png)<br><br>   
 
 ## Exercise 12.2 - Beautify your Thermometer Control
@@ -132,10 +133,10 @@ Now you want to create a nice looking thermometer, which displays not only the t
 					oRM.openEnd();
                         oRM.openStart("div", oControl);
                         oRM.class("thermometer-tube");
+                        oRM.class("sapUiIconBGColor" + oControl.getColor());
                         var h = Math.min(Number(oControl.getValue()*7).toPrecision(2), 50);
                         oRM.style("top", 74-h + "px");
                         oRM.style("height", h + "px");
-                        oRM.style("background-color", oControl.getColor());
                         oRM.openEnd();
                         oRM.close("div");
                         oRM.openStart("div", oControl);
@@ -144,12 +145,12 @@ Now you want to create a nice looking thermometer, which displays not only the t
                         oRM.close("div");
                         oRM.openStart("div", oControl);
                         oRM.class("thermometer-tube-bgc");
-                        oRM.style("background-color", oControl.getColor());
+                        oRM.class("sapUiIconBGColor" + oControl.getColor());
                         oRM.openEnd();
                         oRM.close("div");
                         oRM.openStart("div", oControl);
                         oRM.class("thermometer-bulb");
-                        oRM.style("background-color", oControl.getColor());
+                        oRM.class("sapUiIconBGColor" + oControl.getColor());
                         oRM.openEnd();
                         oRM.close("div");
                         oRM.openStart("div", oControl);
@@ -158,7 +159,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
                         oRM.close("div");
                         oRM.openStart("div", oControl);
                         oRM.class("thermometer-bulb-bgc");
-                        oRM.style("background-color", oControl.getColor());
+                        oRM.class("sapUiIconBGColor" + oControl.getColor());
                         oRM.openEnd();
                         oRM.close("div");
                         oRM.openStart("div", oControl);
@@ -173,7 +174,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
 
 ````
 
-3. Add the css properties for the `div` elements which are used to paint your thermometer control. It consists of three circles and three rectangular divs.
+1. Add the css properties for the `div` elements which are used to paint your thermometer control. It consists of three circles and three rectangular divs.
 
 ***sensormanager/webapp/css/style.css***
 
