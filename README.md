@@ -24,7 +24,7 @@ The requirements to follow the exercises in this repository are:
 - [Getting Started](exercises/ex0/)
 - [Exercise 1 - Project Setup Using Business Application Studio](exercises/ex1/)
     - [Exercise 1.1 - Create a New UI5 Application](exercises/ex1#exercise-11---create-a-new-ui5-application)
-    - [Exercise 1.2 - Try out the generated Application](exercises/ex1#exercise-12---create-a-run-configuration)
+    - [Exercise 1.2 - Try out the generated Application](exercises/ex1#exercise-12---try-out-the-generated-application)
 - [Exercise 2 - Basic UI5 Configuration and  View Creation](exercises/ex2/)
     - [Exercise 2.1 - Switch to SAP Fiori 3](exercises/ex2#exercise-21---switch-to-sap-fiori-3)
     - [Exercise 2.2 - Create Sensors.view.xml](exercises/ex2#exercise-22---create-sensorsviewxml)
