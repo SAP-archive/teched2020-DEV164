@@ -189,22 +189,17 @@ renderer : {
 ````css
 /* Enter your custom styles here */
 .thermometer-control {
-    border: 1px;
     width: 50px;
     height: 70px;
-    border-style: none;
 }
 .thermometer-tube {
     position: absolute;
-    border: 1px;
     width: 10px;
-    top: 20px;
     left: 9px;
     z-index: 5;
 }
 .thermometer-tube-bgw {
     position: absolute;
-    border: 1px;
     width: 14px;
     height: 60px;
     background-color: white;
