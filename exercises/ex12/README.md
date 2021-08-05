@@ -257,7 +257,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
 
 4. Switch to the browser tab where the application preview is opened. Now you see your own custom control displaying the temperature also graphically for every kooling house.
 <br><br>![](images/12_03_0040.png)<br><br>
-
+ 
 
 ## Further Information
 * Cards: https://ui5.sap.com/#/topic/5b46b03f024542ba802d99d67bc1a3f4
