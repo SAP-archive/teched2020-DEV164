@@ -123,53 +123,53 @@ Now you want to create a nice looking thermometer, which displays not only the t
 ***sensormanager/webapp/control/Thermometer.js***
 
 ````js
-		renderer : {
-			apiVersion : 2,
-			render : function (oRM, oControl) {
-				if (oControl.getValue()){
-					oRM.openStart("div", oControl);
-					oRM.class("thermometer-control");
-					oRM.openEnd();
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tube");
-                        oRM.class("sapUiIconBGColor" + oControl.getColor());
-                        var h = Math.min(Number(oControl.getValue()*7).toPrecision(2), 50);
-                        oRM.style("top", 74-h + "px");
-                        oRM.style("height", h + "px");
-                        oRM.openEnd();
-                        oRM.close("div");
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tube-bgw");
-                        oRM.openEnd();
-                        oRM.close("div");
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tube-bgc");
-                        oRM.class("sapUiIconBGColor" + oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-bulb");
-                        oRM.class("sapUiIconBGColor" + oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-bulb-bgw");
-                        oRM.openEnd();
-                        oRM.close("div");
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-bulb-bgc");
-                        oRM.class("sapUiIconBGColor" + oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-value");
-                        oRM.openEnd();
+renderer : {
+		apiVersion : 2,
+		render : function (oRM, oControl) {
+		if (oControl.getValue()){
+			oRM.openStart("div", oControl);
+			oRM.class("thermometer-control");
+			oRM.openEnd();
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-tube");
+                        	oRM.class("sapUiIconBGColor" + oControl.getColor());
+                        	var h = Math.min(Number(oControl.getValue()*7).toPrecision(2), 50);
+                        	oRM.style("top", 74-h + "px");
+                        	oRM.style("height", h + "px");
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-tube-bgw");
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-tube-bgc");
+                        	oRM.class("sapUiIconBGColor" + oControl.getColor());
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-bulb");
+                        	oRM.class("sapUiIconBGColor" + oControl.getColor());
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-bulb-bgw");
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-bulb-bgc");
+                       		oRM.class("sapUiIconBGColor" + oControl.getColor());
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-value");
+                        	oRM.openEnd();
                         	oRM.text(Math.min(Number(oControl.getValue()).toFixed(1)));
-                        oRM.close("div");
-					oRM.close("div");
-				}
-			}
+                        	oRM.close("div");
+			oRM.close("div");
 		}
+	}
+}
 
 ````
 
