@@ -110,7 +110,8 @@ sap.ui.define([
 
 ````
 
-1. Reload the preview page and you see the first versin of your thermometer control. 
+1. Reload the preview page and you see the first simple version of your thermometer control. 
+
 <br><br>![](images/12_01_0010.png)<br><br>   
 
 ## Exercise 12.2 - Beautify your Thermometer Control
