@@ -57,7 +57,7 @@ sap.ui.define([
 
 ***sensormanager/webapp/css/style.css***
 
-```json
+````css
 /* Enter your custom styles here */
 .thermometer-control {
     width: 50px;
