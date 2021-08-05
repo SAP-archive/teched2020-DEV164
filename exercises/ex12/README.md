@@ -84,8 +84,8 @@ sap.ui.define([
 });
 ````
 
-3. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with the customer name.
-<br><br>![](images/09_02_0010.png)<br><br>
+3. Switch to the browser tab where the application preview is opened. Now you see your own custom control displaying the temperature also graphically for every kooling house.
+<br><br>![](images/12_03_0040.png)<br><br>
 
 
 ## Further Information
