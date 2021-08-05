@@ -177,7 +177,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
 
 ***sensormanager/webapp/css/style.css***
 
-````jsn
+````JSON
 /* Enter your custom styles here */
 .thermometer-control {
     border: 1px;
