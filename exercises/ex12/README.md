@@ -57,7 +57,7 @@ sap.ui.define([
 
 ***sensormanager/webapp/css/style.css***
 
-````js
+```json
 /* Enter your custom styles here */
 .thermometer-control {
     width: 50px;
@@ -66,7 +66,7 @@ sap.ui.define([
     color: white;
     background-color: gray;
 }
-````
+```
 
 3. Switch in the Sensors.view.xml from the icon control to your thermometer control. First define a namespace for the control folder like for a library:
 
