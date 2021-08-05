@@ -71,7 +71,7 @@ The requirements to follow the exercises in this repository are:
 - [Exercise 10 - Chart with DataBinding](exercises/ex10/)
     - [Exercise 10.1 - Create the Chart](exercises/ex10#exercise-101---create-the-chart)
     - [Exercise 10.2 - Master the Chart](exercises/ex10#exercise-102---master-the-chart)
-- [Exercise 12 - Deployment to SAP BTP, Cloud Foundry runtime](exercises/ex11/)
+- [Exercise 11 - Deployment to SAP BTP, Cloud Foundry runtime](exercises/ex11/)
     - [Exercise 11.1 - Create Space in Cloud Foundry](exercises/ex11#exercise-111---create-space-in-cloud-foundry)
     - [Exercise 11.2 - Login to Cloud Foundry](exercises/ex11#exercise-112---login-to-cloud-foundry)
     - [Exercise 11.3 - Set Organization and Space](exercises/ex11#exercise-113---set-organization-and-space)
