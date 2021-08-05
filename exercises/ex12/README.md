@@ -259,8 +259,4 @@ Now you want to create a nice looking thermometer, which displays not only the t
  
 
 ## Further Information
-* Cards: https://ui5.sap.com/#/topic/5b46b03f024542ba802d99d67bc1a3f4
-* `sap.f.Card`: https://ui5.sap.com/#/api/sap.f.Card
-* `sap.f.cards.NumericHeader`: https://ui5.sap.com/#/api/sap.f.cards.NumericHeader
-* Methods and Events for Navigation
-: https://ui5.sap.com/#/topic/516e477e7e0b4e188b19a406e7528c1e
+* Custom Controls: https://ui5.sap.com/#/topic/d12d2ee6a5454d799358d425f9e7c4db
