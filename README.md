@@ -8,7 +8,7 @@ This repository contains the material for a beginner workshop about developing a
 
 ## Overview
 
-In this session, you will learn about developing web applications with SAPUI5. We will use the SAP Business Application Studio as development environment and build a small application to get familiar with our latest developer tools and recommendations.
+In this session, you will learn about developing web applications with SAPUI5. This is a test. We will use the SAP Business Application Studio as development environment and build a small application to get familiar with our latest developer tools and recommendations.
 
 ## Requirements
 
