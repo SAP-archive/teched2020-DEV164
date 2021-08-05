@@ -254,7 +254,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
 }
 ````
 
-4. Switch to the browser tab where the application preview is opened. Now you see your own custom control displaying the temperature also graphically for every kooling house.
+4. Switch to the browser tab where the application preview is opened. Now you see your own custom control displaying the temperature also graphically for every icehouse.
 <br><br>![](images/12_03_0040.png)<br><br>
  
 
