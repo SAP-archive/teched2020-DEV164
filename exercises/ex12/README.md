@@ -162,6 +162,15 @@ renderer : {
                         	oRM.openEnd();
                         	oRM.close("div");
                         	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-tubetop-bgw");
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
+                        	oRM.class("thermometer-tubetop-bgc");
+                       		oRM.class("sapUiIconBGColor" + oControl.getColor());
+                        	oRM.openEnd();
+                        	oRM.close("div");
+                        	oRM.openStart("div", oControl);
                         	oRM.class("thermometer-value");
                         	oRM.openEnd();
                         	oRM.text(Math.min(Number(oControl.getValue()).toFixed(1)));
@@ -240,6 +249,26 @@ renderer : {
     position: absolute;
     top: 68px;
     left: 0px;
+    z-index: 3;
+}
+.thermometer-tubetop-bgw {
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    z-index: 4;
+
+}
+.thermometer-tubetop-bgc {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 5px;
     z-index: 3;
 }
 .thermometer-value{
