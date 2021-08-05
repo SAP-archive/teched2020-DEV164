@@ -1,5 +1,3 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex12/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex12/TechEd2020/SensorManager/webapp/)
 
 # Exercise 12 - Develop your own Control
 
