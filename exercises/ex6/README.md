@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex6/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex6/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../tree/code/ex6)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex6/sensormanager/webapp/)
 
 # Exercise 6 - Filtering With the IconTabBar
 

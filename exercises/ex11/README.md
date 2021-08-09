@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex11/TechEd2020)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../tree/code/ex11)
 
 # Exercise 11 - Deploy Your App to SAP BTP, Cloud Foundry runtime
 

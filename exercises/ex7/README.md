@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex7/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex7/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../tree/code/ex7)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex7/sensormanager/webapp/)
 
 # Exercise 7 - Fragment Containing a SelectDialog
 
