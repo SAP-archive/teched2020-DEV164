@@ -128,6 +128,6 @@ The build step has created a file named `TechEd2020_0.0.1.mtar` located under `m
 
 ## Summary
 
-Hooray! You've completed successfully [Exercise 11 - Deployment to SAP BTP, Cloud Foundry runtime](../ex11/README.md).
+Hooray! You've completed successfully [Exercise 11 - Deployment to SAP BTP, Cloud Foundry runtime](../ex11/README.md). But this is not the end yet:
 
-And now it's time to celebrate! By mastering this session you've reached the first level in becoming a UI5 expert.
+Continue to [Exercise 12 - Develop your own Control](../ex12/README.md).
