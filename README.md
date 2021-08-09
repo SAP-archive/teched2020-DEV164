@@ -85,7 +85,7 @@ The requirements to follow the exercises in this repository are:
 
 
 ## Download and Installation
-Follow these [steps](./tree/code) to get the code or do the exercises step by step.
+Follow these [steps](../../tree/code) to get the code or do the exercises step by step.
 
 ## Known Issues
 No known issues.
