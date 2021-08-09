@@ -3,7 +3,7 @@
 
 In this exercise you'll create your own UI5 custom control. Although the color of the thermometer icons shows already the general state in the main page, we want to see the temperature value and the temperature level also displayed graphically. Therefore we create a thermometer control which displays the temperatur with the color and the height of the scale directly.
 
-## Exercise 12.1 - Create the custom control code
+## Exercise 12.1 - Create the Custom Control Code
 
 1. Right-click on the `sensormanager/webapp` folder and select `New Folder`. Enter "control" as folder name and confirm.
 

@@ -4,11 +4,11 @@
 
 ## Description
 
-This repository contains the material for a beginner workshop about developing applications with SAPUI5 based on the the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**.
+This repository contains the material for a beginner workshop about developing applications with SAPUI5, based on the the SAP TechEd 2020 session called **DEV164 – Developing Apps with SAPUI5**.
 
 ## Overview
 
-In this session, you will learn about developing web applications with SAPUI5. This is a test. We will use the SAP Business Application Studio as development environment and build a small application to get familiar with our latest developer tools and recommendations.
+In this session, you will learn about developing web applications with SAPUI5. You will use the SAP Business Application Studio as development environment and build a small application to get familiar with our latest developer tools and recommendations.
 
 ## Requirements
 
@@ -79,20 +79,22 @@ The requirements to follow the exercises in this repository are:
     - [Exercise 11.5 - Configure Your UI5 Application](exercises/ex11#exercise-115---configure-your-ui5-application)
     - [Exercise 11.6 - Build Your Application](exercises/ex11#exercise-116---build-your-application)
     - [Exercise 11.7 - Deploy Your Application](exercises/ex11#exercise-117---deploy-your-application)
-- [Exercise 12 - Deployment your own Control](exercises/ex12/)
+- [Exercise 12 - Develop your own Control](exercises/ex12/)
+    - [Exercise 12.1 - Create the custom control code](exercises/ex12#exercise-121---create-the-custom-control-code)
+    - [Exercise 12.2 - Beautify your Thermometer Control](exercises/ex12#exercise-122---beautify-your-thermometer-control)
 
 
 ## Download and Installation
-Follow these [steps](https://github.com/SAP-samples/teched2020-DEV164/tree/code) to get the code or do the exercises step by step.
+Follow these [steps](./tree/code) to get the code or do the exercises step by step.
 
 ## Known Issues
 No known issues.
 
 ## Contributing
-The content of this repository is targeting the session *DEV164 - Developing Apps with SAPUI5* at SAP TechEd 2020. Only sesson speakers will make contributions to this repository. If you wanna enhance the content of this repository feel free to fork it.
+The content of this repository is meant for a UI5 course. Only course teachers will make contributions to this repository. If you want to enhance the content of this repository feel free to fork it. Bug fixes are welcome, though.
 
 ## How to obtain support
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+Support for the content in this repository is only available for course participants during the course. Otherwise, this repository is provided as-is.
 
 ## Stay in touch
 Stay in touch with the community by choosing your favourite channel.
@@ -112,4 +114,4 @@ Stay in touch with the community by choosing your favourite channel.
 
 ## License
 
-Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSES/Apache-2.0.txt) file.
+Copyright (c) 2021 SAP SE or an SAP affiliate company. All rights reserved. This repository is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](/LICENSES/Apache-2.0.txt) file.
