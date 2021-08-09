@@ -136,65 +136,63 @@ Now you want to create a nice looking thermometer, which displays not only the t
         renderer : {
             apiVersion : 2,
             render : function (oRM, oControl) {
-                if (oControl.getValue()){
+                oRM.openStart("div", oControl);
+                oRM.class("thermometer-control");
+                oRM.openEnd();
                     oRM.openStart("div", oControl);
-                    oRM.class("thermometer-control");
+                    oRM.class("thermometer-tube");
+                    oRM.style("background-color", oControl.getColor());
+                    var temperatureHeight = Math.min(oControl.getValue() * 7, 50);
+                    oRM.style("top", 74 - temperatureHeight + "px");
+                    oRM.style("height", temperatureHeight + "px");
                     oRM.openEnd();
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tube");
-                        oRM.style("background-color", oControl.getColor());
-                        var h = Math.min(Number(oControl.getValue()*7).toPrecision(2), 50);
-                        oRM.style("top", 74-h + "px");
-                        oRM.style("height", h + "px");
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tube-bgw");
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tube-bgc");
-                        oRM.style("background-color", oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-bulb");
-                        oRM.style("background-color", oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-bulb-bgw");
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-bulb-bgc");
-                        oRM.style("background-color", oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tubetop-bgw");
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-tubetop-bgc");
-                        oRM.style("background-color", oControl.getColor());
-                        oRM.openEnd();
-                        oRM.close("div");
-
-                        oRM.openStart("div", oControl);
-                        oRM.class("thermometer-value");
-                        oRM.openEnd();
-                        oRM.text(Math.min(Number(oControl.getValue()).toFixed(1)));
-                        oRM.close("div");
                     oRM.close("div");
-                }
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-tube-bgw");
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-tube-bgc");
+                    oRM.style("background-color", oControl.getColor());
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-bulb");
+                    oRM.style("background-color", oControl.getColor());
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-bulb-bgw");
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-bulb-bgc");
+                    oRM.style("background-color", oControl.getColor());
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-tubetop-bgw");
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-tubetop-bgc");
+                    oRM.style("background-color", oControl.getColor());
+                    oRM.openEnd();
+                    oRM.close("div");
+
+                    oRM.openStart("div", oControl);
+                    oRM.class("thermometer-value");
+                    oRM.openEnd();
+                    oRM.text(oControl.getValue().toFixed(1));
+                    oRM.close("div");
+                oRM.close("div");
             }
         }
 ````
@@ -208,6 +206,8 @@ Now you want to create a nice looking thermometer, which displays not only the t
 .thermometer-control {
     width: 50px;
     height: 70px;
+    position: relative;
+    display: inline-block;
 }
 .thermometer-tube {
     position: absolute;
