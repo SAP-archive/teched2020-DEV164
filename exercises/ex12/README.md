@@ -128,7 +128,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
 
 1. Open `sensormanager/webapp/control/Thermometer.js`.
 
-2. Enhance the code of the renderer to create several div elements which will be used to paint a thermometer using css.
+2. Enhance the code of the renderer to create several div elements which will be used to paint a thermometer using CSS. That's a lot of `div` elements. For productive development using SVG might be cleaner, but for the purpose of this tutorial, we stick with HTML.
 
 ***sensormanager/webapp/control/Thermometer.js***
 
