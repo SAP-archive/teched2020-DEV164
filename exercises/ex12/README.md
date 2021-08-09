@@ -87,9 +87,12 @@ sap.ui.define([
       <Title text="{sensorModel>location}"/>
       <Label text="{i18n>distanceLabel}:"/>
     </VBox>
+
     <cc:Thermometer 
       value="{sensorModel>temperature/value}"
-      color="{path: 'sensorModel>temperature/value', formatter:'.formatThermometerColor'}"/>
+      color="{path: 'sensorModel>temperature/value', formatter:'.formatThermometerColor'}"
+      class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
+
     <!--core:Icon 
       src="sap-icon://temperature" 
       color="{path: 'sensorModel>temperature/value', formatter:'.formatIconColor'}"
@@ -136,63 +139,28 @@ Now you want to create a nice looking thermometer, which displays not only the t
         renderer : {
             apiVersion : 2,
             render : function (oRM, oControl) {
-                oRM.openStart("div", oControl);
-                oRM.class("thermometer-control");
+                oRM.openStart("figure", oControl);
+                oRM.class("thermometer");
+                oRM.style("border", "2px solid " + oControl.getColor());
                 oRM.openEnd();
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-tube");
-                    oRM.style("background-color", oControl.getColor());
-                    var temperatureHeight = Math.min(oControl.getValue() * 7, 50);
-                    oRM.style("top", 74 - temperatureHeight + "px");
-                    oRM.style("height", temperatureHeight + "px");
-                    oRM.openEnd();
-                    oRM.close("div");
 
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-tube-bgw");
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-tube-bgc");
-                    oRM.style("background-color", oControl.getColor());
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-bulb");
-                    oRM.style("background-color", oControl.getColor());
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-bulb-bgw");
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-bulb-bgc");
-                    oRM.style("background-color", oControl.getColor());
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-tubetop-bgw");
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
-                    oRM.class("thermometer-tubetop-bgc");
-                    oRM.style("background-color", oControl.getColor());
-                    oRM.openEnd();
-                    oRM.close("div");
-
-                    oRM.openStart("div", oControl);
+                    oRM.openStart("figcaption");
                     oRM.class("thermometer-value");
+                    oRM.style("background-color", oControl.getColor());
+				    oRM.style("box-shadow", "0 0 0 2px " + oControl.getColor());
                     oRM.openEnd();
                     oRM.text(oControl.getValue().toFixed(1));
+                    oRM.close("figcaption");
+
+                    oRM.openStart("div");
+                    oRM.class("thermometer-level");
+                    var temperatureHeight = Math.min(oControl.getValue() * 7, 50) + 5; // values should range from 5 to 55
+                    oRM.style("height", temperatureHeight + "px");
+                    oRM.style("background-color", oControl.getColor());
+                    oRM.openEnd();
                     oRM.close("div");
-                oRM.close("div");
+
+                oRM.close("figure");
             }
         }
 ````
@@ -203,95 +171,41 @@ Now you want to create a nice looking thermometer, which displays not only the t
 
 ````css
 /* Enter your custom styles here */
-.thermometer-control {
-    width: 50px;
-    height: 70px;
+.thermometer {
+    display: block;
     position: relative;
-    display: inline-block;
-}
-.thermometer-tube {
-    position: absolute;
-    width: 10px;
-    left: 9px;
-    z-index: 5;
-}
-.thermometer-tube-bgw {
-    position: absolute;
-    width: 14px;
+    box-sizing: border-box;
+    width: 18px;
     height: 60px;
     background-color: white;
-    top: 22px;
-    left: 7px;
-    z-index: 4;
+    border-radius: 10px;
+    margin: 6px;
 }
-.thermometer-tube-bgc {
-    position: absolute;
-    border: 1px;
-    width: 18px;
-    height: 64px;
-    top: 20px;
-    left: 5px;
-    z-index: 3;
-}
-.thermometer-bulb {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    position: absolute;
-    top: 72px;
-    left: 4px;
-    z-index: 5;
 
-}
-.thermometer-bulb-bgw {
-    height: 24px;
-    width: 24px;
-    background-color: white;
-    border-radius: 50%;
+.thermometer-value {
     position: absolute;
-    top: 70px;
-    left: 2px;
-    z-index: 4;
-
-}
-.thermometer-bulb-bgc {
-    height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    position: absolute;
-    top: 68px;
-    left: 0px;
-    z-index: 3;
-}
-.thermometer-tubetop-bgw {
-    height: 14px;
-    width: 14px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 14px;
-    left: 7px;
-    z-index: 4;
-
-}
-.thermometer-tubetop-bgc {
+    bottom: -22px; 
+    left: -6px;
+    border: 2px solid white;
+    width: 22px;
     height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    position: absolute;
-    top: 12px;
-    left: 5px;
-    z-index: 3;
-}
-.thermometer-value{
-    position: absolute;
-    width: 20px;
-    top: 74px;
-    left: 4px;
-    z-index: 6;
+    border-radius: 14px;
     color: white;
-    font-size: small;
+    font-size: 13px;
     text-align: center;
+    padding-top: 4px;
+}
+
+.thermometer-level {
+    background-color: white;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    height: 30px;
+    width: 14px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 ````
 
