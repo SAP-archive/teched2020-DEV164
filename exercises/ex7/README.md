@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../tree/code/ex7)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/code/ex7)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex7/sensormanager/webapp/)
 
 # Exercise 7 - Fragment Containing a SelectDialog

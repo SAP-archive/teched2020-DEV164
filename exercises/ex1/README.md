@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../tree/code/ex1)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/code/ex1)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex1/sensormanager/webapp/)
 
 # Exercise 1 - Project Setup Using SAP Business Application Studio

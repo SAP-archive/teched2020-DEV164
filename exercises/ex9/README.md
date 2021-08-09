@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../tree/code/ex9)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/code/ex9)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex9/sensormanager/webapp/)
 
 # Exercise 9 - Card with NumericHeader
