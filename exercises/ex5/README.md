@@ -143,7 +143,7 @@ formatIconColor: function(iTemperature) {
     if (!oThreshold) {
         return IconColor.Neutral;
     } else if (iTemperature < oThreshold.warm) {
-        return IconColor.Positive;
+        return IconColor.Default;
     } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
         return IconColor.Critical;
     } else {

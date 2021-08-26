@@ -29,7 +29,7 @@ Now you'll dress up the `SensorStatus.view.xml` view.
 ***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<Page id="SensorStatusPage" title="{i18n>title}" showNavButton="true" navButtonPress=".navToSensors">
+<Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true" navButtonPress=".navToSensors">
   <content>
     <VBox class="sapUiContentPadding">
       <f:Card>

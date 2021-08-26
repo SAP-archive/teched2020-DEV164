@@ -56,11 +56,11 @@ It's time for a first preview of your newly created application!
 
 1. The Business Application Studio has altready created three so called Run Configurations.
     1. Click the ![](images/01_02_0005b.png) icon in the left icon bar.
-    2. Click on the first runconfiguration named *Start sensormanager*
+    2. Click on the green run icon of the first runconfiguration named *Start sensormanager*
 
 <br><br>![](images/01_02_0010b.png)<br><br>
 
-2. The application is initialized. After a few seconds, the application is started in a new tab of your browser.
+2. The application is initialized. After a few seconds, the application is started in a new tab of your browser. (It might be neccessary to switch off the pop up blocker)
 <br><br>![](images/01_02_0040b.png)<br><br>
 
 

@@ -165,7 +165,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
         }
 ````
 
-3. Add the css properties for the `div` elements which are used to paint your thermometer control. It consists of three circles and three rectangular divs.
+3. Add the css properties for the `div` elements which are used to paint your thermometer control. It consists of a circle and a rectangular div.
 
 ***sensormanager/webapp/css/style.css***
 

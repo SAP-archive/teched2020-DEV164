@@ -160,7 +160,7 @@ return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
 ***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<Page id="SensorStatusPage" title="{i18n>title}" showNavButton="true" navButtonPress=".navToSensors">
+<Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true" navButtonPress=".navToSensors">
 </Page>
 ````
 
