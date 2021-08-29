@@ -16,15 +16,16 @@ For this, we enhance our `sap.m.IconTabBar` control.
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<IconTabBar id="idIconTabBar" class="sapUiResponsiveContentPadding">
-    <items>
-        <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All"/>
-        <IconTabSeparator/>
-        <IconTabFilter icon="sap-icon://fridge" iconColor="Default" text="{i18n>msgFilterCold}" key="Cold"/>
-        <IconTabFilter icon="sap-icon://blur" iconColor="Critical" text="{i18n>msgFilterWarm}" key="Warm"/>
-        <IconTabFilter icon="sap-icon://warning" iconColor="Negative" text="{i18n>msgFilterHot}" key="Hot"/>
-    </items>
-    <content>
+            <IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
+                <items>
+                    <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All"/>
+                    <IconTabSeparator/>
+                    <IconTabFilter icon="sap-icon://fridge" iconColor="Default" text="{i18n>msgFilterCold}" key="Cold"/>
+                    <IconTabFilter icon="sap-icon://blur" iconColor="Critical" text="{i18n>msgFilterWarm}" key="Warm"/>
+                    <IconTabFilter icon="sap-icon://warning" iconColor="Negative" text="{i18n>msgFilterHot}" key="Hot"/>
+                </items>
+                <content>
+                ...
 ````
 
 3. Let's see if your UI5 application now displays the newly introduced `sap.m.IconTabFilter` elements! Switch to the browser tab with the opened application preview and reload the page.
@@ -55,26 +56,26 @@ sap.ui.define([
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onSensorSelect: function (oEvent) {
-    this._aCustomerFilters = [];
-    this._aStatusFilters = [];
+            onSensorSelect: function (oEvent) {
+                this._aCustomerFilters = [];
+                this._aStatusFilters = [];
 
-    var oBinding = this.getView().byId("sensorsList").getBinding("items"),
-        sKey = oEvent.getParameter("key"),
-        oThreshold = this.getSensorModel().getProperty("/threshold");
+                var oBinding = this.getView().byId("sensorsList").getBinding("items"),
+                    sKey = oEvent.getParameter("key"),
+                    oThreshold = this.getSensorModel().getProperty("/threshold");
 
-    if (sKey === "Cold") {
-        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
-    } else if (sKey === "Warm") {
-        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
-    } else if (sKey === "Hot") {
-        this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
-    } else {
-        this._aStatusFilters = [];
-    }
+                if (sKey === "Cold") {
+                    this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
+                } else if (sKey === "Warm") {
+                    this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
+                } else if (sKey === "Hot") {
+                    this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
+                } else {
+                    this._aStatusFilters = [];
+                }
 
-    oBinding.filter(this._aStatusFilters);
-}
+                oBinding.filter(this._aStatusFilters);
+            }
 ````
 
 ## Exercise 6.3 - Assign the Filtering to the IconTabBar
@@ -88,7 +89,7 @@ The filtering logic is written. Next, you need to assign the filtering function 
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<IconTabBar id="idIconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">
+            <IconTabBar id="iconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">
 ````
 
 3. Let's see if your UI5 application is now able to filter the sensor data correctly. Switch to the browser tab with the opened application preview and reload the page. Click the *Too Hot* icon. Only sensors with too high a temperature are displayed.
@@ -105,9 +106,11 @@ Your customer wishes to display the total number of sensors as well. For this, y
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<IconTabBar id="idIconTabBar" select=".onSensorSelect" class="sapUiResponsiveContentPadding">
-    <items>
-        <IconTabFilter showAll="true" text="{i18n>msgFilterAll}" key="All" count="{=${sensorModel>/sensors}.length}"/>
+                    <IconTabFilter 
+                        showAll="true" 
+                        text="{i18n>msgFilterAll}" 
+                        key="All"
+                        count="{=${sensorModel>/sensors}.length}"/>
 ````
 
 3. Let's see if your UI5 application can display the total number of sensors correctly. Switch to the browser tab with the opened application preview and reload the page. Do you see *100*? Yeah!

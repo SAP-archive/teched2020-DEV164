@@ -41,11 +41,11 @@ After creating the new view, you'll next add routing information for it to the `
 ***sensormanager/webapp/manifest.json***
 
 ````json
-{
-    "name": "RouteSensorStatus",
-    "pattern": "sensor/{index}",
-    "target": ["TargetSensorStatus"]
-}
+                {
+                    "name": "RouteSensorStatus",
+                    "pattern": "sensor/{index}",
+                    "target": ["TargetSensorStatus"]
+                }
 ````
 
 4. Go to section `sap.ui5` / `routing` / `targets`.
@@ -55,11 +55,11 @@ After creating the new view, you'll next add routing information for it to the `
 ***sensormanager/webapp/manifest.json***
 
 ````json
-"TargetSensorStatus": {
-    "viewId": "sensorStatus",
-    "viewName": "SensorStatus",
-    "viewLevel": 2
-}
+                "TargetSensorStatus": {
+                    "viewId": "sensorStatus",
+                    "viewName": "SensorStatus",
+                    "viewLevel": 2
+                }
 ````
 
 6. Let's see if the newly created view can be opened. Switch to the browser tab with the opened application preview. Add `#sensor/0` at the end of the URL in the browser's location bar and open that URL. The UI5 application is refreshed, and the newly created page is displayed.
@@ -76,10 +76,10 @@ Fine. You can access the newly created view. Next, you need to implement logic t
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-navToSensorStatus: function(oEvent) {
-    var iSensorIndex = oEvent.getSource().getBindingContext("sensorModel").getProperty("index");
-    this.getOwnerComponent().getRouter().navTo("RouteSensorStatus", {index: iSensorIndex});
-}
+            navToSensorStatus: function(oEvent) {
+                var iSensorIndex = oEvent.getSource().getBindingContext("sensorModel").getProperty("index");
+                this.getOwnerComponent().getRouter().navTo("RouteSensorStatus", {index: iSensorIndex});
+            }                       
 ````
 
 ## Exercise 8.4 - Assign the Navigation Logic to the Sensor Items
@@ -93,7 +93,7 @@ After implementing the navigation logic you'll need to assign it to a control, s
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<CustomListItem type="Active" press=".navToSensorStatus">
+                            <CustomListItem  type="Active" press=".navToSensorStatus">
 ````
 
 3. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page. Click any sensor. The navigation takes place, and you see the newly created view.
@@ -146,11 +146,12 @@ Next you need to implement the navigation logic.
 ***sensormanager/webapp/controller/SensorStatus.controller.js***
 
 ````js
-return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
-    navToSensors: function () {
-        this.getOwnerComponent().getRouter().navTo("RouteSensors");
-    }
-});
+    return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
+        navToSensors: function () {
+            this.getOwnerComponent().getRouter().navTo("RouteSensors");
+        }
+    });
+
 ````
 
 3. Open `sensormanager/webapp/view/SensorStatus.view.xml`.

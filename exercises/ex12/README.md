@@ -115,7 +115,7 @@ sap.ui.define([
                 } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
                     return "orange";
                 } else {
-                    return "red;
+                    return "red";
                 }
             },
 ````

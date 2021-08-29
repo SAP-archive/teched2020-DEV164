@@ -9,24 +9,40 @@ In this exercise you'll add some content to your application. A new UI5 view sho
 
 SAP Fiori 3 is SAP’s new target design system. It evolves the SAP Fiori design for all SAP products to fully support the Intelligent Suite, running on any device. SAP Business Application Studio by default generates UI5 projects based on SAP Fiori 3. In your UI5 application the SAP Fiori version is controlled by the UI5 theme. 
 
-1. Open `sensormanager/webapp/index.html`.
+1. Click on the files icon at the top of the icon bar at the left and open `sensormanager/webapp/index.html`.
 
 2. Check that the attribute `data-sap-ui-theme` has the value `sap_fiori_3`.
 
 ***sensormanager/webapp/index.html***
 
 ````html
-    <script
-        id="sap-ui-bootstrap"
-        src="resources/sap-ui-core.js"
-        data-sap-ui-theme="sap_fiori_3"
-        data-sap-ui-resourceroots='{"keepcool.sensormanager": "./"}'
-        data-sap-ui-compatVersion="edge"
-        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
-        data-sap-ui-async="true"
-        data-sap-ui-preload="async"
-        data-sap-ui-frameOptions="trusted">
-    </script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sensormanager</title>
+        <script
+            id="sap-ui-bootstrap"
+            src="resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_fiori_3"
+            data-sap-ui-resourceroots='{"keepcool.sensormanager": "./"}'
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+            data-sap-ui-async="true"
+			data-sap-ui-preload="async"
+            data-sap-ui-frameOptions="trusted"
+        ></script>
+    </head>
+    <body class="sapUiBody">
+        <div
+            data-sap-ui-component
+            data-name="keepcool.sensormanager"
+            data-id="container"
+            data-settings='{"id" : "sensormanager"}'
+        ></div>
+    </body>
+</html>
 ````
 
 ## Exercise 2.2 - Create Sensors.view.xml
@@ -70,16 +86,16 @@ You will use several UI5 libraries like `sap.m` or `sap.f` in your application. 
 ***sensormanager/webapp/manifest.json***
 
 ````json
-"dependencies": {
-    "minUI5Version": "1.66.0",
-    "libs": {
-        "sap.ui.core": {},
-        "sap.ui.layout": {},
-        "sap.m": {},
-        "sap.f": {},
-        "sap.suite.ui.microchart": {}
-    }
-},
+        "dependencies": {
+            "minUI5Version": "1.93.0",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.ui.layout": {},
+                "sap.m": {},
+                "sap.f": {},
+                "sap.suite.ui.microchart": {}
+            }
+        },
 ````
 
 ## Exercise 2.4 - Enable Routing for Sensors.view.xml
@@ -95,31 +111,31 @@ Let's adjust the `manifest.json` to enable the routing feature for your newly cr
 ***sensormanager/webapp/manifest.json***
 
 ````json
-"routing": {
-    "config": {
-        "routerClass": "sap.m.routing.Router",
-        "viewType": "XML",
-        "async": true,
-        "transition": "slide",
-        "viewPath": "keepcool.sensormanager.view",
-        "controlAggregation": "pages",
-        "controlId": "app"
-    },
-    "routes": [{
-        "name": "RouteSensors",
-        "pattern": "",
-        "target": ["TargetSensors"]
-    }],
-    "targets": {
-        "TargetSensors": {
-            "viewType": "XML",
-            "transition": "slide",
-            "clearControlAggregation": false,
-            "viewId": "Sensors",
-            "viewName": "Sensors"
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "transition": "slide",
+                "viewPath": "keepcool.sensormanager.view",
+                "controlAggregation": "pages",
+                "controlId": "app"
+            },
+            "routes": [{
+                "name": "RouteSensors",
+                "pattern": "",
+                "target": ["TargetSensors"]
+            }],
+            "targets": {
+                "TargetSensors": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "Sensors",
+                    "viewName": "Sensors"
+                }
+            }
         }
-    }
-}
 ````
 
 4. Open the tab with the application preview and reload it. The application is being updated, and you can see an empty `sap.m.IconTabBar`.

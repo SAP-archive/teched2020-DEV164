@@ -64,23 +64,24 @@ sap.ui.define([
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onCustomerSelect: function(){
-    if(!this._pDialog) {
-        this._pDialog = Fragment.load({
-            type: "XML",
-            name: "keepcool.sensormanager.view.CustomerSelectDialog",
-            controller: this
-        }).then(function(oDialog){
-            oDialog.setModel(this.getSensorModel(), "sensorModel");
-            oDialog.setModel(this.getView().getModel("i18n"), "i18n");
-            oDialog.setMultiSelect(true);
-            return oDialog;
-        }.bind(this));
-    }
-    this._pDialog.then(function(oDialog){
-        oDialog.open();
-    });
-}
+            onCustomerSelect: function(){
+                if(!this._pDialog) {
+                    this._pDialog = Fragment.load({
+                        type: "XML",
+                        name: "keepcool.sensormanager.view.CustomerSelectDialog",
+                        controller: this
+                    }).then(function(oDialog){
+                        oDialog.setModel(this.getSensorModel(), "sensorModel");
+                        oDialog.setModel(this.getView().getModel("i18n"), "i18n");
+                        oDialog.setMultiSelect(true);
+                        return oDialog;
+                    }.bind(this));
+                }
+                this._pDialog.then(function(oDialog){
+                    oDialog.open();
+                });
+            }
+
 ````
 
 ## Exercise 7.3 - Add a Dialog Opening Button
@@ -93,11 +94,12 @@ After implementing the dialog opening logic, you need to assign this logic to a 
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<Page id="page" title="{i18n>title}">
-    <headerContent>
-        <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}"/>
-    </headerContent>
-    <content>
+    <Page id="page" title="{i18n>title}">
+        <headerContent>
+            <Button icon="sap-icon://menu" press=".onCustomerSelect" tooltip="{i18n>toolTipSelectCustomer}"/>
+        </headerContent>
+        <content>
+        ...
 ````
 
 3. Switch the browser tab to the application preview and refresh the page to see how the user interface of your application changes. Click the menu button in upper right corner.
@@ -115,12 +117,13 @@ For this, you need to implement the filter logic.
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onCustomerSelectChange: function(oEvent) {
-    var sValue = oEvent.getParameter("value");
-    var oFilter = new Filter("name", "Contains", sValue);
-    var oBinding = oEvent.getSource().getBinding("items");
-    oBinding.filter([oFilter]);
-}
+            onCustomerSelectChange: function(oEvent) {
+                var sValue = oEvent.getParameter("value");
+                var oFilter = new Filter("name", "Contains", sValue);
+                var oBinding = oEvent.getSource().getBinding("items");
+                oBinding.filter([oFilter]);
+            }
+
 ````
 
 ## Exercise 7.5 - Implement the 'Select Customer' Logic
@@ -134,14 +137,14 @@ After providing an option to select preferred customers, you also need to add th
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onCustomerSelectConfirm: function(oEvent) {
-    var aSelectedItems = oEvent.getParameter("selectedItems");
-    var oBinding = this.getView().byId("sensorsList").getBinding("items");
-    this._aCustomerFilters = aSelectedItems.map(function(oItem) {
-        return new Filter("customer", "EQ", oItem.getTitle());
-    });
-    oBinding.filter(this._aCustomerFilters.concat(this._aStatusFilters));
-}
+            onCustomerSelectConfirm: function(oEvent) {
+                var aSelectedItems = oEvent.getParameter("selectedItems");
+                var oBinding = this.getView().byId("sensorsList").getBinding("items");
+                this._aCustomerFilters = aSelectedItems.map(function(oItem) {
+                    return new Filter("customer", "EQ", oItem.getTitle());
+                });
+                oBinding.filter(this._aCustomerFilters.concat(this._aStatusFilters));
+            }
 ````
 
 3. To ensure that both filters (customer and status) are applied, you need to make two more adaptations in `Sensors.controller.js`.  Here, you declare the `_aCustomerFilters` and `_aStatusFilters` in the `onInit` function to ensure that they are defined. You also merge the `_aCustomerFilters` with the `_aStatusFilters` before performing the filtering on the binding.
@@ -149,31 +152,32 @@ onCustomerSelectConfirm: function(oEvent) {
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onInit: function () {
-    this._aCustomerFilters = [];
-    this._aStatusFilters = [];
+            onInit: function() {
+                this._aCustomerFilters = [];
+                this._aStatusFilters = [];
+                ...
 ````
 
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onSensorSelect: function (oEvent) {
-    var oBinding = this.getView().byId("sensorsList").getBinding("items"),
-        sKey = oEvent.getParameter("key"),
-        oThreshold = this.getSensorModel().getProperty("/threshold");
+            onSensorSelect: function (oEvent) {
+                var oBinding = this.getView().byId("sensorsList").getBinding("items"),
+                    sKey = oEvent.getParameter("key"),
+                    oThreshold = this.getSensorModel().getProperty("/threshold");
 
-    if (sKey === "Cold") {
-        this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
-    } else if (sKey === "Warm") {
-        this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
-    } else if (sKey === "Hot") {
-        this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
-    } else {
-        this._aStatusFilters = [];
-    }
+                if (sKey === "Cold") {
+                    this._aStatusFilters = [new Filter("temperature/value", "LT", oThreshold.warm, false)];
+                } else if (sKey === "Warm") {
+                    this._aStatusFilters = [new Filter("temperature/value", "BT", oThreshold.warm, oThreshold.hot, false)];
+                } else if (sKey === "Hot") {
+                    this._aStatusFilters = [new Filter("temperature/value", "GT", oThreshold.hot, false)];
+                } else {
+                    this._aStatusFilters = [];
+                }
 
-    oBinding.filter(this._aStatusFilters.concat(this._aCustomerFilters));
-},
+                oBinding.filter(this._aStatusFilters.concat(this._aCustomerFilters));
+            },
 ````
 
 ## Exercise 7.6 - Assign the 'Customer Change and Select' Logic to the Dialog
@@ -187,16 +191,18 @@ One last thing is missing: You need to assign the newly created functions to the
 ***sensormanager/webapp/view/CustomerSelectDialog.fragment.xml***
 
 ````xml
-<SelectDialog
-    title="{i18n>titleSelectCustomer}"
-    contentHeight="38.3%"
-    rememberSelections="true"
-    confirm=".onCustomerSelectConfirm"
-    liveChange=".onCustomerSelectChange"
-    items="{
-        path: 'sensorModel>/customers',
-        sorter: {path:'name'}
-    }">
+    <SelectDialog
+        title="{i18n>titleSelectCustomer}"
+        contentHeight="38.3%"
+        rememberSelections="true"
+        confirm=".onCustomerSelectConfirm"
+        liveChange=".onCustomerSelectChange"
+        items="{
+            path: 'sensorModel>/customers',
+            sorter: {path:'name'}
+        }">
+        <StandardListItem title="{sensorModel>name}"/>
+    </SelectDialog>
 ````
 
 3. It's demo time! Switch the browser tab to the application preview and refresh the page to see how the user interface of your UI5 application changes. Select the *menu* button in upper right corner. Enter some parts of customer names and check if the customer list is filtered.

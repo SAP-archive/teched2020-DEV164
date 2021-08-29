@@ -17,9 +17,9 @@ To give the customer the best possible overview, add some color to your applicat
 <mvc:View
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
     xmlns:grid="sap.ui.layout.cssgrid"
     xmlns:f="sap.f"
-    xmlns="sap.m"
     displayBlock="true">
 ````
 
@@ -28,21 +28,32 @@ To give the customer the best possible overview, add some color to your applicat
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<CustomListItem type="Active">
-    <layoutData>
-        <FlexItemData growFactor="1" shrinkFactor="0"/>
-    </layoutData>
-    <HBox justifyContent="SpaceBetween">
-        <VBox justifyContent="SpaceBetween" class="sapUiSmallMarginTop sapUiSmallMarginBegin">
-            <Title text="{sensorModel>location}"/>
-            <Label text="{i18n>distanceLabel}:"/>
-        </VBox>
-        <core:Icon src="sap-icon://temperature" size="2.5rem" class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
-    </HBox>
-    <HBox justifyContent="SpaceBetween" class="sapUiTinyMarginTop sapUiSmallMarginBottom sapUiSmallMarginBeginEnd">
-        <ObjectNumber number="{sensorModel>distance}" unit="{i18n>distanceUnit}"/>
-    </HBox>
-</CustomListItem>
+                            <CustomListItem  type="Active">
+                                <layoutData>
+                                    <FlexItemData 
+                                        growFactor="1" 
+                                        shrinkFactor="0"/>
+                                </layoutData>
+                                <HBox justifyContent="SpaceBetween">
+                                    <VBox 
+                                        justifyContent="SpaceBetween" 
+                                        class="sapUiSmallMarginTop sapUiSmallMarginBegin">
+                                        <Title text="{sensorModel>location}"/>
+                                        <Label text="{i18n>distanceLabel}:"/>
+                                    </VBox>
+                                    <core:Icon 
+                                        src="sap-icon://temperature" 
+                                        size="2.5rem" 
+                                        class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
+                                </HBox>
+                                <HBox 
+                                    justifyContent="SpaceBetween" 
+                                    class="sapUiTinyMarginTop sapUiSmallMarginBottom sapUiSmallMarginBeginEnd">
+                                    <ObjectNumber 
+                                        number="{sensorModel>distance}" 
+                                        unit="{i18n>distanceUnit}"/>
+                                </HBox>
+                            </CustomListItem>
 ````
 
 ## Exercise 5.2 - Create Sensors.controller.js
@@ -93,14 +104,17 @@ sap.ui.define([
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-onInit: function() {
-    this.getSensorModel().dataLoaded().then(function() {
-        MessageToast.show(this.getOwnerComponent().getModel("i18n").getResourceBundle().getText("msgSensorDataLoaded"), { closeOnBrowserNavigation: false });
-    }.bind(this));
-},
-getSensorModel: function(){
-    return this.getOwnerComponent().getModel("sensorModel");
-}
+            onInit: function() {
+                this.getSensorModel().dataLoaded().then(function() {
+                    MessageToast.show(
+                        this.getOwnerComponent().getModel("i18n").getResourceBundle().getText("msgSensorDataLoaded"), 
+                        { closeOnBrowserNavigation: false });
+                }.bind(this));
+            },
+            getSensorModel: function(){
+                return this.getOwnerComponent().getModel("sensorModel");
+            }
+
 ```` 
 
 ## Exercise 5.3 - Assign Controller to View
@@ -118,9 +132,9 @@ Now you need to tell your view which controller is associated with it.
     controllerName="keepcool.sensormanager.controller.Sensors"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
     xmlns:grid="sap.ui.layout.cssgrid"
     xmlns:f="sap.f"
-    xmlns="sap.m"
     displayBlock="true">
 ````
 
@@ -138,18 +152,19 @@ Your next goal is to bring some color to the user interface. You'd like to displ
 ***sensormanager/webapp/controller/Sensors.controller.js***
 
 ````js
-formatIconColor: function(iTemperature) {
-    var oThreshold = this.getSensorModel().getProperty("/threshold");
-    if (!oThreshold) {
-        return IconColor.Neutral;
-    } else if (iTemperature < oThreshold.warm) {
-        return IconColor.Default;
-    } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
-        return IconColor.Critical;
-    } else {
-        return IconColor.Negative;
-    }
-}
+            formatIconColor: function(iTemperature) {
+                var oThreshold = this.getSensorModel().getProperty("/threshold");
+                if (!oThreshold) {
+                    return IconColor.Neutral;
+                } else if (iTemperature < oThreshold.warm) {
+                    return IconColor.Default;
+                } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
+                    return IconColor.Critical;
+                } else {
+                    return IconColor.Negative;
+                }
+            }
+
 ````
 
 ## Exercise 5.5 - Add the Formatter in your View
@@ -164,9 +179,11 @@ You're almost done. The last piece is adding the newly created formatter functio
 ***sensormanager/webapp/view/Sensors.view.xml***
 
 ````xml
-<core:Icon src="sap-icon://temperature" size="2.5rem"
-    color="{path: 'sensorModel>temperature/value', formatter:'.formatIconColor'}"
-    class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
+                                    <core:Icon 
+                                        src="sap-icon://temperature" 
+                                        size="2.5rem" 
+                                        color="{path: 'sensorModel>temperature/value', formatter:'.formatIconColor'}"
+                                        class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
 ````
 
 3. Let's see if your UI5 application can now color icons depending on the sensor data! Switch to the browser tab with the opened application preview and reload the page. The sensor icons should be displayed either in blue (default), yellow (critical) or red (negative).

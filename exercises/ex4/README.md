@@ -14,9 +14,10 @@ In your existing UI5 application you've used hard-coded text values. That's OK i
 2. Replace the `noDataText` value with the i18n key `noSensorDataText`. "i18n" is a common abbreviation of "internationalization".
 
 ````xml
-<f:GridList id="sensorsList"
-    items="{path: 'sensorModel>/sensors', sorter: {path:'customer', group:true, descending: false}}"
-    noDataText="{i18n>noSensorDataText}">
+                    <f:GridList 
+                        id="sensorsList" 
+                        items="{path: 'sensorModel>/sensors', sorter: {path:'customer', group:true, descending: false}}"
+                        noDataText="{i18n>noSensorDataText}">
 ````
 
 3. Add the newly introduced i18n key also to your `i18n.properties` file, which is located under `sensormanager/webapp/i18n/`, and by the way, let's also pick a better title and prepare some other strings we'll need later.
@@ -130,14 +131,14 @@ Usually, only the `i18n.properties` file is maintained by developers. The langua
 ***sensormanager/webapp/manifest.json***
 
 ````json
-"i18n": {
-  "type": "sap.ui.model.resource.ResourceModel",
-  "settings": {
-      "bundleName": "keepcool.sensormanager.i18n.i18n",
-      "supportedLocales": ["de", "en"],
-      "fallbackLocale": "en"
-  }
-}
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "keepcool.sensormanager.i18n.i18n",
+                    "supportedLocales": ["de", "en"],
+                    "fallbackLocale": "en"
+                }
+            },
 ````
 
 3. Let's see if your UI5 application is able to start in English and German! Switch to the browser tab with an opened application preview and reload the page. The UI5 application should start in English or in German, depending on your browser language.

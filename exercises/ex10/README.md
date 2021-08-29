@@ -30,13 +30,21 @@ To show some historical data you can use the `temperatureLog` of the sensor data
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<f:content>
-    <FlexBox width="100%" height="15rem" alignItems="Center" class="sapUiSmallMargin">
-        <mc:InteractiveLineChart points="{sensorModel>temperatureLog}" displayedPoints="20" selectionEnabled="false">
-            <mc:InteractiveLineChartPoint value="{sensorModel>temperature}"/>
-        </mc:InteractiveLineChart>
-    </FlexBox>
-</f:content>
+                <f:content>
+                    <FlexBox 
+                        width="100%" 
+                        height="15rem" 
+                        alignItems="Center" 
+                        class="sapUiSmallMargin">
+                        <mc:InteractiveLineChart 
+                            points="{sensorModel>temperatureLog}" 
+                            displayedPoints="20" 
+                            selectionEnabled="false">
+                            <mc:InteractiveLineChartPoint 
+                                value="{sensorModel>temperature}"/>
+                        </mc:InteractiveLineChart>
+                    </FlexBox>
+                </f:content>
 ````
 
 4. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history.
@@ -53,8 +61,8 @@ After completing the previous exercises, you are quite experienced in enhancing 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mc:InteractiveLineChartPoint
-    value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"/>
+                            <mc:InteractiveLineChartPoint 
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"/>
 ````
 
 3. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with better readability.
@@ -65,9 +73,10 @@ After completing the previous exercises, you are quite experienced in enhancing 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mc:InteractiveLineChartPoint
-    value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
-    color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], formatter:'.formatValueColor'}"/>
+                            <mc:InteractiveLineChartPoint 
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
+                                color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
+                                    formatter:'.formatValueColor'}"/>
 ````
 
 5. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with colored data points.
@@ -78,10 +87,11 @@ After completing the previous exercises, you are quite experienced in enhancing 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mc:InteractiveLineChartPoint
-    value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
-    color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], formatter:'.formatValueColor'}"
-    label="{sensorModel>time}"/>
+                            <mc:InteractiveLineChartPoint 
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
+                                color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
+                                    formatter:'.formatValueColor'}"
+                                label="{sensorModel>time}"/>
 ````
 
 7. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with x-axis labels. 
@@ -92,17 +102,16 @@ After completing the previous exercises, you are quite experienced in enhancing 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mc:InteractiveLineChartPoint
-    value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
-    color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], formatter:'.formatValueColor'}"
-    label="{
-        path: 'sensorModel>time',
-        type: 'sap.ui.model.type.Time',
-        formatOptions: {
-            source: { pattern: 'timestamp' },
-                style: 'short'
-            }
-        }"/>
+                            <mc:InteractiveLineChartPoint 
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
+                                color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
+                                    formatter:'.formatValueColor'}"
+                                label="{
+                                    path: 'sensorModel>time',
+                                    type: 'sap.ui.model.type.Time',
+                                    formatOptions: {
+                                    source: { pattern: 'timestamp' }, style: 'short' }
+                                }"/>
 ````
 
 9. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with readable x-axis labels. 

@@ -29,20 +29,20 @@ Now you'll dress up the `SensorStatus.view.xml` view.
 ***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true" navButtonPress=".navToSensors">
-  <content>
-    <VBox class="sapUiContentPadding">
-      <f:Card>
-        <f:header>
-          <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"/>
-        </f:header>
-        <f:content>
+    <Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true" navButtonPress=".navToSensors">
+        <content>
+            <VBox class="sapUiContentPadding">
+            <f:Card>
+                <f:header>
+                <card:Header title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"/>
+                </f:header>
+                <f:content>
 
-        </f:content>
-      </f:Card>
-    </VBox>
-  </content>
-</Page>
+                </f:content>
+            </f:Card>
+            </VBox>
+        </content>
+    </Page>
 ````
 
 ## Exercise 9.2 - Enhance SensorStatus.controller.js
@@ -96,20 +96,20 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 ***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<f:header>
-  <card:NumericHeader
-    title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
-    subtitle="{parts: [
-      'i18n>cardSubTitle', 
-      'i18n>locationLabel', 
-      'sensorModel>location', 
-      'i18n>distanceLabel', 
-      'sensorModel>distance', 
-      'i18n>distanceUnit'], 
-      formatter: '.formatMessage'}"
-    number="{sensorModel>temperature/value}"
-    scale="{i18n>temperatureUnit}"/>
-</f:header>
+                <f:header>
+                    <card:NumericHeader
+                        title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
+                        subtitle="{parts: [
+                        'i18n>cardSubTitle', 
+                        'i18n>locationLabel', 
+                        'sensorModel>location', 
+                        'i18n>distanceLabel', 
+                        'sensorModel>distance', 
+                        'i18n>distanceUnit'], 
+                        formatter: '.formatMessage'}"
+                        number="{sensorModel>temperature/value}"
+                        scale="{i18n>temperatureUnit}"/>
+                </f:header>
 ````
 
 2. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card which includes temperature information.
@@ -132,16 +132,16 @@ sap.ui.define([
 and
 
 ````js
-  formatValueColor: function (oThreshold, iTemperature) {
-    oThreshold = oThreshold || {};
-    if (iTemperature < oThreshold.warm) {
-        return ValueColor.Neutral;
-    } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
-        return ValueColor.Critical;
-    } else {
-        return ValueColor.Error;
-    }
-  }
+        formatValueColor: function (oThreshold, iTemperature) {
+            oThreshold = oThreshold || {};
+            if (iTemperature < oThreshold.warm) {
+                return ValueColor.Neutral;
+            } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
+                return ValueColor.Critical;
+            } else {
+                return ValueColor.Error;
+            }
+        }
 ````
 
 4. The `sap.f.cards.NumericHeader` control provides a `state` property, which allows you to render the state of your control in a fancy way. Open `sensormanager/webapp/view/SensorStatus.view.xml`.
@@ -151,24 +151,24 @@ and
 ***sensormanager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<f:header>
-  <card:NumericHeader 
-    title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
-    subtitle="{parts: [
-      'i18n>cardSubTitle', 
-      'i18n>locationLabel', 
-      'sensorModel>location', 
-      'i18n>distanceLabel', 
-      'sensorModel>distance', 
-      'i18n>distanceUnit'], 
-      formatter: '.formatMessage'}"
-    number="{sensorModel>temperature/value}"
-    scale="{i18n>temperatureUnit}"
-    state="{parts: [
-      'sensorModel>/threshold', 
-      'sensorModel>temperature/value'],
-      formatter: '.formatValueColor'}"/>
-</f:header>
+                <f:header>
+                    <card:NumericHeader
+                        title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
+                        subtitle="{parts: [
+                        'i18n>cardSubTitle', 
+                        'i18n>locationLabel', 
+                        'sensorModel>location', 
+                        'i18n>distanceLabel', 
+                        'sensorModel>distance', 
+                        'i18n>distanceUnit'], 
+                        formatter: '.formatMessage'}"
+                        number="{sensorModel>temperature/value}"
+                        scale="{i18n>temperatureUnit}"
+                        state="{parts: [
+                        'sensorModel>/threshold', 
+                        'sensorModel>temperature/value'],
+                        formatter: '.formatValueColor'}"/>
+                </f:header>
 ````
 
 6. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a card with colored temperature information depending on the value of the temperature.

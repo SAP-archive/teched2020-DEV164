@@ -38,16 +38,18 @@ After completing these steps you'll have created your first UI5 application.
     4. You can leave the description
     5. Leave the Project folder path as */home/user/projects* .
     6. Select *Add deployment configuration*
-    7. Click *Finish*. </ol>
+    7. Click *Next*. </ol>
 <br>![](images/01_01_0051b.png)<br><br><ol>
 
-7. In the next step, select *Cloud Foundry* as target, leave the Destination name to "None" and make sure that the *Yes* is checked for adding the application to the application router.  </ul>
+7. In the next step, select *Cloud Foundry* as target, leave the Destination name to "None" and make sure that the *Yes* is checked for adding the application to the application router and click *Finish*.  </ul>
 <br><br>![](images/01_01_0065b.png)<br><br>
 
-8. The project is generated, and a notification window appears in the lower right corner which will inform you when the project has been generated. Click the blue *Open Folder* button at the top left of the screen. Alternatively, click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
+8. The project is generated, and a notification window appears in the lower right corner which will inform you when the project has been generated. Wait for the message that the project has been generated!
+
+9.  Click the blue *Open Folder* button at the top left of the screen. Alternatively, click *File* in the header toolbar, select *Open Workspace* and pick the generated project.  </ul>
 <br><br>![](images/01_01_0060b.png)<br><br>
 
-9. Open the *projects* folder and select the *sensormanager* folder in the dialog and click *open*
+10. Open the *projects* folder and select the *sensormanager* folder in the dialog and click *open*
 <br><br>![](images/01_01_0071b.png)<br><br>
 
 ## Exercise 1.2 - Try out the generated Application
