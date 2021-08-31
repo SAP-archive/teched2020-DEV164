@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/code/ex2)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/gh-pages/ex2)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex2/sensormanager/webapp/)
 
 # Exercise 2 - Basic UI5 Configuration and View Creation
