@@ -19,7 +19,7 @@ To simulate a source providing sensor data, you'll now add some sensor data to y
 4. Enter `sensors.json` as file name.
 <br><br>![](images/03_01_0020.png)<br><br>
 
-5. Copy and paste the content of [sensors.json](data/sensors.json) into the newly created file.
+5. Copy and paste the content of [sensors.json](https://raw.githubusercontent.com/dirkelko/Developing-Apps-with-SAPUI5/master/exercises/ex3/data/sensors.json) into the newly created file.
 
 ## Exercise 3.2 - Configure a Data Service
 
