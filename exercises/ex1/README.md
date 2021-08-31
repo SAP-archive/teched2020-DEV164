@@ -17,7 +17,7 @@ After completing these steps you'll have created your first UI5 application.
     * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *Welcome*.</ul>
 <br><br>![](images/01_01_0010b.png)<br><br>
 
-2. Click on *SAP Fiori Application* on as template and click *Start*.
+2. Click on *SAP Fiori application* on as template and click *Start*.
 <br><br>![](images/01_01_0015b.png)<br><br>
 
 3. Enter the following settings in the *Floorplan Selection* step: 
