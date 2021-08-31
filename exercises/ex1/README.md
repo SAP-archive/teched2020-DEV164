@@ -14,7 +14,7 @@ Your customer "Keep Cool, Inc." is an operator of several icehouses across the c
 After completing these steps you'll have created your first UI5 application.
 
 1. Click on *Start from template* on the *Welcome* page.
-    * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *SAP Business Application Studio: Welcome Page*.</ul>
+    * [Optional] If you have closed the *Welcome* page accidentally, click in the header toolbar on *View*, and select *Find Command...*  Enter *Welcome*.</ul>
 <br><br>![](images/01_01_0010b.png)<br><br>
 
 2. Click on *SAP Fiori Application* on as template and click *Start*.
