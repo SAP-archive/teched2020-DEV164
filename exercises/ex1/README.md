@@ -25,7 +25,7 @@ After completing these steps you'll have created your first UI5 application.
     2. Select *SAPUI5 Application* as application template and click *Next*.</ol>
 <br>![](images/01_01_0020b.png)<br><br><ol>
 
-4. Select *None* as Data Source, since we start without an external data source.
+4. Select *None* as Data Source, since we start without an external data source. Click *Next*
 <br><br>![](images/01_01_0025b.png)<br><br>
    
 5. Enter *App* as view name in the next step. (we don't really select an entity set, since we start without a data service).
