@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/code/ex8)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/gh-pages/ex8)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex8/sensormanager/webapp/)
 
 # Exercise 8 - Add a Second View with Navigation
