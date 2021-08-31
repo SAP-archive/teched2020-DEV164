@@ -166,9 +166,9 @@ and
                         number="{sensorModel>temperature/value}"
                         scale="{i18n>temperatureUnit}"
                         state="{parts: [
-                        'sensorModel>/threshold', 
-                        'sensorModel>temperature/value'],
-                        formatter: '.formatValueColor'}"/>
+                            'sensorModel>/threshold', 
+                            'sensorModel>temperature/value'],
+                            formatter: '.formatValueColor'}"/>
                 </f:header>
 ````
 
