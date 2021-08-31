@@ -57,30 +57,31 @@ To be able to show the data in your card, you need to assign the correct binding
 
 ````js
 sap.ui.define([
-  "sap/ui/core/mvc/Controller",
-  "sap/base/strings/formatMessage"
+    "sap/ui/core/mvc/Controller",
+    "sap/base/strings/formatMessage"
 ], function (Controller, formatMessage) {
     "use strict";
 
-  return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
-      
-    formatMessage: formatMessage,
+    return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
 
-    onInit: function () {
-      this.getOwnerComponent().getRouter().getRoute("RouteSensorStatus").attachMatched(this.onRouteMatched, this);
-    },
+        formatMessage: formatMessage,
 
-    onRouteMatched: function (oEvent) {
-      this.getView().bindElement({
-          path: "/sensors/" + oEvent.getParameter("arguments").index,
-          model: "sensorModel"
-      });
-    },
+        onInit: function () {
+        this.getOwnerComponent().getRouter().getRoute("RouteSensorStatus").attachMatched(this.onRouteMatched, this);
+        },
 
-    navToSensors: function () {
-      this.getOwnerComponent().getRouter().navTo("RouteSensors");
-    }
-  });
+        onRouteMatched: function (oEvent) {
+        this.getView().bindElement({
+            path: "/sensors/" + oEvent.getParameter("arguments").index,
+            model: "sensorModel"
+        });
+        },
+
+        navToSensors: function () {
+        this.getOwnerComponent().getRouter().navTo("RouteSensors");
+        }
+
+    });
 });
 ````
 
