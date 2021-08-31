@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/code/ex5)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/gh-pages/ex5)
 [![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex5/sensormanager/webapp/)
 
 # Exercise 5 - Improve Visualization
