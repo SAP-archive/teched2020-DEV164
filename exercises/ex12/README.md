@@ -1,3 +1,5 @@
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](../../../../tree/gh-pages/ex12)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://dirkelko.github.io/Developing-Apps-with-SAPUI5/ex12/sensormanager/webapp/)
 
 # Exercise 12 - Develop your own Control
 
