@@ -31,7 +31,7 @@ After adding the sensor data to your application, you'll need to configure the d
 
 ***sensormanager/webapp/manifest.json***
 
-````json
+````js
     "sap.app": {
         ...,
         "dataSources": {
@@ -47,7 +47,7 @@ After adding the sensor data to your application, you'll need to configure the d
 
 ***sensormanager/webapp/manifest.json***
 
-````json
+````js
     "sap.ui5": {
         "models": {
 	        ...,
