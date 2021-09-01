@@ -98,13 +98,15 @@ The build step has created a file named `TechEd2020_0.0.1.mtar` located under `m
 1. Right-click `mta_archives/TechEd2020_0.0.1.mtar` and select *Deploy MTA Archive*. Deployment starts.
 <br><br>![](images/11_07_0010.png)<br><br>
 
-2. Deployment should have finished after a few minutes, of which you'll be notified by in the terminal.
+2. You are asked for the organisation and space again. Choose your trial account as organisation and the *ui5-apps* space you just created. 
+
+3. Deployment takes some time but should have finished after a few minutes, of which you'll be notified by in the terminal.
 <br><br>![](images/11_07_0020.png)<br><br>
 
-3. The deployed application can be started from the SAP BTP Cockpit. Go to your trial subaccount and click on the *HTML5 Applications* section at tjhe left hand side. The application is listed there as 'keepcoolsensormanager'. Click on it to start it.
+4. The deployed application can be started from the SAP BTP Cockpit. Go to your trial subaccount and click on the *HTML5 Applications* section at tjhe left hand side. The application is listed there as 'keepcoolsensormanager'. Click on it to start it.
 <br><br>![](images/11_07_0030.png)<br><br>
 
-4. Congratulations! You've deployed your UI5 application to the SAP BTP, Cloud Foundry runtime.
+5. Congratulations! You've deployed your UI5 application to the SAP BTP, Cloud Foundry runtime.
 <br><br>![](images/11_07_0040.png)<br><br>
 
 ## Summary
