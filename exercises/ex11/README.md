@@ -69,7 +69,7 @@ Since you created your app using one of the application templates available in S
 
 2. Remove the `"/localService/**"` entry for the `builder` section.
 
-***sensormanager/ui5.yaml***
+***sensormanager/ui5-deploy.yaml***
 
 ````yaml
 builder:

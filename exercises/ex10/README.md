@@ -56,13 +56,13 @@ After completing the previous exercises, you are quite experienced in enhancing 
 
 1. Open `sensormanager/webapp/view/SensorStatus.view.xml`.
 
-2. Add formatting to every data point to improve readability. You can use expression binding to achieve this.
+2. Add formatting to every data point to improve readability. In this case we simply change the format of the temperature value to one digit after the comma. You can use expression binding to achieve this.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
                             <mc:InteractiveLineChartPoint 
-                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"/>
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(1))}"/>
 ````
 
 3. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with better readability.
@@ -74,7 +74,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
 
 ````xml
                             <mc:InteractiveLineChartPoint 
-                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(1))}"
                                 color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
                                     formatter:'.formatValueColor'}"/>
 ````
@@ -88,7 +88,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
 
 ````xml
                             <mc:InteractiveLineChartPoint 
-                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(1))}"
                                 color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
                                     formatter:'.formatValueColor'}"
                                 label="{sensorModel>time}"/>
@@ -103,7 +103,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
 
 ````xml
                             <mc:InteractiveLineChartPoint 
-                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(2))}"
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(1))}"
                                 color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
                                     formatter:'.formatValueColor'}"
                                 label="{
