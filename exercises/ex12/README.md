@@ -46,7 +46,7 @@ sap.ui.define([
 
 4. Open `sensormanager/css/style.css`.
 
-5. Add the css properties for the `div` element which is created by your thermometer control. In the first step it is just a grey square displaying the temparature.
+5. Add the css properties for the `div` element which is created by your thermometer control. In the first step it is just a gray square displaying the temparature.
 
 ***sensormanager/webapp/css/style.css***
 
@@ -103,11 +103,11 @@ sap.ui.define([
   </HBox>
 ````
 
-7. Open the file `Sensors.controller.js` and add the new formatter, which closely resembles the old one, but
+7. Open the file `Sensors.controller.js` and add the new formatter, which closely resembles the old one, but returns concrete CSS color values. These values can be written directly to the HTML, while the previously used UI5 icon color values were translated by the icon control.
    
 ***sensormanager/webapp/controller/Sensors.controller.xml***
 
-````xml
+````js
             formatThermometerColor: function(iTemperature) {
                 var oThreshold = this.getSensorModel().getProperty("/threshold");
                 if (!oThreshold) {
@@ -122,7 +122,7 @@ sap.ui.define([
             },
 ````
 
-8. Reload the preview page and you see the first simple version of your thermometer control. You may have noticed that the calculated color was not written to the HTML in the control renderer, so the boxes are all colored the same, as defined in the CSS.
+8. Reload the preview page and you see the first simple version of your thermometer control. You may have noticed that the calculated color was not yet written to the HTML in the control renderer, so the boxes are all colored the same, as defined in the CSS.
 
 <br><br>![](images/12_01_0010.png)<br><br>   
 
@@ -133,7 +133,9 @@ Now you want to create a nice looking thermometer, which displays not only the t
 
 1. Open `sensormanager/webapp/control/Thermometer.js`.
 
-2. Enhance the code of the renderer to create several div elements which will be used to paint a thermometer using CSS. That's a lot of `div` elements. For productive development using SVG might be cleaner, but for the purpose of this tutorial, we stick with HTML.
+2. Enhance the code of the renderer to create several HTML elements which will be used to paint a thermometer. We use three HTML elements (one `<figure>`, one `<figcaption>`, one `<div>`) which are styled using CSS and overlaid on top of each other in a way that makes the result look like a nice thermometer.
+
+<br><br>![](images/12_02.png)<br><br>
 
 ***sensormanager/webapp/control/Thermometer.js***
 
@@ -149,9 +151,9 @@ Now you want to create a nice looking thermometer, which displays not only the t
                     oRM.openStart("figcaption");
                     oRM.class("thermometer-value");
                     oRM.style("background-color", oControl.getColor());
-				    oRM.style("box-shadow", "0 0 0 2px " + oControl.getColor());
+                    oRM.style("box-shadow", "0 0 0 2px " + oControl.getColor());
                     oRM.openEnd();
-                    oRM.text(oControl.getValue().toFixed(1));
+                    oRM.text(oControl.getValue().toFixed(1)); // the temperature value
                     oRM.close("figcaption");
 
                     oRM.openStart("div");
@@ -167,7 +169,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
         }
 ````
 
-3. Add the css properties for the `div` elements which are used to paint your thermometer control. It consists of a circle and a rectangular div.
+3. While some of the CSS properties, like the color and the height of the mercury column, are calculated and have been written by the renderer with the respective current values, most CSS (e.g. for the overall layout information) is static. Now add these static CSS properties to the CSS file of the project. Note how the CSS classes like `thermometer` and `thermometer-value` match those written in the renderer code above.
 
 ***sensormanager/webapp/css/style.css***
 
@@ -180,7 +182,7 @@ Now you want to create a nice looking thermometer, which displays not only the t
     width: 18px;
     height: 60px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     margin: 6px;
 }
 
