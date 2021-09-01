@@ -153,7 +153,7 @@ Usually, only the `i18n.properties` file is maintained by developers. The langua
 5. Let's try to start the application in another language, e.g Hindi. Add `?sap-ui-language=hi` to the URL shown in your browser. UI5 should now start in English, because you have configured English as your fallback locale. 
 <br><br>![](images/04_03_0010.png)<br><br> 
 
-If you'd like to support Hindi, or any other language of your choice, feel free to repeat the steps described in [Exercise 4.2 Add New Languages](#exercise-42---add-new-languages) with your desired language.
+If you'd like to support Hindi, or any other language of your choice, feel free to repeat the steps described in [Exercise 4.2 Add New Languages](#exercise-42---add-additional-languages) with your desired language.
 
 ## Summary
 
