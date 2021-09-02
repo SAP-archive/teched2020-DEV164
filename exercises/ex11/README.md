@@ -23,7 +23,17 @@ First of all, you need to create the space in your Cloud Foundry environment to 
 5. The newly created space is displayed.
 <br><br>![](images/11_01_0050.png)<br><br>
 
+## Exercise 11.2 - Subscribe to Launchpad Service
 
+To be able to display deployed UI5 applications we need the Launchpad Service in our trial account. 
+1. To subscribe to it, click on *Service Marketplace* and search the Launchpad Service.
+2. Click on the Launchpad Service tile and then on *Create* on the right hand side
+<br><br>![](images/11_02_0060.png)<br><br>
+
+3. Leave the selected values as they are and click *Create*
+<br><br>![](images/11_02_0070.png)<br><br>
+
+If you now click on *Instance and Subscriptions* you'll see that you have subscribed to the Launchpad Servcice.
 ## Exercise 11.2 - Login to Cloud Foundry
 
 Now you can login to your Cloud Foundry environment directly from SAP Business Application Studio.
