@@ -34,7 +34,7 @@ To be able to display deployed UI5 applications we need the Launchpad Service in
 <br><br>![](images/11_02_0070.png)<br><br>
 
 If you now click on *Instance and Subscriptions* you'll see that you have subscribed to the Launchpad Servcice.
-## Exercise 11.2 - Login to Cloud Foundry
+## Exercise 11.3 - Login to Cloud Foundry
 
 Now you can login to your Cloud Foundry environment directly from SAP Business Application Studio.
 
@@ -54,7 +54,7 @@ Now you can login to your Cloud Foundry environment directly from SAP Business A
 <br><br>![](images/11_02_0050.png)<br><br>
 
 
-## Exercise 11.3 - Set Organization and Space
+## Exercise 11.4 - Set Organization and Space
 
 After logging in you're asked to specify your desired Cloud Foundry organization and space.
 
@@ -71,7 +71,7 @@ After logging in you're asked to specify your desired Cloud Foundry organization
 <br><br>![](images/11_03_0040.png)<br><br>
 
 
-## Exercise 11.4 - Configure Your UI5 Application
+## Exercise 11.5 - Configure Your UI5 Application
 
 Since you created your app using one of the application templates available in SAP Business Application Studio, all files which are located under `sensormanager/test/` and `sensormanager/localService/` are excluded from any build, because in a productive application these files are usually not needed. In our case the sensor data is placed in a local JSON file, so the `sensors.json` file needs to be included in the build. 
 
