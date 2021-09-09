@@ -1,0 +1,94 @@
+_schema-version: "3.2"
+ID: keepcool-sensormanager
+description: A Fiori application.
+version: 0.0.1
+modules:
+- name: keepcool-sensormanager-dest-content
+  type: com.sap.application.content
+  requires:
+  - name: keepcool-sensormanager-dest-srv
+    parameters:
+      content-target: true
+  - name: keepcool-sensormanager-repo-host
+    parameters:
+      service-key:
+        name: keepcool-sensormanager-repo-host-key
+  - name: keepcool-sensormanager-uaa
+    parameters:
+      service-key:
+        name: keepcool-sensormanager-uaa-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: keepcool-sensormanager_repo_host
+          ServiceInstanceName: keepcool-sensormanager-html5-srv
+          ServiceKeyName: keepcool-sensormanager-repo-host-key
+          sap.cloud.service: keepcool-sensormanager
+        - Authentication: OAuth2UserTokenExchange
+          Name: keepcool-sensormanager_uaa
+          ServiceInstanceName: keepcool-sensormanager-xsuaa-srv
+          ServiceKeyName: keepcool-sensormanager-uaa-key
+          sap.cloud.service: keepcool-sensormanager
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: keepcool-sensormanager-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: keepcool-sensormanager-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - keepcoolsensormanager.zip
+      name: keepcoolsensormanager
+      target-path: resources/
+- name: keepcoolsensormanager
+  type: html5
+  path: .
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: keepcool-sensormanager-dest-srv
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: keepcool-sensormanager-dest-srv
+    service-plan: lite
+- name: keepcool-sensormanager-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: keepcool-sensormanager-xsuaa-srv
+    service-plan: application
+- name: keepcool-sensormanager-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: keepcool-sensormanager-html5-srv
+    service-plan: app-host
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true

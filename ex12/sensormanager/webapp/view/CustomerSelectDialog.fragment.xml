@@ -1,0 +1,16 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+        <SelectDialog
+            title="{i18n>titleSelectCustomer}"
+            contentHeight="38.3%"
+            rememberSelections="true"
+            confirm=".onCustomerSelectConfirm"
+            liveChange=".onCustomerSelectChange"
+            items="{
+                path: 'sensorModel>/customers',
+                sorter: {path:'name'}
+            }">
+        <StandardListItem title="{sensorModel>name}"/>
+    </SelectDialog>
+</core:FragmentDefinition>

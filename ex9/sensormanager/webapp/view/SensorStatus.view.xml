@@ -1,0 +1,38 @@
+<mvc:View 
+    controllerName="keepcool.sensormanager.controller.SensorStatus" 
+    displayBlock="true" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards">
+    <Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true" navButtonPress=".navToSensors">
+        <content>
+            <VBox class="sapUiContentPadding">
+            <f:Card>
+                <f:header>
+                    <card:NumericHeader
+                        title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
+                        subtitle="{parts: [
+                        'i18n>cardSubTitle', 
+                        'i18n>locationLabel', 
+                        'sensorModel>location', 
+                        'i18n>distanceLabel', 
+                        'sensorModel>distance', 
+                        'i18n>distanceUnit'], 
+                        formatter: '.formatMessage'}"
+                        number="{sensorModel>temperature/value}"
+                        scale="{i18n>temperatureUnit}"
+                        state="{parts: [
+                            'sensorModel>/threshold', 
+                            'sensorModel>temperature/value'],
+                            formatter: '.formatValueColor'}"/>
+
+                </f:header>
+                <f:content>
+
+                </f:content>
+            </f:Card>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

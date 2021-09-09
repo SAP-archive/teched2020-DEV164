@@ -1,0 +1,59 @@
+<mvc:View 
+    controllerName="keepcool.sensormanager.controller.SensorStatus" 
+    displayBlock="true" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    xmlns:mc="sap.suite.ui.microchart">
+    <Page id="SensorStatusPage" title="{i18n>titleSensorStatus}" showNavButton="true" navButtonPress=".navToSensors">
+        <content>
+            <VBox class="sapUiContentPadding">
+            <f:Card>
+                <f:header>
+                    <card:NumericHeader
+                        title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
+                        subtitle="{parts: [
+                        'i18n>cardSubTitle', 
+                        'i18n>locationLabel', 
+                        'sensorModel>location', 
+                        'i18n>distanceLabel', 
+                        'sensorModel>distance', 
+                        'i18n>distanceUnit'], 
+                        formatter: '.formatMessage'}"
+                        number="{sensorModel>temperature/value}"
+                        scale="{i18n>temperatureUnit}"
+                        state="{parts: [
+                            'sensorModel>/threshold', 
+                            'sensorModel>temperature/value'],
+                            formatter: '.formatValueColor'}"/>
+
+                </f:header>
+                <f:content>
+                    <FlexBox 
+                        width="100%" 
+                        height="15rem" 
+                        alignItems="Center" 
+                        class="sapUiSmallMargin">
+                        <mc:InteractiveLineChart 
+                            points="{sensorModel>temperatureLog}" 
+                            displayedPoints="20" 
+                            selectionEnabled="false">
+                            <mc:InteractiveLineChartPoint 
+                                value="{=Number.parseFloat(${sensorModel>temperature}.toFixed(1))}"
+                                color="{parts: ['sensorModel>/threshold', 'sensorModel>temperature'], 
+                                    formatter:'.formatValueColor'}"
+                                label="{
+                                    path: 'sensorModel>time',
+                                    type: 'sap.ui.model.type.Time',
+                                    formatOptions: {
+                                    source: { pattern: 'timestamp' }, style: 'short' }
+                                }"/>
+                        </mc:InteractiveLineChart>
+                    </FlexBox>
+                </f:content>
+            </f:Card>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
