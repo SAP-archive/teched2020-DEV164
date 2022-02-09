@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex9/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex9/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex9)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex9/sensormanager/webapp/)
 
 # Exercise 9 - Card with NumericHeader
 
@@ -16,7 +16,7 @@ Now you'll dress up the `SensorStatus.view.xml` view.
 ***SensorManager/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mvc:View displayBlock="true"       
+<mvc:View displayBlock="true"
   controllerName="keepcool.SensorManager.controller.SensorStatus"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
@@ -63,7 +63,7 @@ sap.ui.define([
     "use strict";
 
   return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
-      
+
     formatMessage: formatMessage,
 
     onInit: function () {
@@ -100,12 +100,12 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
   <card:NumericHeader
     title="{parts: ['i18n>cardTitle','sensorModel>customer'], formatter: '.formatMessage'}"
     subtitle="{parts: [
-      'i18n>cardSubTitle', 
-      'i18n>locationLabel', 
-      'sensorModel>location', 
-      'i18n>distanceLabel', 
-      'sensorModel>distance', 
-      'i18n>distanceUnit'], 
+      'i18n>cardSubTitle',
+      'i18n>locationLabel',
+      'sensorModel>location',
+      'i18n>distanceLabel',
+      'sensorModel>distance',
+      'i18n>distanceUnit'],
       formatter: '.formatMessage'}"
     number="{sensorModel>temperature/value}"
     scale="{i18n>temperatureUnit}"/>
@@ -116,7 +116,7 @@ To improve the visualization further, you will replace the `sap.f.card.Header` b
 <br><br>![](images/09_03_0010.png)<br><br>
 
 3. Add a formatter to provide semantic coloring for the card header.
-The formatter fetches both the threshold and the current temperature from the model. On the basis of these values it then returns the `sap.m.ValueColor`. 
+The formatter fetches both the threshold and the current temperature from the model. On the basis of these values it then returns the `sap.m.ValueColor`.
 Open `SensorManager/webapp/controller/SensorStatus.controller.js` and add the formatter function given below. Don't forget to import the `sap.m.ValueColor` module, which provides nice color support!
 
 ***SensorManager/webapp/controller/SensorStatus.controller.js***
@@ -127,7 +127,7 @@ sap.ui.define([
   "sap/base/strings/formatMessage",
   "sap/m/ValueColor"
 ], function (Controller, formatMessage, ValueColor) {
-  
+
   formatValueColor: function (oTreshold, iTemperature) {
     oTreshold = oTreshold || {};
     if (iTemperature < oTreshold.warm) {
@@ -148,20 +148,20 @@ sap.ui.define([
 
 ````xml
 <f:header>
-  <card:NumericHeader 
+  <card:NumericHeader
     title="{parts: ['i18n>cardTitle', 'sensorModel>customer'], formatter: '.formatMessage'}"
     subtitle="{parts: [
-      'i18n>cardSubTitle', 
-      'i18n>locationLabel', 
-      'sensorModel>location', 
-      'i18n>distanceLabel', 
-      'sensorModel>distance', 
-      'i18n>distanceUnit'], 
+      'i18n>cardSubTitle',
+      'i18n>locationLabel',
+      'sensorModel>location',
+      'i18n>distanceLabel',
+      'sensorModel>distance',
+      'i18n>distanceUnit'],
       formatter: '.formatMessage'}"
     number="{sensorModel>temperature/value}"
     scale="{i18n>temperatureUnit}"
     state="{parts: [
-      'sensorModel>/threshold', 
+      'sensorModel>/threshold',
       'sensorModel>temperature/value'],
       formatter: '.formatValueColor'}"/>
 </f:header>
@@ -172,7 +172,7 @@ sap.ui.define([
 
 ## Summary
 
-Yay! You've successfully completed [Exercise 9 - Card with NumericHeader](#exercise-9---card-with-numericheader). Stay tuned! 
+Yay! You've successfully completed [Exercise 9 - Card with NumericHeader](#exercise-9---card-with-numericheader). Stay tuned!
 
 Continue to [Exercise 10 - Chart with Data Binding](../ex10/README.md).
 

@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex10/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex10/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex10)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex10/sensormanager/webapp/)
 
 # Exercise 10 - Chart with Data Binding
 
@@ -9,14 +9,14 @@ In this exercise you'll add some analytical flavor to your UI5 application by us
 
 To show some historical data you can use the `temperatureLog` of the sensor data. You'll use an `sap.suite.ui.microchart.InteractiveLineChart`to add the data points.
 
-1. Open `SensorManager/webapp/view/SensorStatus.view.xml`. 
+1. Open `SensorManager/webapp/view/SensorStatus.view.xml`.
 
 2. Add the `sap.suite.ui.microchart` library to the `SensorStatus.view.xml`.
 
 ***SensorStatus/webapp/view/SensorStatus.view.xml***
 
 ````xml
-<mvc:View displayBlock="true" 
+<mvc:View displayBlock="true"
     controllerName="keepcool.SensorManager.controller.SensorStatus"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
@@ -84,7 +84,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
     label="{sensorModel>time}"/>
 ````
 
-7. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with x-axis labels. 
+7. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with x-axis labels.
 <br><br>![](images/10_02_0030.png)<br><br>
 
 8. Displaying the time as a date makes not much sense here. To improve readability you should format the label using a `UI5 DataType`. These types are predefined and can be configured individually regarding the input and output format.
@@ -105,7 +105,7 @@ After completing the previous exercises, you are quite experienced in enhancing 
         }"/>
 ````
 
-9. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with readable x-axis labels. 
+9. Switch to the browser tab where the application preview is opened. Click any sensor. Now the sensor status page contains a chart with a temperature history with readable x-axis labels.
 <br><br>![](images/10_02_0040.png)<br><br>
 
 ## Summary

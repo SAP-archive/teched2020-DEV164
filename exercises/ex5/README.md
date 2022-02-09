@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex5/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex5/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex5)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex5/sensormanager/webapp/)
 
 # Exercise 5 - Improve Visualization
 
@@ -47,7 +47,7 @@ To give the customer the best possible overview, add some color to your applicat
 
 ## Exercise 5.2 - Create Sensors.controller.js
 
-In this exercise you'll enhance your application with some additional controller coding. 
+In this exercise you'll enhance your application with some additional controller coding.
 
 1. Go to folder `SensorManager/webapp/controller/`.
 
@@ -102,11 +102,11 @@ onInit: function() {
 getSensorModel: function(){
     return this.getOwnerComponent().getModel("sensorModel");
 }
-```` 
+````
 
 ## Exercise 5.3 - Assign Controller to View
 
-Now you need to tell your view which controller is associated with it. 
+Now you need to tell your view which controller is associated with it.
 
 1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
@@ -132,9 +132,9 @@ Now you need to tell your view which controller is associated with it.
 
 Your next goal is to bring some color to the user interface. You'd like to display the icon in a suitable color which is based on the actual temperature of the sensor. To do this, you can use the formatter concept of UI5.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
+1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
-2. Add the new function `formatIconColor`. 
+2. Add the new function `formatIconColor`.
 
 ***SensorManager/webapp/controller/Sensors.controller.js***
 
@@ -158,7 +158,7 @@ formatIconColor: function(iTemperature) {
 
 You're almost done. The last piece is adding the newly created formatter function to the binding of your icon.
 
-1. Open `SensorManager/webapp/view/Sensors.view.xml`. 
+1. Open `SensorManager/webapp/view/Sensors.view.xml`.
 
 2. Add the `color` property to the `sap.ui.core.Icon` definition, bind the `color` property to the path `sensors>temperature/value`, and assign the formatter function to the binding.
 
@@ -181,6 +181,6 @@ Continue to [Exercise 6 - Filtering with the IconTabBar](../ex6/README.md).
 
 ## Further Information
 
-* Model View Controller Concept: https://ui5.sap.com/#/topic/91f233476f4d1014b6dd926db0e91070 
+* Model View Controller Concept: https://ui5.sap.com/#/topic/91f233476f4d1014b6dd926db0e91070
 * Controller: https://ui5.sap.com/#/topic/121b8e6337d147af9819129e428f1f75
 * Formatting, Parsing, and Validating Data: https://ui5.sap.com/#/topic/07e4b920f5734fd78fdaa236f26236d8

@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex8/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex8/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex8)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex8/sensormanager/webapp/)
 
 # Exercise 8 - Add a Second View with Navigation
 
@@ -131,7 +131,7 @@ sap.ui.define([
 6. Using the `controllerName` attribute, assign the newly created controller to the view.
 
 ````xml
-<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" displayBlock="true" 
+<mvc:View controllerName="keepcool.SensorManager.controller.SensorStatus" displayBlock="true"
   xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
 ````
 
@@ -164,7 +164,7 @@ return Controller.extend("keepcool.SensorManager.controller.SensorStatus", {
 </Page>
 ````
 
-5. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page. 
+5. Let's see if the navigation logic works. Switch to the browser tab with the opened application preview. In the URL, remove any content after `index.html`. Reload the page.
 <br><br>![](images/08_06_0010.png)<br><br>
 
 6. Click any sensor. The navigation takes place, and you see the newly created view.

@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex6/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex6/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex6)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex6/sensormanager/webapp/)
 
 # Exercise 6 - Filtering With the IconTabBar
 
@@ -115,7 +115,7 @@ Your customer wishes to display the total number of sensors as well. For this, y
 
 ## Summary
 
-Hooray! You've successfully completed [Exercise 6 - Filtering with the IconTabBar](#exercise-6---filtering-with-the-icontabbar). 
+Hooray! You've successfully completed [Exercise 6 - Filtering with the IconTabBar](#exercise-6---filtering-with-the-icontabbar).
 
 Continue to [Exercise 7 - Fragment containing a SelectDialog](../ex7/README.md).
 

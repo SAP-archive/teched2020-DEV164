@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex4/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex4/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex4)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex4/sensormanager/webapp/)
 
 # Exercise 4 - Introduce Localization
 
@@ -141,22 +141,22 @@ Usually, only the `i18n.properties` file is maintained by developers. The langua
 ````
 
 3. Let's see if your UI5 application is able to start in English and German! Switch to the browser tab with an opened application preview and reload the page. The UI5 application should start in English or in German, depending on your browser language.
-<br><br>![](images/04_03_0010.png)<br><br> 
+<br><br>![](images/04_03_0010.png)<br><br>
 
 4. UI5 provides a URL parameter to simulate another browser language. Add `?sap-ui-language=de` to the URL shown in your browser. UI5 should now start in German regardless of the language you have configured as your browser language.
-<br><br>![](images/04_03_0020.png)<br><br> 
+<br><br>![](images/04_03_0020.png)<br><br>
 
 5. You can simulate any other language, e.g. English. Add `?sap-ui-language=en` to the URL shown in your browser. UI5 should now start in English regardless of the language you have configured as your browser language.
 <br><br>![](images/04_03_0010.png)<br><br>
 
-5. Let's try to start the application in another language, e.g Hindi. Add `?sap-ui-language=hi` to the URL shown in your browser. UI5 should now start in English, because you have configured English as your fallback locale. 
-<br><br>![](images/04_03_0010.png)<br><br> 
+5. Let's try to start the application in another language, e.g Hindi. Add `?sap-ui-language=hi` to the URL shown in your browser. UI5 should now start in English, because you have configured English as your fallback locale.
+<br><br>![](images/04_03_0010.png)<br><br>
 
 If you'd like to support Hindi, or any other language of your choice, feel free to repeat the steps described in [Exercise 4.2 Add New Languages](#exercise-42---add-new-languages) with your desired language.
 
 ## Summary
 
-Yay! You've accomplished successfully [Exercise 4 - Introduce Localization](#exercise-4---introduce-localization). 
+Yay! You've accomplished successfully [Exercise 4 - Introduce Localization](#exercise-4---introduce-localization).
 
 Continue to [Exercise 5 - Improve Visualization](../ex5/README.md).
 

@@ -1,4 +1,4 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex11/TechEd2020)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex11)
 
 # Exercise 11 - Deploy Your App to SAP BTP, Cloud Foundry runtime
 
@@ -82,9 +82,9 @@ Your application will be available at `https://<approuter-url>/<app/id>`, and th
 
 ## Exercise 11.5 - Configure Your UI5 Application
 
-Since you created your app using one of the application templates available in SAP Business Application Studio, all files which are located under `SensorManager/test/` and `SensorManager/localService/` are excluded from any build, because in a productive application these files are usually not needed. In our case the sensor data is placed in a local JSON file, so the `sensors.json` file needs to be included in the build. 
+Since you created your app using one of the application templates available in SAP Business Application Studio, all files which are located under `SensorManager/test/` and `SensorManager/localService/` are excluded from any build, because in a productive application these files are usually not needed. In our case the sensor data is placed in a local JSON file, so the `sensors.json` file needs to be included in the build.
 
-1. Open `SensorManager/ui5.yaml`. 
+1. Open `SensorManager/ui5.yaml`.
 
 2. Remove the `"/localService/**"` entry for the `builder` section.
 

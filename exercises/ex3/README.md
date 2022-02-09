@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex3/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex3/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex3)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex3/sensormanager/webapp/)
 
 # Exercise 3 - Show Sensor Content
 
@@ -122,7 +122,7 @@ After adding the `sap.f.GridList` control, you'll need to connect the control to
 ````
 
 4. Let's see if our UI5 application displays the correct sensor data. Switch to the browser tab with the opened application preview and reload the page.
-<br><br>![](images/03_04_0010.png)<br><br> 
+<br><br>![](images/03_04_0010.png)<br><br>
 
 ## Summary
 

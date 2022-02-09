@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex1/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex1/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex1)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex1/sensormanager/webapp/)
 
 # Exercise 1 - Project Setup Using SAP Business Application Studio
 
@@ -20,7 +20,7 @@ After completing these steps you'll have created your first UI5 application.
 2. Choose *SAP Fiori Freestyle Project* and click *Next*.
 <br><br>![](images/01_01_0020.png)<br><br>
 
-3. Enter the following settings in the *Target Running Environment* step: 
+3. Enter the following settings in the *Target Running Environment* step:
     1. Select *Cloud Foundry* as target running environment.
     2. Select *SAPUI5 Application* as application template and click *Next*.</ol>
 <br>![](images/01_01_0030.png)<br><br><ol>
@@ -32,7 +32,7 @@ After completing these steps you'll have created your first UI5 application.
 <br><br>![](images/01_01_0050.png)<br><br>
 
 6. Enter the following settings in the *Basic Attributes* step:
-    1. Enter *SensorManager* as *HTML5 module name*. 
+    1. Enter *SensorManager* as *HTML5 module name*.
     2. Choose *No* for authentication usage.
     3. Enter *keepcool* as your namespace.
     4. Choose *Yes* for Karma support and press *Next*.</ol>
@@ -55,7 +55,7 @@ It's time for a first preview of your newly created application!
 1. Click the &#9654; icon in the left icon bar.
 <br><br>![](images/01_02_0010.png)<br><br>
 
-2. Click the &plusb; icon to add a new configuration to *Run Configurations*. After a short delay, a list pops up in the top center of your screen. 
+2. Click the &plusb; icon to add a new configuration to *Run Configurations*. After a short delay, a list pops up in the top center of your screen.
 <br><br>![](images/01_02_0020.png)<br><br>
 
 3. Select the module *SensorManager* that you've just created.

@@ -1,5 +1,5 @@
-[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex7/TechEd2020)
-[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex7/TechEd2020/SensorManager/webapp/)
+[![solution](https://flat.badgen.net/badge/solution/available/green?icon=github)](https://github.com/SAP-samples/teched2020-DEV164/tree/code/ex7)
+[![demo](https://flat.badgen.net/badge/demo/deployed/blue?icon=chrome)](https://sap-samples.github.io/teched2020-DEV164/ex7/sensormanager/webapp/)
 
 # Exercise 7 - Fragment Containing a SelectDialog
 
@@ -108,7 +108,7 @@ After implementing the dialog opening logic, you need to assign this logic to a 
 The Dialog contains an input field where the user can search for a customer name.
 For this, you need to implement the filter logic.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
+1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
 2. Add an `onCustomerSelectChange` function with the following content:
 
@@ -127,7 +127,7 @@ onCustomerSelectChange: function(oEvent) {
 
 After providing an option to select preferred customers, you also need to add the logic to filter the sensors.
 
-1. Open `SensorManager/webapp/controller/Sensors.controller.js`. 
+1. Open `SensorManager/webapp/controller/Sensors.controller.js`.
 
 2. Add an `onCustomerSelectConfirm` function with the following content:
 
